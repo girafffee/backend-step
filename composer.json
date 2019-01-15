@@ -1,0 +1,10 @@
+{
+    "name": "girafffee/girafffee-15-01",
+    "description": "First lesson with GitHub",
+    "type": "lesson",
+    "require": {
+        "phpmailer/phpmailer": "dev-master"
+    },
+    "license": "BeerWare",
+    "minimum-stability": "dev"
+}
