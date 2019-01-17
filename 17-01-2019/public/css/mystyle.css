@@ -1,0 +1,68 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+article img {width: 100px;}
+
+
+
+#containerAbout, #containerPartners {background-color: #f8f8f8}
+
+#containerHeader {background-image: url('../img/fon.jpg'); background-repeat: no-repeat; background-position: top center;  height: 770px; overflow: hidden;     background-size: 100%;}
+h1#siteLogo {margin-top: 25px;}
+h1#siteLogo a {font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 24pt; color: #fff;}
+h1#siteLogo a:hover {text-decoration: none;} 
+
+#menuMain li {display: inline-block; list-style: none; text-align: center; padding: 0px 15px; margin-top: 40px;}
+#menuMain li a {color: #fff; font-family: 'Montserrat', sans-serif; font-size: 14pt;}
+#menuMain li a:hover {color: #ccc; text-decoration: none;} 
+
+
+#headerCaptions {margin-top: 255px;}
+#headerCaptions h2 {font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 48pt; color: #fff; text-transform: uppercase;}
+#headerCaptions p {font-family: 'Montserrat', sans-serif; font-weight: normal; font-size: 20pt; color: #fff; padding: 10px;}
+#headerCaptions a {font-family: 'Montserrat', sans-serif; font-weight: normal; font-size: 20pt; color: #fff; border: 2px solid #fff; border-radius: 2px; padding: 15px 30px; margin-top: 10px;}
+#headerCaptions a:hover {text-decoration: none; background-color: #fff; color: #5f1510;}
+
+#containerServices h3 {font-family: 'Montserrat', sans-serif; font-weight: normal; font-size: 20pt; color: #555; padding: 10px}
+#containerServices hr {color: #555; width: 50px;}
+#containerServices p { color: #555; }
+#containerServices i {font-size: 30pt; margin: 25px auto;}
+#containerServices div.ico {background: #fff; border: 2px solid #ddd; border-radius: 50%; height: 90px; width: 90px; margin: 0px auto;}
+#containerServices div.ico:hover {background: #c0301c;}
+#containerServices div.ico:hover i {color: #fff;}
+
+
+/*
+
+#slideBody { position: relative; width: 100%; height: 450px; background: #ccc; margin: 0px; padding: 0px; }
+#slideContent {padding: 0px; margin: 0px;}
+#slideContent li {position: absolute; border: 1px solid red; list-style: none; width: 100%; height: 400px; margin: 0px; padding: 0px; z-index: 10;}
+
+#btnPrev, #btnNext {position: absolute; z-index: 9999; top: 200px; cursor: pointer; background: green; border: 2px solid #fff; text-align: center; border-radius: 50%; padding: 5px; opacity: 0.5;}
+#btnPrev:hover, #btnNext:hover {opacity: 1;}
+
+#btnPrev {left: 20px;}
+#btnNext {right: 20px;}
+
+#slideBody  #sadow { visibility: hidden; background: red; z-index: 999; opacity: 0.3; }
+#slideBody:hover #sadow { visibility: visible; }
+#slideBody:hover li {opacity: 0.3;}
+*/
+
+
+
+#slideBar{height: 310px; margin-top: 50px;}
+#slide ul { list-style: none; margin: 0; padding: 0;width: 250px; height: 250px;}
+#social li {display: inline-block; list-style: none; text-align: center; padding: 0px 0px; width: 30px; height: 30px;
+    margin-top:200px;}
+#social li:nth-child(1) {margin-left: 50px;}
+#slideBar #slide ul:hover #social{visibility: visible; background: rgba(124, 52, 52, 0.555);width: 250px; height: 250px;}
+#slide ul li ul{position: absolute; top: 0px; left: 15px; visibility: hidden;}
+#social i{color:#fff; margin-top: 7px;}
+#slide ul li ul li:hover {background-color:#c0301c;}
+
+#slide h5{font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 11pt; margin-top: 20px; 
+    text-transform: uppercase;}
+
