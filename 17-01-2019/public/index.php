@@ -1,5 +1,5 @@
 <?php
-$startFrameworkTime = "";
+$startFrameworkTime = microtime(true);
 include ("../app/templates.lib.php");
 include ("../app/vardump.lib.php");
 include ("../app/files.lib.php");
@@ -15,7 +15,7 @@ $responce ['content'] = '<h1 class="w-100"> Content </h1>';
 
 //$responce['content'] = parserGuest();
 $responce['content'] = parserPhoto();
-
+$responce['footer']['time'] = $startFrameworkTime(); 
 //--------------------------------
 buildPage($responce);
 
