@@ -30,7 +30,7 @@ public:
 			if ($this->menu[$i]['parent'] == $parent){
 				$ret.= '<li><a href="' . $this->menu[$i]['url'] . '">' . $this->menu[$i]['text'] . '</a>';
 				if ($this->menu[$i]['children'] == true){
-					$ret.= echoMenu($i);
+					$ret.= $this->echoMenu($i);
 				}
 
 				$ret.='</li>';	

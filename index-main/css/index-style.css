@@ -1,0 +1,52 @@
+body div{
+	margin: 0px;
+}
+
+#mainContainer{
+	background-image: url('http://good-surf.ru/forum/urok/css/fon/images/big.jpg');
+	height: 100%;
+	background-size: cover;
+}
+.flex div{
+	background-color: red;
+	width: 250px;
+	height: 100px;
+	display: flex;
+	
+}
+.flex{
+	width: 80%;
+	background-color: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.my-container{
+	height: 100%;
+	margin: 0 auto;
+	background-color: #edeef0;
+	border-radius: 15px;
+	box-shadow: 0px 0px 15px 15px #fff;
+
+}
+.my-container form{
+	width: 80%;
+	padding: 20px 0px 20px 0px;
+	margin: 0px auto;
+	opacity: 1;
+}
+.my-container span{
+	margin: 0px auto;
+}
