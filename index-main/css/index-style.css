@@ -1,4 +1,4 @@
-body div{
+body section{
 	margin: 0px;
 }
 
@@ -6,23 +6,99 @@ body div{
 	background-image: url('http://good-surf.ru/forum/urok/css/fon/images/big.jpg');
 	height: 100%;
 	background-size: cover;
+	min-height: 300px;
+}
+#secondContainer{
+	background-image: url('http://29palms.ru/photo/blog/travel/namibia_4/resized/009_Blog_Pavla_Aksenova_Namibiya_Pustynya_Namib_Foto_yoka66_-_Depositphotos.jpg');
+	height: 100%;
+	background-size: cover;
+	min-height: 200px;
+	width: 100%;
+}
+
+.center-flex{
+	display: flex;
+	align-items: center;
+}
+.start-flex{
+	display: flex;
+	align-items: flex-start;
+}.end-flex{
+	display: flex;
+	align-items: flex-end;
 }
 .flex div{
-	background-color: red;
-	width: 250px;
-	height: 100px;
-	display: flex;
-	
+	margin: 10px;	
+	font-size: 48px;
+	color: #fff;
+	text-align: center;
+	min-width: 100px;
+	max-width: 500px;
 }
 .flex{
-	width: 80%;
-	background-color: green;
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	background-color: grey;
+	align-items: center;
+	height: 50%;
+	justify-content: flex-start;
+
 }
 
+.flex div:nth-child(even){
+	align-self: center;
+}
+
+#flex_1{
+	background-color: aqua;
+	height: 80%;
+	flex: 1 0 100px;
+}
+#flex_2{
+	background-color: #abbb11;
+	flex: 1 0 180px;
+}
+#flex_3{
+	background-color: #faaa55;
+	height: 50%;
+	flex: 1 0 100px;
+}
+#flex_4{
+	background-color: #cddd55;
+	flex: 1 0 160px;
+}
+#flex_5{
+	background-color: #faad99;
+	height: 65%;
+	flex: 1 0 100px;
+}
+#flex_6{
+	background-color: #ccdae8;
+	flex: 1 0 200px;
+}	
 
 
 
+.new-flex{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+.new-flex div{
+	margin: 20px;
+	flex-basis: 200px;
+}
 
+#new-1{
+	background-color: yellow;
+	flex: 1 0 100px;
+}
+
+#new-2{
+	background-color: green;
+	flex: 5 1 100px;
+}
 
 
 
