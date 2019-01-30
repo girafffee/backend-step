@@ -1,14 +1,16 @@
 <?php
 
-include("app/simpleform/form.php");
+include_once ("../vendor/autoload.php");
 
-$f = new Form("");
+use App\Simpleform\Form;
+
+$f = new Form("1");
 
 $f->addInput("Name");
 $f->addInput("Phone");
 $f->addInput("Email");
 
-$f->addTextArea("Message", "Ваша информация");
+$f->addTextArea("Message");
 
 $f->addInput("Send", "submit", "Отправить");
 

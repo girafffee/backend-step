@@ -1,0 +1,22 @@
+{
+    "name": "girafffee/simpleform",
+    "description": "Simple Form",
+    "type": "library",
+    "require": {
+        "phpmailer/phpmailer": "dev-master"
+    },
+    "require-dev": {
+        "phpmailer/phpmailer": "dev-master"
+    },
+    "license": "beerWare",
+    "authors": [
+        {
+            "name": "girafffee",
+            "email": "sanko200065@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {"App\\": "app/"}
+    }
+}

@@ -1,10 +1,12 @@
 <?php
 
+namespace App\Simpleform;
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
 class Form
 {
-
-
 	public $item = array();
 	public $name;
 
@@ -27,10 +29,10 @@ class Form
 		return $ret;
 	}
 	public function doSend(){
-		$ret = "<h3> Name = ". $_GET['Name'] . "</h3>\n\n";
-		$ret .= $_GET['Phone'] . "</h3>\n\n";
-		$ret .= "<h3>"$_GET['Email'] . "</h3>\n\n";
-		$ret .= "<h3>"$_GET['Message'] . "</h3>\n\n";
+		$ret = "<h3>Name = ". $_GET['Name'] . "</h3>\n\n";
+		$ret .= "<h3>Phone = ". $_GET['Phone'] . "</h3>\n\n";
+		$ret .= "<h3>Email = ". $_GET['Email'] . "</h3>\n\n";
+		$ret .= "<h3>Message = ". $_GET['Message'] . "</h3>\n\n";
 
 		return $ret;
 
@@ -44,13 +46,13 @@ class Form
 		    $mail->isSMTP();                                      // Set mailer to use SMTP
 		    $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
 		    $mail->SMTPAuth = true;                               // Enable SMTP authentication
-		    $mail->Username = 'noreply5@gmail.com';                 // SMTP username
-		    $mail->Password = '2324fdgdfgdhf';                           // SMTP password
+		    $mail->Username = 'sanko200065@gmail.com';                 // SMTP username
+		    $mail->Password = 'KK1hD8TvkMwD';                           // SMTP password
 		    $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 		    $mail->Port = 456;                                    // TCP port to connect to
 
 		    //Recipients
-		    $mail->setFrom('noreply5@gmail.com', 'Ivanenko PHP Mailer test');
+		    $mail->setFrom('sanko200065@gmail.com', 'Ivanenko PHP Mailer test');
 		    $mail->addAddress('sanko200065@gmail.com');     // Add a recipient
 		    //$mail->addAddress('ellen@example.com');               // Name is optional
 		    //$mail->addReplyTo('info@example.com', 'Information');
@@ -68,11 +70,12 @@ class Form
 		    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
 		    $mail->send();
-		    echo 'Message has been sent';
+		    $ret = 'Message has been sent';
 
 		} catch (Exception $e) {
-	    echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
+	    $ret = 'Ошибка отправки сообщения. Mailer Error: '. $mail->ErrorInfo;
 		}
+		return $ret;
 	}
 	public function buildForm(){
 		$ret = "<form action='".$_SERVER['PHP_SELF']."' method='GET'>";
