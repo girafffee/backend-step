@@ -1,12 +1,10 @@
 <?php
-
 namespace App\Simpleform;
 
 use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\Exception; 
 
-class Form
-{
+class Form{
 	public $item = array();
 	public $name;
 
@@ -46,13 +44,13 @@ class Form
 		    $mail->isSMTP();                                      // Set mailer to use SMTP
 		    $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
 		    $mail->SMTPAuth = true;                               // Enable SMTP authentication
-		    $mail->Username = 'sanko200065@gmail.com';                 // SMTP username
-		    $mail->Password = 'KK1hD8TvkMwD';                           // SMTP password
+		    $mail->Username = 'noreply.girafffee@gmail.com';                 // SMTP username
+		    $mail->Password = 'SaNkO20001221';                           // SMTP password
 		    $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 		    $mail->Port = 456;                                    // TCP port to connect to
 
 		    //Recipients
-		    $mail->setFrom('sanko200065@gmail.com', 'Ivanenko PHP Mailer test');
+		    $mail->setFrom('noreply.girafffee@gmail.com', 'Ivanenko PHP Mailer test');
 		    $mail->addAddress('sanko200065@gmail.com');     // Add a recipient
 		    //$mail->addAddress('ellen@example.com');               // Name is optional
 		    //$mail->addReplyTo('info@example.com', 'Information');

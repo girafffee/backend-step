@@ -4,7 +4,7 @@ include_once ("../vendor/autoload.php");
 
 use App\Simpleform\Form;
 
-$f = new Form("1");
+$f = new Form("FormSimple");
 
 $f->addInput("Name");
 $f->addInput("Phone");
