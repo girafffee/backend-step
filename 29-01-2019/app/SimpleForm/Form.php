@@ -1,5 +1,5 @@
 <?php
-namespace App\Simpleform;
+namespace App\SimpleForm;
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception; 
@@ -32,6 +32,8 @@ class Form{
 		$ret .= "<h3>Email = ". $_GET['Email'] . "</h3>\n\n";
 		$ret .= "<h3>Message = ". $_GET['Message'] . "</h3>\n\n";
 
+		$ret.= $this->doSendEmail($ret);
+		
 		return $ret;
 
 	}	

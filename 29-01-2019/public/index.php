@@ -2,7 +2,7 @@
 
 include_once ("../vendor/autoload.php");
 
-use App\Simpleform\Form;
+use App\SimpleForm\Form;
 
 $f = new Form("FormSimple");
 
