@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Univer\Departments\Biochemistry;
-use App\Univer\Calc;
 use App\Univer\Departments\Departments;
 /**
  * 
@@ -14,9 +13,8 @@ class Leadership extends Departments
 		parent::__construct();
 	}
 	
-	public function GetData(){
-		$ret = "/***Создалось руководство***/  || Счетчик: " .self::$count." <br/>";
-		Calc::$i++;
+	public function GetData($what){
+		$ret = "/***Created ".$what."***/  || Счетчик: " .$this->safeCount." <br/>";
 		return $ret;
 	}
 }

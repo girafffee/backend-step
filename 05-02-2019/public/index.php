@@ -3,7 +3,6 @@
 include_once ("../vendor/autoload.php");
 
 
-use App\Univer\Calc;
 use App\Univer\Univer;
 use App\Univer\PrettyDiv;
 use App\Univer\Departments\Departments;
@@ -13,7 +12,6 @@ use App\Univer\Departments\Biochemistry\Leadership\Decan;
 use App\Univer\Departments\Biochemistry\Students\Student;
 
 $ret = "";
-//$num = new Calc();
 
 $mnu = new Univer();
 $dep = new Departments();
@@ -22,15 +20,14 @@ $lead = new Leadership();
 $dec = new Decan();
 $stud = new Student();
 
-$ret .= $mnu->GetDataIn("МНУ ім. В. О. Сухомлинського");
-$ret .= $dep->GetDataIn(12);
-$ret .= $studs->GetData();
-$ret .= $lead->GetData();
-$ret .= $dec->GetDataIn("Иванов Иван Иванович");
-$ret .= $stud->GetDataIn("Попов Вениамин Артемович");
+$ret .= $mnu->GetDataIn("Универ", "МНУ ім. В. О. Сухомлинського");
+$ret .= $dep->GetDataIn("Факультет", 12);
+$ret .= $studs->GetData("Студенство");
+$ret .= $lead->GetData("Руководство");
+$ret .= $dec->GetDataIn("Декан","Иванов Иван Иванович");
+$ret .= $stud->GetDataIn("Студент", "Попов Вениамин Артемович");
 $ret .= $stud->callStudInfo();
 
-$ret .= Calc::$i . " объектов.";
 $ret = PrettyDiv::BuildDiv($ret);
 
 

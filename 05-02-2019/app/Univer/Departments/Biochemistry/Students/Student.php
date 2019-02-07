@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Univer\Departments\Biochemistry\Students;
-use App\Univer\Calc;
 use App\Univer\Departments\Biochemistry\Students;
 /**
  * 
@@ -21,10 +20,9 @@ class Student extends Students
 		$this->studStip = rand(1300, 2400);
 	}
 	
-	public function GetDataIn($name){
+	public function GetDataIn($what, $name){
 		$this->studName = $name;
-		$ret = "/***Создан студент***/ = " . $this->studName ." || Счетчик: " .self::$count." <br/>";
-		Calc::$i++;
+		$ret = "/***Created ".$what."***/ = " . $this->studName ." || Счетчик: " .$this->safeCount." <br/>";
 		return $ret;
 	}
 

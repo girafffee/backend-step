@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Univer\Departments\Biochemistry;
-use App\Univer\Calc;
 use App\Univer\Departments\Departments;
 /**
  * 
@@ -14,9 +13,8 @@ class Students extends Departments
 		parent::__construct();
 	}
 	
-	public function GetData(){
-		$ret = "/***Создалось студентство***/  || Счетчик: " .self::$count." <br/>";
-		Calc::$i++;
+	public function GetData($what){
+		$ret = "/***Создалось ".$what."***/  || Счетчик: " .$this->safeCount." <br/>";
 		return $ret;
-	}
+	} 
 }

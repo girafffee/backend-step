@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Univer;
-use App\Univer\Calc;
 
 /**
  * 
@@ -10,14 +9,14 @@ use App\Univer\Calc;
 class Univer 
 {
 	static protected $count;
+	protected $safeCount;
 	function __construct()
 	{
-		self::$count++;
+		$this->safeCount = self::$count++ + 1;
 	}
 	
-	public function GetDataIn($name){
-		$ret = "/***Создан университет***/ = " . $name . " || Счетчик: " .self::$count."<br/>";
-		Calc::$i++;
+	public function GetDataIn($what, $name){
+		$ret = "/***Created ".$what."***/ = " . $name . " || Счетчик: " .$this->safeCount."<br/>";
 		return $ret;
 	}
 }
