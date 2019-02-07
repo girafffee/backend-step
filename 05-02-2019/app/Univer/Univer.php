@@ -19,4 +19,9 @@ class Univer
 		$ret = "/***Created ".$what."***/ = " . $name . " || Счетчик: " .$this->safeCount."<br/>";
 		return $ret;
 	}
+	
+	public function GetData($what){
+		$ret = "/***Created ".$what."***/  || Счетчик: " .$this->safeCount." <br/>";
+		return $ret;
+	}
 }

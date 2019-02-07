@@ -13,8 +13,5 @@ class Leadership extends Departments
 		parent::__construct();
 	}
 	
-	public function GetData($what){
-		$ret = "/***Created ".$what."***/  || Счетчик: " .$this->safeCount." <br/>";
-		return $ret;
-	}
+	
 }

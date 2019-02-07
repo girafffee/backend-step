@@ -13,8 +13,5 @@ class Students extends Departments
 		parent::__construct();
 	}
 	
-	public function GetData($what){
-		$ret = "/***Создалось ".$what."***/  || Счетчик: " .$this->safeCount." <br/>";
-		return $ret;
-	} 
+	
 }
