@@ -1,0 +1,21 @@
+{
+    "name": "ninydev/simpleform",
+    "description": "Simple Form",
+    "type": "lesson",
+    "require": {
+    },
+    "license": "beerWare",
+    "authors": [
+        {
+            "name": "Oleksandr Nykytin",
+            "email": "nikitin_a@itstep.org"
+        }
+    ],
+    "minimum-stability": "dev",
+	"autoload": {
+        "psr-4": {
+            "App\\": "App/",
+            "Kernel\\": "Kernel"
+        }
+	}
+}

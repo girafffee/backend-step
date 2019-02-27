@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+#containerHeader {background-image: url('../img/fon.png'); background-repeat: no-repeat; 
+    background-position: top center;  height: 770px; overflow: hidden; background-size: 100%;}
+h1#siteLogo {margin-top: 20px;}
+h1#siteLogo a {font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 16pt; color: #fff;}
+h1#siteLogo a:hover {text-decoration: none;} 
+
+#menuMain li {display: inline-block; list-style: none; text-align: center; padding: 0px 10px; margin-top: 40px;}
+#menuMain li a {color: #fff; font-family: 'Montserrat', sans-serif; font-size: 10pt;}
+#menuMain li a:hover {color: #ccc; text-decoration: none;} 
+
+#headerCaptions {margin-top: 240px;}
+#headerCaptions h2 {font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 34pt; color: #fff; 
+    text-transform: uppercase;}
+#headerCaptions p {font-family: 'Montserrat', sans-serif; font-weight: normal; font-size: 13pt; color: #fff; 
+    padding: 10px;}
+#headerCaptions a {font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 13pt; color: #fff; 
+    border: 2px solid #fff; border-radius: 2px; padding: 10px 15px;}
+#headerCaptions a:hover {text-decoration: none; font-weight: bold; background-color: #fff; color: #c0301c;}
+
+
+#containerServices {height: 580px;}
+#containerServices h3 {font-family: 'Montserrat', sans-serif; font-weight: normal; font-size: 14pt; color: #555; 
+    padding: 70px 10px 0;}
+#containerServices hr {color: #555; width: 50px;}
+#containerServices p { color: #555; font-size: 11pt; margin-top: 25px;}
+#containerServices i {font-size: 30pt; margin: 23px auto; color:#c0301c}
+#containerServices div.ico {background: #fff; border: 2px solid #ddd; border-radius: 50%; height: 90px; width: 90px; 
+    margin: 40px auto;}
+#containerServices h4{text-transform: uppercase; font-size: 10pt;}
+#containerServices div.ico:hover {background: #c0301c;}
+#containerServices div.ico:hover i {color: #fff;}
+
+
+#containerAbout {height: 850px; background-color: #f8f8f8;}
+#containerAbout h3 {font-family: 'Montserrat', sans-serif; font-weight: normal; font-size: 14pt; color: #555; 
+    padding-top: 70px;}
+#containerAbout hr {color: #555; width: 50px; padding-top: 30px; margin: 30px auto 0;}
+
+#aboutContent{padding-top: 55px;}
+
+#slideBar{height: 310px; margin-top: 50px;}
+#slide ul { list-style: none; margin: 0; padding: 0;width: 250px; height: 250px;}
+#social li {display: inline-block; list-style: none; text-align: center; padding: 0px 0px; width: 30px; height: 30px;
+    margin-top:200px;}
+#social li:nth-child(1) {margin-left: 50px;}
+#slideBar #slide ul:hover #social{visibility: visible; background: rgba(124, 52, 52, 0.555);width: 250px; height: 250px;}
+#slide ul li ul{position: absolute; top: 0px; left: 15px; visibility: hidden;}
+#social i{color:#fff; margin-top: 7px;}
+#slide ul li ul li:hover {background-color:#c0301c;}
+
+#slide h5{font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 11pt; margin-top: 20px; 
+    text-transform: uppercase;}
+
+
+#containerLatestWorks{height: 1380px;}
+#containerLatestWorks hr {color: #555; width: 50px;}
+#containerLatestWorks h3 {font-family: 'Montserrat', sans-serif; font-weight: normal; font-size: 14pt; color: #555; 
+    padding: 70px 10px 0;}
+#menuWorks ul { list-style: none; margin-bottom: 40px; padding: 0;text-decoration: none;}
+#menuWorks li {display: inline-block; list-style: none; text-align: center; padding: 0px 0px; margin: auto 10px; }
+#menuWorks li a {color: #555; font-family: 'Montserrat', sans-serif; font-size: 10pt;}
+#menuWorks li a:hover {color: rgb(180, 85, 85); text-decoration: none;} 
+
+#view ul{ list-style: none; margin: 0; padding: 0;text-decoration: none;}
+#view ul li { list-style: none; text-align: center; padding: 0px 0px;}
+#viewMenu {position: absolute; top: 0px; left: 30px; visibility: hidden;}
+#view ul li ul li {padding: 8px; color:#fff;}
+#view ul li ul li a {padding: 8px; color:#fff;background-color: #fff;color:#c0301c;}
+#view ul li ul li a:hover{text-decoration: none;}
+#view ul li:hover #viewMenu{visibility: visible;background: rgba(124, 52, 52, 0.555);width: 320px; height: 320px;}
+#viewMenu li:nth-child(1) {margin-top: 60px;}
+
+
+#containerBannerAbout{background-image: url('img/bannerAbout.jpg'); background-repeat: no-repeat; 
+    background-position: top center;  height: 368px; overflow: hidden; background-size: 100%;}
+#containerBannerAbout .textAbout{padding-top: 100px; color:#fff}
+#containerBannerAbout a {font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 13pt; color: #fff; 
+    border: 2px solid #fff; border-radius: 2px; padding: 10px 15px;}
+#containerBannerAbout a:hover {text-decoration: none; font-weight: bold; background-color: #fff; color: #c0301c;}
+
+#containerBlog .articleBlog{padding: 25px 0;}
+#containerBlog h3 {font-family: 'Montserrat', sans-serif; font-weight: normal; font-size: 14pt; color: #555; 
+    padding: 40px 0 30px 0;}
+#containerBlog hr {color: #555; width: 50px;}
+#containerBlog p { color: #555; font-size: 11pt; margin-top: 30px;}
+#containerBlog .dataPost{padding: 10px 0; border: 2px solid #555;width: 100%; height: 80px;}
+article{padding-left: 20px;}
+#headerText1{font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 14pt; color: #555;}
+#headerText2{font-family: 'Montserrat', sans-serif; font-weight: normal; font-style:italic; font-size: 12pt; color: #555;}
+
+#containerContacts{background-color: #f8f8f8; height: 475px;}
+#containerContacts ul{ list-style: none; margin: 0; padding: 0;text-decoration: none;}
+#containerContacts ul li {display: inline-block; list-style: none; text-align: center; padding: 0px 0px; width: 160px; height: 50px;
+    margin:100px 0 80px;}
+
+
+#containerGetInTouch {height: 660px;}
+#containerGetInTouch h3 {font-family: 'Montserrat', sans-serif; font-weight: normal; font-size: 14pt; color: #555; 
+    padding-top: 70px;}
+#containerGetInTouch hr {color: #555; width: 50px; padding-top: 30px; margin: 30px auto 0;}
