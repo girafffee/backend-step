@@ -1,0 +1,163 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+article img {width: 100px;}
+
+
+
+
+
+
+
+#containerAbout, #containerPartners {background-color: #f8f8f8}
+
+#containerHeader {
+    background-image: url('../img/fon.jpg'); 
+    background-repeat: no-repeat;  
+    background-position: top center;
+    height: 100px; 
+    overflow: hidden;     
+    background-size: 100%;
+    background-attachment: fixed;}
+
+#containerHeaderHome {background-image: url('../img/fon.jpg'); background-repeat: no-repeat; background-position: top center;  height: 770px; overflow: hidden;     
+background-size: 100%;
+background-attachment: fixed;}
+
+
+h1#siteLogo {margin-top: 25px;}
+h1#siteLogo a {font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 24pt; color: #fff;}
+h1#siteLogo a:hover {text-decoration: none;} 
+
+#menuMain li {display: inline-block; list-style: none; text-align: center; padding: 0px 15px; margin-top: 40px;}
+#menuMain li a {color: #fff; font-family: 'Montserrat', sans-serif; font-size: 14pt;}
+#menuMain li a:hover {color: #ccc; text-decoration: none;} 
+
+
+#headerCaptions {margin-top: 255px;}
+#headerCaptions h2 {font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 48pt; color: #fff; text-transform: uppercase;}
+#headerCaptions p {font-family: 'Montserrat', sans-serif; font-weight: normal; font-size: 20pt; color: #fff; padding: 10px;}
+#headerCaptions a {font-family: 'Montserrat', sans-serif; font-weight: normal; font-size: 20pt; color: #fff; border: 2px solid #fff; border-radius: 2px; padding: 15px 30px; margin-top: 10px;}
+#headerCaptions button{
+    font-size: 30px;
+    background: none;
+    color: #fff;
+    border: 2px solid aqua;
+    border-radius: 3em 3em;
+}
+#headerCaptions button:focus{
+    box-shadow: 0rem 0rem 4rem 1rem rgba(0,123,255, .4);
+}
+
+body{
+	background: #eff;
+}
+
+#get-form button{
+	font-size: 24px;
+}
+
+.siteArticle{
+	width: 50%;
+	background: #eee;
+	border-radius: 15em 3em;
+	margin: 5em auto 10em auto;
+	padding-bottom: 3em;
+
+
+}
+.siteArticle h1{
+	color: #A52A2A;
+	padding-top: 50px;
+	text-align: center;
+	text-shadow: 2px 4px 0px rgba(0,0,0,0.2);
+	font-size: 2.5em;
+
+}
+
+/* Стили формы */
+#application {
+    width: 475px;
+    margin: 0 auto;
+
+}
+ 
+/*Стили полей для ввода*/
+#applicationName, #applicationEmail, #applicationTelephone {
+    width: 100%;
+    height: 73px;
+    background: none;
+    margin-top: 25px;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    text-align: center;
+    color: maroon;
+    font-size: 24px;
+}
+
+/*Стили полей при клике по ним*/
+#applicationName:focus, #applicationEmail:focus, #applicationTelephone:focus {
+    border: 2px solid #30ad64;
+    background: #ccc;
+    transform: scale(1.1);
+	transition: 0.4s;
+}
+ 
+/*Стили текста, выводящегося в placeholder*/
+::-webkit-input-placeholder {
+    color: #999;
+    font-family: 'PT Sans', sans-serif;
+    transform: scaleX(1);
+    transition: .4s;
+}
+ 
+::-moz-placeholder  {
+    color: #999;
+    font-family: 'PT Sans', sans-serif;
+    transition: .4s;	
+
+}  /* Firefox 19+ */
+ 
+:-moz-placeholder {
+    color: #999;
+    font-family: 'PT Sans', sans-serif;
+    transition: .4s;
+
+}  /* Firefox 18- */
+ 
+:-ms-input-placeholder {
+    color: #999;
+    font-family: 'PT Sans', sans-serif;
+    transition: .4s;
+}
+ 
+::placeholder {
+    color: #999;
+    transition: .4s;
+}
+
+/*Стили для кнопки*/
+.applicationButton {
+
+    margin-top: 25px;
+    background: #A52A2A;
+    border: none;
+    width: 60%;
+    height: 73px;
+    border-radius: 10em 3em;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'PT Sans', sans-serif;
+    cursor: pointer;
+}
+    .applicationButton:hover {
+        background: #CD5C5C;
+        transition: .4s;
+    }
+
+
+
+

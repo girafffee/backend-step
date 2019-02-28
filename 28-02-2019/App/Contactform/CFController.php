@@ -14,7 +14,7 @@ class CFController  extends \Kernel\Base\BaseController
 		if ($action == "send") {return $this->send ();}
 	}
 
-	private function index (){
+	public function index (){
 		$data['formTitle'] = "Contact Form";
 		FormController::$data ['formTitle'] = "Contact form";
 		$this->content =  self::render ('contactform.tpl.php', $data);
