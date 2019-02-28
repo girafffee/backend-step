@@ -6,25 +6,10 @@ namespace Composer\Autoload;
 
 class ComposerStaticInita21354aeeb23766f76adbdac4730d69a
 {
-    public static $files = array (
-        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
-    );
-
     public static $prefixLengthsPsr4 = array (
-        'S' => 
-        array (
-            'Symfony\\Polyfill\\Ctype\\' => 23,
-            'Symfony\\Component\\Yaml\\' => 23,
-            'Symfony\\Component\\Filesystem\\' => 29,
-            'Symfony\\Component\\Config\\' => 25,
-        ),
         'P' => 
         array (
             'PHPMailer\\PHPMailer\\' => 20,
-        ),
-        'L' => 
-        array (
-            'Lavary\\Menus\\' => 13,
         ),
         'K' => 
         array (
@@ -37,29 +22,9 @@ class ComposerStaticInita21354aeeb23766f76adbdac4730d69a
     );
 
     public static $prefixDirsPsr4 = array (
-        'Symfony\\Polyfill\\Ctype\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
-        ),
-        'Symfony\\Component\\Yaml\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/yaml',
-        ),
-        'Symfony\\Component\\Filesystem\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/filesystem',
-        ),
-        'Symfony\\Component\\Config\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/config',
-        ),
         'PHPMailer\\PHPMailer\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
-        ),
-        'Lavary\\Menus\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/lavary/menus/src',
         ),
         'Kernel\\' => 
         array (

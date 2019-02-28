@@ -3,7 +3,6 @@
     "description": "First lesson with GitHub",
     "type": "lesson",
     "require": {
-        "phpmailer/phpmailer": "dev-master"
     },
     "license": "BeerWare",
     "minimum-stability": "dev"

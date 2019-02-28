@@ -2,12 +2,12 @@
 namespace Kernel;
 
 /**
- *
+ * 
  */
 class Router{
 	function __construct(){
 	}
-
+	private $controller;
 	function getMainController (){
 
 		if (!isset($_GET["controller"])){
@@ -15,10 +15,9 @@ class Router{
 		}
 
 		if (!isset($_GET["action"])){
-			$action= "show";
+			$action= "index";
 		} else {
 			$action = $_GET["action"];
-
 		}
 
 		if (!isset($_GET["page_id"])){
@@ -38,17 +37,19 @@ class Router{
 				break;
 
 			case 'contactform':
-			return new \App\ContactForm\CFController($action);
+			return new \App\Contactform\CFController ($action);
 				break;
-
+			
 			default:
 			return new \App\Page\PageController (); // TODO Error 404 or HomePage
 				break;
 		}
+
+		
 	}
 
 //*------------------------------------------------------------
-// Обеспечение единственной копии класса
+// Обеспечение единственной копии класса      
       private static $instance;
       public static function getInstance() {
           if (!self::$instance) {
@@ -57,7 +58,7 @@ class Router{
           return self::$instance;
       }
       private function __clone() {}
-      private function __wakeup() {}
+      private function __wakeup() {}	
 }
 
 // $Router = Router::getInstance();

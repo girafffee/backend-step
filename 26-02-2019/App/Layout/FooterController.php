@@ -6,5 +6,5 @@ namespace App\Layout;
  */
 class FooterController 
 {
-	public static function getContent () {return "Footer";}
+	public static function getContent () {return;}
 }

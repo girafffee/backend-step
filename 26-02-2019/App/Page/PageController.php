@@ -18,7 +18,4 @@ class PageController
 
 	function getContent () {return $this->content;}
 
-
-
-
 }

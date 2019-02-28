@@ -18,26 +18,30 @@ final class Responce {
 //*------------------------------------------------------------
 // Собрать данные для построения страницы
     public static function buildPageData (){
-      self::$pageData ['head'] = HeadController::getContent();
       self::$pageData ['header'] = HeaderController::getContent();
+      self::$pageData ['head'] = HeadController::getContent();
       self::$pageData ['sidebar'] = SidebarController::getContent();
       self::$pageData ['footer'] = FooterController::getContent();
       self::$pageData ['mainnav'] = MainNavigationController::getContent();
+      self::$pageData ['form'] = FormController::getContent();
+
     }
 
 
 //*------------------------------------------------------------
 // Вернуть всю страницу
     public static function renderPage(){
-      $ret = '<!DOCTYPE html><html lang="ru" class="no-js">';
+      $ret = '<!DOCTYPE html>
+      <html lang="ru" class="no-js">';
       $ret.= self::$pageData ['head'];
-      $ret.= '<body>';
+      $ret.= "\n<body>\n";
       $ret.= self::$pageData ['header'];
+      $ret.= self::$pageData ['form'];
       $ret.= self::$pageData ['mainnav'];
       $ret.= self::$pageData ['sidebar'];
       $ret.= self::$pageData ['content'];
       $ret.= self::$pageData ['footer'];
-      $ret.= '</body></html>';
+      $ret.= "\n</body></html>";
       return $ret;
     }
 

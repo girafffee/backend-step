@@ -1,5 +1,5 @@
 <?php
-use App\Layout\Responce;
+
 /*
 |--------------------------------------------------------------------------
 | Register The Auto Loader
@@ -24,25 +24,14 @@ include_once ("../vendor/autoload.php");
 */
 include_once ("../Kernel/app.boot.php");
 
+/*
+|--------------------------------------------------------------------------
+| Build the Page
+|--------------------------------------------------------------------------
+|
+| Рендерим всю страницу
+|
+*/
 
-use Lavary\Menus\MenuBuilder;
-
-$builder = new MenuBuilder();
-
-$builder->make('MyNavBar', function($menu) {
-  $menu->add('Home', $_SERVER['PHP_SELF'] .'?controller=contactform');
-  $menu->add('About', $_SERVER['PHP_SELF'] .'#');
-  $menu->add('services', $_SERVER['PHP_SELF'] .'#');
-  $menu->add('Contact', $_SERVER['PHP_SELF'] .'#');
-
-});
-
-
-
-
-
+use App\Layout\Responce;
 echo Responce::renderPage();
-
-echo $builder->get('MyNavBar')->asUl();
-
-

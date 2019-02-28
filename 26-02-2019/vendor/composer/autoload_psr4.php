@@ -6,12 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Symfony\\Polyfill\\Ctype\\' => array($vendorDir . '/symfony/polyfill-ctype'),
-    'Symfony\\Component\\Yaml\\' => array($vendorDir . '/symfony/yaml'),
-    'Symfony\\Component\\Filesystem\\' => array($vendorDir . '/symfony/filesystem'),
-    'Symfony\\Component\\Config\\' => array($vendorDir . '/symfony/config'),
     'PHPMailer\\PHPMailer\\' => array($vendorDir . '/phpmailer/phpmailer/src'),
-    'Lavary\\Menus\\' => array($vendorDir . '/lavary/menus/src'),
     'Kernel\\' => array($baseDir . '/Kernel'),
     'App\\' => array($baseDir . '/App'),
 );
