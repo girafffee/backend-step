@@ -24,11 +24,11 @@ class PageModel
 
 	function getPageByID ($id){
 		switch ($id) {
-			case '1':
+			case "1":
 			return $this->getPageFile('about.php');
 				break;
 
-			case '2':
+			case "2":
 			return $this->getPageFile('blog.php');
 				break;
 

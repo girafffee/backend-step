@@ -59,7 +59,7 @@ final class Responce {
 // Обеспечение единственной копии класса      
     private function __construct() {      
 
-      self::$pageData ['content'] ="";
+      self::$pageData ['content'] = "";
 
     }
 

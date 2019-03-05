@@ -12,7 +12,7 @@ class Router{
 	function getMainController (){
 
 		if (!isset($_GET["controller"]) OR $_GET["controller"] == "home"){
-				return new HomeController ();
+			return new HomeController ();
 		}
 
 		if (!isset($_GET["action"]))
@@ -28,7 +28,12 @@ class Router{
 
 		switch ($_GET["controller"]) {
 			case 'page':
-			return new \App\Page\PageController ($action, $page_id);
+			case 'PageController':
+			return new \App\Page\PageController ($page_id, $action);
+				break;
+
+			case 'HomeController':
+			return new \App\Homepage\HomeController ();
 				break;
 
 			case 'post':
@@ -44,8 +49,11 @@ class Router{
 				break;
 		}
 
+
 		
 	}
+
+	
 
 //*------------------------------------------------------------
 // Обеспечение единственной копии класса      

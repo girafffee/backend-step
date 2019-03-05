@@ -1,1 +1,1 @@
-<h1 class="text-center">This is Services page</h1>
+<h1 class="text-center">This is Blog page</h1>

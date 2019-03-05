@@ -17,23 +17,41 @@ article img {width: 100px;}
     background-image: url('../img/fon.jpg'); 
     background-repeat: no-repeat;  
     background-position: top center;
-    height: 100px; 
+    height: 120px; 
     overflow: hidden;     
     background-size: 100%;
-    background-attachment: fixed;}
+    background-attachment: fixed;
+    border-radius: 0 0 50% 50%;
+}
 
-#containerHeaderHome {background-image: url('../img/fon.jpg'); background-repeat: no-repeat; background-position: top center;  height: 770px; overflow: hidden;     
-background-size: 100%;
-background-attachment: fixed;}
+    #containerHeaderHome {background-image: url('../img/fon.jpg'); background-repeat: no-repeat; background-position: top center;  height: 770px; overflow: hidden;     
+    background-size: 100%;
+    background-attachment: fixed;
+}
 
+h1#siteLogo, #menuMain ul, #headerCaptions{
 
-h1#siteLogo {margin-top: 25px;}
-h1#siteLogo a {font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 24pt; color: #fff;}
-h1#siteLogo a:hover {text-decoration: none;} 
+}
 
-#menuMain li {display: inline-block; list-style: none; text-align: center; padding: 0px 15px; margin-top: 40px;}
+h1#siteLogo {
+    margin-top: 35px;
+}
+    h1#siteLogo a {font-family: 'Montserrat', sans-serif; 
+    font-weight: bold; 
+    font-size: 24pt; 
+    color: #fff;}
+        h1#siteLogo a:hover {text-decoration: none;} 
+
+#menuMain li {display: inline-block; list-style: none; text-align: center; padding: 0px 15px; margin-top: 65px;}
 #menuMain li a {color: #fff; font-family: 'Montserrat', sans-serif; font-size: 14pt;}
-#menuMain li a:hover {color: #ccc; text-decoration: none;} 
+#menuMain li a:hover {
+    color: #999; 
+    text-decoration: none;
+    /*box-shadow: 0rem 0rem 4rem 0.2rem rgba(255,255,255, .6);*/
+        -webkit-transition: all .1s ease;
+        -o-transition: all .1s ease;
+        transition: all .1s ease;
+} 
 
 
 #headerCaptions {margin-top: 255px;}
@@ -41,15 +59,23 @@ h1#siteLogo a:hover {text-decoration: none;}
 #headerCaptions p {font-family: 'Montserrat', sans-serif; font-weight: normal; font-size: 20pt; color: #fff; padding: 10px;}
 #headerCaptions a {font-family: 'Montserrat', sans-serif; font-weight: normal; font-size: 20pt; color: #fff; border: 2px solid #fff; border-radius: 2px; padding: 15px 30px; margin-top: 10px;}
 #headerCaptions button{
+    padding: .78em;
     font-size: 30px;
     background: none;
     color: #fff;
-    border: 2px solid aqua;
+    border: 2px solid #fff;
     border-radius: 3em 3em;
+
 }
-#headerCaptions button:focus{
-    box-shadow: 0rem 0rem 4rem 1rem rgba(0,123,255, .4);
-}
+    #headerCaptions button:focus{
+        box-shadow: 0rem 0rem 4rem 1rem rgba(0,123,255, .4);
+    }
+    #headerCaptions button:hover{
+        box-shadow: 0rem 0rem 5rem .8rem rgba(255,255,255, .6);
+        -webkit-transition: all .2s ease;
+        -o-transition: all .2s ease;
+        transition: all .2s ease;
+    }
 
 body{
 	background: #eff;
@@ -95,14 +121,17 @@ body{
     text-align: center;
     color: maroon;
     font-size: 24px;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
 }
 
 /*Стили полей при клике по ним*/
 #applicationName:focus, #applicationEmail:focus, #applicationTelephone:focus {
-    border: 2px solid #30ad64;
+    border: 2px solid #A52A2A;
     background: #ccc;
     transform: scale(1.1);
-	transition: 0.4s;
+    outline: none;
 }
  
 /*Стили текста, выводящегося в placeholder*/
@@ -110,32 +139,32 @@ body{
     color: #999;
     font-family: 'PT Sans', sans-serif;
     transform: scaleX(1);
-    transition: .4s;
+    transition: .2s;
 }
  
 ::-moz-placeholder  {
     color: #999;
     font-family: 'PT Sans', sans-serif;
-    transition: .4s;	
+    transition: .2s;	
 
 }  /* Firefox 19+ */
  
 :-moz-placeholder {
     color: #999;
     font-family: 'PT Sans', sans-serif;
-    transition: .4s;
+    transition: .2s;
 
 }  /* Firefox 18- */
  
 :-ms-input-placeholder {
     color: #999;
     font-family: 'PT Sans', sans-serif;
-    transition: .4s;
+    transition: .2s;
 }
  
 ::placeholder {
     color: #999;
-    transition: .4s;
+    transition: .2s;
 }
 
 /*Стили для кнопки*/
@@ -151,11 +180,14 @@ body{
     font-size: 24px;
     text-transform: uppercase;
     font-family: 'PT Sans', sans-serif;
-    cursor: pointer;
+    cursor: pointer;-webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+
 }
     .applicationButton:hover {
         background: #CD5C5C;
-        transition: .4s;
+        outline: none;     
     }
 
 
