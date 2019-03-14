@@ -10,6 +10,7 @@ class BaseController
 	public static function render ($tplPath, $data = ''){
 		// включаем буфер
 		ob_start();
+		//echo Config::$pathToTemplate . $tplPath;
 		include (Config::$pathToTemplate . $tplPath); 
 
 		// сохраняем всё что есть в буфере в переменную $content

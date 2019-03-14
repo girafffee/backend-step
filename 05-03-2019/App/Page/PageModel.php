@@ -41,6 +41,14 @@ class PageModel
 */	
 	
 	function getPageByID ($id){
+
+		// ToDo: Переписать, с попыткой включитьф айл- еслиф айла нет - вернуть 404
+		// HowTo:
+		// 0. Создать файл 404.php
+		// 1. проверить на наличие файла 
+		// 2. Если файл есть,включить его
+		// 3. Если файла нет - вернуть 404.php
+
 		switch ($id) {
 			case '1':
 			return $this->getContentPageFromFile('1.php');

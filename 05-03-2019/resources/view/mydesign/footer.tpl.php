@@ -1,7 +1,9 @@
-
-
-<footer><?=$data['footerMenu']?></footer>
-
+<?php
+echo $data["footerMenu"];
+?>
+<footer>
+	
+</footer>
 <?php if (isset($data['error'])) {
 	echo '<div class="alert alert-danger" role="alert">' . $data ['error'] . '</div>';
 }?>

@@ -1,10 +1,9 @@
 <?php
+//var_dump($data);
+
+
 
 echo \Kernel\Router::BuildItem($data, 0);
-
-
-
-
 
 
 ?>

@@ -10,18 +10,22 @@ class NavigationController extends \Kernel\Base\BaseController
 	var $content;
 	var $menuName;
 
-	function __construct($menuName = "main"){
+
+	function __construct($menuName = "MainMenu"){
 		$this->menuName = $menuName;
 	}
 
 	function buildMenu(){
 		$this->Model = new NavigationModel();
-		if($this->menuName == 'main')
-			$this->Model->createSimpleMenu();
-		if($this->menuName == 'footer')
+
+		// TODO: поставить вызов функции в зависимости от имени
+
+		if ($this->menuName == "MainMenu")
+			$this->Model->createMainMenu();
+		if ($this->menuName == "FooterMenu")
 			$this->Model->createFooterMenu();
-		
-		$this->content = self::render(strtolower($this->menuName).'menu.tpl.php', $this->Model->arrMenu);
+
+		$this->content = self::render(strtolower($this->menuName) . '.tpl.php', $this->Model->arrMenu);
 		return $this->content;
 	}
 

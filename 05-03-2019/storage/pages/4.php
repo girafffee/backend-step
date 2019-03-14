@@ -1,2 +1,2 @@
-<h2> Garantiya </h2>
-<p> There is garantia </p>
+<h2> Гарантия </h2>
+<p>  </p>
