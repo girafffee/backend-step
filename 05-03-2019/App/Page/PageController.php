@@ -10,12 +10,15 @@ class PageController
 	var $content;
 	function __construct($action = "index", $arg){
 		// var_dump($arg);
-		if (isset($arg["page_id"])) $page_id = $arg["page_id"];
-
+		if (isset($arg["page"])) $page = $arg["page"];
 
 
 		$this->Model=new PageModel ();
-		if ($action == "index") { $this->content = $this->Model->getPageByID($page_id);}
+		if ($action == "index" && isset($page)) { 
+				$this->content = $this->Model->getPage($page);
+
+
+		}
 	}
 
 	function getContent () {return $this->content;}

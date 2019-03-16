@@ -4,3 +4,5 @@
 phpinfo();
 
 var_dump ($GLOBALS);
+?>
+</pre>

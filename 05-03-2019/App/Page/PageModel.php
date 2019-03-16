@@ -7,6 +7,20 @@ use App\Config;
  */
 class PageModel
 {
+	private $pageFile;
+
+
+/*
+|--------------------------------------------------------------------------
+| Создание обьекта страницы и подготовка абсолютного маршрута
+|--------------------------------------------------------------------------
+| Сохраняет путь к страницам в переменную
+| 
+|
+*/	
+	function __construct(){
+		$this->pageFiles = Config::$pathToStorage . 'pages/';
+	}
 
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +33,7 @@ class PageModel
 	function getContentPageFromFile ($fileName){
 		// включаем буфер
 		ob_start();
-		include (Config::$pathToStorage . 'pages/' . $fileName); 
+		include ($this->pageFiles . $fileName); 
 
 		// сохраняем всё что есть в буфере в переменную $content
 		$content = ob_get_contents();
@@ -31,6 +45,11 @@ class PageModel
 	}
 
 
+	function checkPath($fileName){
+		
+
+	}
+
 /*
 |--------------------------------------------------------------------------
 | Взять страницу по номеру 
@@ -40,7 +59,7 @@ class PageModel
 |
 */	
 	
-	function getPageByID ($id){
+	function getPage($name){
 
 		// ToDo: Переписать, с попыткой включитьф айл- еслиф айла нет - вернуть 404
 		// HowTo:
@@ -48,33 +67,16 @@ class PageModel
 		// 1. проверить на наличие файла 
 		// 2. Если файл есть,включить его
 		// 3. Если файла нет - вернуть 404.php
+		$fileName = $name.'.php';	
 
-		switch ($id) {
-			case '1':
-			return $this->getContentPageFromFile('1.php');
-				break;
-
-			case '2':
-			return  $this->getContentPageFromFile('2.php');
-				break;
-
-			case '3':
-			return  $this->getContentPageFromFile('3.php');
-				break;
-
-			case '4':
-			return  $this->getContentPageFromFile('4.php');
-				break;
-
-			case '5':
-			return  $this->getContentPageFromFile('5.php');
-				break;
-			
-			default:
-			return ' <h1 class="alert alert-danger" role="alert"> Error 404</h1> '; // TODO Error 404 or HomePage
-				break;
-		}
+		if(file_exists($this->pageFiles . $fileName))			
+			return $this->getContentPageFromFile($fileName);
+		else
+			return $this->getContentPageFromFile('404.php');
 	}
 
+	
+
+	
 
 }

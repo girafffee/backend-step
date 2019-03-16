@@ -40,35 +40,292 @@ h1#siteLogo a:hover {text-decoration: none;}
 #containerServices div.ico:hover i {color: #fff;}
 
 
-/*
 
-#slideBody { position: relative; width: 100%; height: 450px; background: #ccc; margin: 0px; padding: 0px; }
-#slideContent {padding: 0px; margin: 0px;}
-#slideContent li {position: absolute; border: 1px solid red; list-style: none; width: 100%; height: 400px; margin: 0px; padding: 0px; z-index: 10;}
+/*--------------------------------------
+  CATALOG
+--------------------------------------*/
 
-#btnPrev, #btnNext {position: absolute; z-index: 9999; top: 200px; cursor: pointer; background: green; border: 2px solid #fff; text-align: center; border-radius: 50%; padding: 5px; opacity: 0.5;}
-#btnPrev:hover, #btnNext:hover {opacity: 1;}
+    *{box-sizing: border-box;}
+    .item {
+      width: 300px;
+      border: 1px solid rgba(0,0,0,.08);
+      padding: 15px 0;
+      margin: 0 auto;
+      background: white;
+    }
+    .item a {
+      text-decoration: none;
+      outline: 0;
+    }
+    .product {
+      padding: 0 15px;
+      position: relative;
+    }
+    .thumb-img {
+      position: relative;
+      overflow: hidden;
+    }
+    .thumb-img img {
+      width: 100%;
+      display: block;
+    }
+    .thumb-img:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, .5);
+      opacity: 0;
+      transition: .3s ease-in-out; 
+    }
+    .product:hover .thumb-img:after {opacity: 1;}
+    .actions {
+      position: absolute;
+      z-index: 2;
+      top: 100%;
+      left: 0;
+      right: 0;
+      padding: 0 15px;
+      text-align: center;
+      opacity: 0;
+      transition: .3s ease-in-out; 
+    }
+    .product:hover .actions {
+      top: 50%;
+      opacity: 1;
+    }
+    .actions a {
+      margin: 7px 6px;
+      color: white;
+      height: 30px;
+      line-height: 26px;
+      display: inline-block;
+      border-radius: 30px;
+      font-size: 12px;
+      text-transform: uppercase;
+      text-align: center;
+      border: 2px solid white;
+      background: transparent;
+      transition: .3s ease-in-out; 
+    }
+    .share-button {width: 30px;}
+    .add-to-cart:hover {background: #A2927F;}
+    .actions a:hover {
+      border-color: #A2927F;
+      background: #A2927F;
+    }
+    .share-wrap {
+      display: inline-block;
+      height: 30px;
+      position: relative;
+      margin: 7px 6px;
+    }
+    .share-item {
+      width: 200px;
+      margin-left: -100px;
+      position: absolute;
+      z-index: 3;
+      bottom: 38px;
+      left: 50%;
+      opacity: 0;
+      visibility: hidden;
+      text-align: center;
+      transition: .3s ease-in-out; 
+    }
+    .share-wrap:hover .share-item {
+      opacity: 1;
+      visibility: visible;
+    }
+    .add-to-cart {padding: 0 20px;}
+    .product-about {
+      padding: 20px 0 0;
+      text-align: center;
+    }
+    .product-title {
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.1;
+      font-size: 16px;
+      margin: 5px 0 15px;
+      font-weight: normal;
+    }
+    .product-title a {color: #373737;}
+    .price {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.25em;
+      font-weight: bold;
+      color: #F2453E; 
+    }
 
-#btnPrev {left: 20px;}
-#btnNext {right: 20px;}
-
-#slideBody  #sadow { visibility: hidden; background: red; z-index: 999; opacity: 0.3; }
-#slideBody:hover #sadow { visibility: visible; }
-#slideBody:hover li {opacity: 0.3;}
-*/
+/*--------------------------------------
+  /CATALOG
+--------------------------------------*/
 
 
+/*--------------------------------------
+  CONTACT
+--------------------------------------*/
 
-#slideBar{height: 310px; margin-top: 50px;}
-#slide ul { list-style: none; margin: 0; padding: 0;width: 250px; height: 250px;}
-#social li {display: inline-block; list-style: none; text-align: center; padding: 0px 0px; width: 30px; height: 30px;
-    margin-top:200px;}
-#social li:nth-child(1) {margin-left: 50px;}
-#slideBar #slide ul:hover #social{visibility: visible; background: rgba(124, 52, 52, 0.555);width: 250px; height: 250px;}
-#slide ul li ul{position: absolute; top: 0px; left: 15px; visibility: hidden;}
-#social i{color:#fff; margin-top: 7px;}
-#slide ul li ul li:hover {background-color:#c0301c;}
+body{
+    background: #eff;
+}
 
-#slide h5{font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 11pt; margin-top: 20px; 
-    text-transform: uppercase;}
+#get-form button{
+    font-size: 24px;
+}
 
+.siteArticle{
+    width: 50%;
+    background: #eee;
+    border-radius: 15em 3em;
+    margin: 5em auto 10em auto;
+    padding-bottom: 3em;
+
+
+}
+.siteArticle h1{
+    color: #A52A2A;
+    padding-top: 50px;
+    text-align: center;
+    text-shadow: 2px 4px 0px rgba(0,0,0,0.2);
+    font-size: 2.5em;
+
+}
+
+/* Стили формы */
+#application {
+    width: 475px;
+    margin: 0 auto;
+
+}
+ 
+/*Стили полей для ввода*/
+#applicationName, #applicationEmail, #applicationTelephone {
+    width: 100%;
+    height: 73px;
+    background: none;
+    margin-top: 25px;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    text-align: center;
+    color: maroon;
+    font-size: 24px;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+/*Стили полей при клике по ним*/
+#applicationName:focus, #applicationEmail:focus, #applicationTelephone:focus {
+    border: 2px solid #A52A2A;
+    background: #ccc;
+    transform: scale(1.1);
+    outline: none;
+}
+ 
+/*Стили текста, выводящегося в placeholder*/
+::-webkit-input-placeholder {
+    color: #999;
+    font-family: 'PT Sans', sans-serif;
+    transform: scaleX(1);
+    transition: .2s;
+}
+ 
+::-moz-placeholder  {
+    color: #999;
+    font-family: 'PT Sans', sans-serif;
+    transition: .2s;    
+
+}  /* Firefox 19+ */
+ 
+:-moz-placeholder {
+    color: #999;
+    font-family: 'PT Sans', sans-serif;
+    transition: .2s;
+
+}  /* Firefox 18- */
+ 
+:-ms-input-placeholder {
+    color: #999;
+    font-family: 'PT Sans', sans-serif;
+    transition: .2s;
+}
+ 
+::placeholder {
+    color: #999;
+    transition: .2s;
+}
+
+/*Стили для кнопки*/
+.applicationButton {
+
+    margin-top: 25px;
+    background: #A52A2A;
+    border: none;
+    width: 60%;
+    height: 73px;
+    border-radius: 10em 3em;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'PT Sans', sans-serif;
+    cursor: pointer;-webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+
+}
+    .applicationButton:hover {
+        background: #CD5C5C;
+        outline: none;     
+    }
+
+/*--------------------------------------
+  /CONTACT
+--------------------------------------*/
+
+
+/*--------------------------------------
+  FOOTER
+--------------------------------------*/
+
+footer{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    width: 100%;
+   background: #667db6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+footer ul{
+    margin: 0 auto;
+    width: 50%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer ul li{
+    list-style: none;
+    display: inline-block;
+}   
+footer ul li{
+    color: #333;
+    font-size: 22px;
+    transition: all .9s;
+}
+
+footer ul li:hover{
+     
+}
+footer ul li a{
+    color: #333;
+    transition: all .2s;
+}
+
+footer ul li a:hover{
+    text-decoration: none;
+    color: #fff; 
+}

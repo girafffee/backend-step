@@ -29,7 +29,7 @@ class RouteEl {
 		return $this;
 	}
 
-	public function setName($name) {
+	public function routeName($name) {
 		$this->name = $name;
 		return $this;
 	}
@@ -87,65 +87,25 @@ class Router{
 	// echo $_SERVER['REQUEST_URI'] . "<br>";
 
 
-$url =  "/" . str_replace ("public/", "" , strstr($_SERVER['REQUEST_URI'], "public/"));
+		$url =  "/" . str_replace ("public/", "" , strstr($_SERVER['REQUEST_URI'], "public/"));
 
-	// echo $url;
-	// echo self::$routes[$url]->controller;
+		//echo $url;
+		// echo self::$routes[$url]->controller;
 
-	if(isset(self::$routes[$url])){
-		// var_dump(self::$routes[$url]->arg);
-	if(is_array(self::$routes[$url]->middleware)){
-		for($i = 0; $i < sizeof(self::$routes[$url]); $i++){
-			$tmp = '\App\Middleware\\' . self::$routes[$url]->middleware[$i];
-			$middleware[$i] = new $tmp();
+		if(isset(self::$routes[$url])){
+			// var_dump(self::$routes[$url]->arg);
+			if(is_array(self::$routes[$url]->middleware)){
+				for($i = 0; $i < count(self::$routes[$url]); $i++){
+					$tmp = '\App\Middleware\\' . self::$routes[$url]->middleware[$i];
+					$middleware[$i] = new $tmp();
+				}
+			}
+			return new self::$routes[$url]->controller(self::$routes[$url]->action, self::$routes[$url]->arg);
 		}
-	}
-
-		return new self::$routes[$url]->controller(self::$routes[$url]->action, self::$routes[$url]->arg);
-	}
 
 	// return new self::$routes[$url]();
 
 
-		die ("<hr>Stop Router");
-
-		
-		// В любой непонятной ситуации - вернуть главную страницу
-		if (!isset($_GET["controller"])){ return new \App\Homepage\HomepageController ();}
-		
-
-		if (!isset($_GET["page_id"])){ $page_id= 0; } else { $page_id = $_GET["page_id"];}
-
-		// Если пользователь не определил акцию, имя по умолчанию будет index
-		if (!isset($_GET["action"])){ $action= "index"; } 
-		else { $action = $_GET["action"];}
-
-
-
-		// Выбираем нужный контроллер, на основе выбора пользователя ( $_GET )
-		switch ($_GET["controller"]) {
-			case 'page':
-			case 'PageController':
-			return new \App\Page\PageController ($action, $page_id);
-				break;
-
-			case 'HomepageController':
-			return new \App\Homepage\HomepageController ();
-				break;
-
-			case 'post':
-			return new \App\Post\PostController ();
-				break;
-
-			// If user chouse Contact Form controller
-			case 'contactform':
-			return new \App\Contactform\CFController ($action);
-				break;
-			
-			default:
-			return new \App\Page\PageController (); // TODO Error 404 or HomePage
-				break;
-		}
 	}
 
 

@@ -8,18 +8,6 @@ use App\Config;
 |--------------------------------------------------------------------------
 | 
 
-
-
-| 
-
-
-|
-*/	
-
-
-
-/**
- * 
  */
 class NavigationModel
 {
@@ -32,21 +20,9 @@ class NavigationModel
 | 
 | 
 |
-*/	
-
-
-
-
-/*
-|--------------------------------------------------------------------------
-| 
-|--------------------------------------------------------------------------
-| 
-| 
-|
 */		public function createFooterMenu(){
 
-	// About
+	// Warrenty
 		$this->arrMenu[1]['controller'] = "PageController"; // Какой контроллер вызывается
 		$this->arrMenu[1]['action'] = "index"; // Метод контроллера
 		$this->arrMenu[1]['arg'] =  array('page_id' => 4); // Доступные аргументы
@@ -59,7 +35,7 @@ class NavigationModel
 		$this->arrMenu[1]['hasCildren'] = false; // Есть ли вложенные элементы
 		$this->arrMenu[1]['parentId'] = 0; // Предок (0 если нет)
 
-	// About
+	// Terms of Conditions
 		$this->arrMenu[2]['controller'] = "PageController"; // Какой контроллер вызывается
 		$this->arrMenu[2]['action'] = "index"; // Метод контроллера
 		$this->arrMenu[2]['arg'] =  array('page_id' => 5); // Доступные аргументы
@@ -85,7 +61,7 @@ class NavigationModel
 		$this->arrMenu[3]['hasCildren'] = false; // Есть ли вложенные элементы
 		$this->arrMenu[3]['parentId'] = 0; // Предок (0 если нет)
 
-	// About
+	// Contacts
 		$this->arrMenu[4]['controller'] = "contactform"; // Какой контроллер вызывается
 		$this->arrMenu[4]['action'] = "index"; // Метод контроллера
 		//$this->arrMenu[4]['arg'] =  array('page_id' => 1); // Доступные аргументы
@@ -145,7 +121,7 @@ class NavigationModel
 		$this->arrMenu[3]['controller'] = "PageController"; // Какой контроллер вызывается
 		$this->arrMenu[3]['action'] = "index"; // Метод контроллера
 		$this->arrMenu[3]['arg'] =  array('page_id' => 2); // Доступные аргументы
-		$this->arrMenu[3]['slug'] = "/service.html"; // SEO ссылка (или ссылка на внешний источник)
+		$this->arrMenu[3]['slug'] = "service.html"; // SEO ссылка (или ссылка на внешний источник)
 		$this->arrMenu[3]['target'] ="_top"; // как открыть ссылку (в новом окне или фрейме) 
 		//$this->arrMenu[3]['js'] =  array('onclick' => ''); // Привязать обработку скриптов
 		//$this->arrMenu[3]['class'] = ""; // css class
@@ -158,7 +134,7 @@ class NavigationModel
 		$this->arrMenu[4]['controller'] = "PageController"; // Какой контроллер вызывается
 		$this->arrMenu[4]['action'] = "index"; // Метод контроллера
 		$this->arrMenu[4]['arg'] =  array('page_id' => 3); // Доступные аргументы
-		$this->arrMenu[4]['slug'] = "/shop.html"; // SEO ссылка (или ссылка на внешний источник)
+		$this->arrMenu[4]['slug'] = "shop.html"; // SEO ссылка (или ссылка на внешний источник)
 		$this->arrMenu[4]['target'] ="_top"; // как открыть ссылку (в новом окне или фрейме) 
 		//$this->arrMenu[4]['js'] =  array('onclick' => ''); // Привязать обработку скриптов
 		//$this->arrMenu[4]['class'] = ""; // css class
@@ -170,8 +146,8 @@ class NavigationModel
 		// Shop
 			$this->arrMenu[6]['controller'] = "PageController"; // Какой контроллер вызывается
 			$this->arrMenu[6]['action'] = "index"; // Метод контроллера
-			$this->arrMenu[6]['arg'] =  array('page_id' => 3); // Доступные аргументы
-			$this->arrMenu[6]['slug'] = "/shop2.html"; // SEO ссылка (или ссылка на внешний источник)
+			$this->arrMenu[6]['arg'] =  array('name_ref' => 'catalog'); // Доступные аргументы
+			$this->arrMenu[6]['slug'] = "catalog.html"; // SEO ссылка (или ссылка на внешний источник)
 			$this->arrMenu[6]['target'] ="_top"; // как открыть ссылку (в новом окне или фрейме) 
 			//$this->arrMenu[6]['js'] =  array('onclick' => ''); // Привязать обработку скриптов
 			//$this->arrMenu[6]['class'] = ""; // css class

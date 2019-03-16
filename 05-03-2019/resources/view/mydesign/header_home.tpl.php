@@ -11,6 +11,6 @@
 	<div id="headerCaptions" class="text-center">
 		<h2><?=(isset($data['pageTitle'])?$data['pageTitle']:' Page title')?></h2>
 		<p>Your Favourite Creative Agency Template </p>
-		<a href="#getStart">Get Started</a>
+		<a href="contact.html">Get Started</a>
 	</div>
 </div>

@@ -1,13 +1,14 @@
-Contcact form
+
 <article class="siteArticle">
 	<header><h1><?=(isset($data['pageTitle'])?$data['pageTitle']:'')?></h1></header>
 	<div>
-		<form action="<?=$_SERVER['PHP_SELF']?>" method="get">
-			<input type="text" name="userName"><br />
-			<input type="email" name="userMail"><br />
-			<input type="tel" name="userPhone"><br />
-			<textarea name="userMsg"></textarea><br />
-			<input type="submit" name=" Отправить ">
+		<form class="text-center" id="application" action="<?=$_SERVER['PHP_SELF']?>" method="get">
+			<input name="name" id="applicationName" maxlength="20" placeholder="Введите ваше имя" required />
+	   		<input name="email" type="email" id="applicationEmail" maxlength="30" placeholder="Введите ваш E-mail" required />
+	   		<input name="telephone" type="Tel" id="applicationTelephone" maxlength="20" placeholder="Введите ваш телефон" required/>
+	   		
+	   		<button class="applicationButton" type="submit" form="application">Отправить</button>
+			<!-- Передаем невидимые параметры для отображение результата -->
 			
 
 			<input type="hidden" name="controller" value="contactform">

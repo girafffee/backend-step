@@ -11,15 +11,29 @@ use \Kernel\Router;
 
 
 Router::add("/", "\App\Homepage\HomepageController")
-			->setName('Home');
+			->routeName('Home');
 
-Router::add("/about.html", "\App\Page\PageController" , "index")
-			->addArg("page_id", 1)
-			->setName('About');
+Router::add("/about.html", "\App\Page\PageController")
+			->addArg("page", 1)
+			->routeName('About');
+
+Router::add("/service.html", "\App\Page\PageController")
+			->addArg("page", 2)
+			->routeName('Service');
+
+Router::add("/shop.html", "\App\Page\PageController")
+			->addArg("page", 3)
+			->routeName('Shop');
+
+Router::add("/catalog.html", "\App\Page\PageController")
+			->routeName('Catalog')
+			->addArg("page", "catalog");
 
 Router::add("/contact.html", "\App\Contactform\CFController")
-			->setName('Contact')
-			->middleware("Stop");
+			->routeName('Contact');
+
+
+
 
 
 
