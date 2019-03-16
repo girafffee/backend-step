@@ -6,10 +6,10 @@ namespace App\Navigation;
  */
 class NavigationController extends \Kernel\Base\BaseController
 {
-	var $Model;
-	var $content;
-	var $menuName;
-
+	public $Model;
+	private $content;
+	private $menuName;
+	//private $createMenu;
 
 	function __construct($menuName = "MainMenu"){
 		$this->menuName = $menuName;
@@ -19,11 +19,23 @@ class NavigationController extends \Kernel\Base\BaseController
 		$this->Model = new NavigationModel();
 
 		// TODO: поставить вызов функции в зависимости от имени
+		$createMenu = 'create'. $this->menuName;
+		
+		try{
+			$this->Model->$createMenu();
+		}catch(Exeption $e){
+			die($e->__toString() );
+		}
 
-		if ($this->menuName == "MainMenu")
-			$this->Model->createMainMenu();
-		if ($this->menuName == "FooterMenu")
-			$this->Model->createFooterMenu();
+
+
+		/*
+		if(function_exists($this->Model->$createMenu()))
+			$this->Model->$createMenu();		
+		else
+			echo "111 ";
+		*/ 
+
 
 		$this->content = self::render(strtolower($this->menuName) . '.tpl.php', $this->Model->arrMenu);
 		return $this->content;

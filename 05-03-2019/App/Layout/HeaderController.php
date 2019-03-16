@@ -1,5 +1,6 @@
 <?php
 namespace App\Layout;
+use \App\Navigation\NavigationController;
 
 /**
  * 
@@ -10,8 +11,9 @@ class HeaderController  extends \Kernel\Base\BaseController
 	public static $tpl;
 
 	public static function buildHeadData (){
-		$mainMenu = new \App\Navigation\NavigationController();
+		$mainMenu = new NavigationController('MainMenu');
 		self::$data['mainMenu'] = $mainMenu->buildMenu();
+		
 		if (!isset(self::$data ['pageTitle']))
 			self::$data ['pageTitle'] = " My Slogan ";
 	}

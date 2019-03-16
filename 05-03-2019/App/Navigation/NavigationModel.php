@@ -26,7 +26,7 @@ class NavigationModel
 		$this->arrMenu[1]['controller'] = "PageController"; // Какой контроллер вызывается
 		$this->arrMenu[1]['action'] = "index"; // Метод контроллера
 		$this->arrMenu[1]['arg'] =  array('page_id' => 4); // Доступные аргументы
-		$this->arrMenu[1]['slug'] = "/warrenty.html"; // SEO ссылка (или ссылка на внешний источник)
+		$this->arrMenu[1]['slug'] = "warrenty.html"; // SEO ссылка (или ссылка на внешний источник)
 		$this->arrMenu[1]['target'] ="_top"; // как открыть ссылку (в новом окне или фрейме) 
 		//$this->arrMenu[1]['js'] =  array('onclick' => ''); // Привязать обработку скриптов
 		//$this->arrMenu[1]['class'] = ""; // css class
@@ -39,7 +39,7 @@ class NavigationModel
 		$this->arrMenu[2]['controller'] = "PageController"; // Какой контроллер вызывается
 		$this->arrMenu[2]['action'] = "index"; // Метод контроллера
 		$this->arrMenu[2]['arg'] =  array('page_id' => 5); // Доступные аргументы
-		$this->arrMenu[2]['slug'] = "/toc.html"; // SEO ссылка (или ссылка на внешний источник)
+		$this->arrMenu[2]['slug'] = "toc.html"; // SEO ссылка (или ссылка на внешний источник)
 		$this->arrMenu[2]['target'] ="_top"; // как открыть ссылку (в новом окне или фрейме) 
 		//$this->arrMenu[2]['js'] =  array('onclick' => ''); // Привязать обработку скриптов
 		//$this->arrMenu[2]['class'] = ""; // css class
@@ -52,7 +52,7 @@ class NavigationModel
 		$this->arrMenu[3]['controller'] = "PageController"; // Какой контроллер вызывается
 		$this->arrMenu[3]['action'] = "index"; // Метод контроллера
 		$this->arrMenu[3]['arg'] =  array('page_id' => 1); // Доступные аргументы
-		$this->arrMenu[3]['slug'] = "/about.html"; // SEO ссылка (или ссылка на внешний источник)
+		$this->arrMenu[3]['slug'] = "about.html"; // SEO ссылка (или ссылка на внешний источник)
 		$this->arrMenu[3]['target'] ="_top"; // как открыть ссылку (в новом окне или фрейме) 
 		//$this->arrMenu[3]['js'] =  array('onclick' => ''); // Привязать обработку скриптов
 		//$this->arrMenu[3]['class'] = ""; // css class
@@ -65,7 +65,7 @@ class NavigationModel
 		$this->arrMenu[4]['controller'] = "contactform"; // Какой контроллер вызывается
 		$this->arrMenu[4]['action'] = "index"; // Метод контроллера
 		//$this->arrMenu[4]['arg'] =  array('page_id' => 1); // Доступные аргументы
-		$this->arrMenu[4]['slug'] = "/contact.html"; // SEO ссылка (или ссылка на внешний источник)
+		$this->arrMenu[4]['slug'] = "contact.html"; // SEO ссылка (или ссылка на внешний источник)
 		$this->arrMenu[4]['target'] ="_top"; // как открыть ссылку (в новом окне или фрейме) 
 		//$this->arrMenu[4]['js'] =  array('onclick' => ''); // Привязать обработку скриптов
 		//$this->arrMenu[4]['class'] = ""; // css class
