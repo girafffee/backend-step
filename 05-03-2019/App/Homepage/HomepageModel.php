@@ -5,7 +5,7 @@ namespace App\Homepage;
 /**
  * 
  */
-class CFModel
+class HomepageModel
 {
 	
 }

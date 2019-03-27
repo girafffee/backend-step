@@ -169,6 +169,20 @@ class NavigationModel
 		$this->arrMenu[5]['hasCildren'] = false; // Есть ли вложенные элементы
 		$this->arrMenu[5]['parentId'] = 0; // Предок (0 если нет)	
 
+		
+
+		$this->arrMenu[7]['controller'] = "PageController"; // Какой контроллер вызывается
+		$this->arrMenu[7]['action'] = "index"; // Метод контроллера
+		//$this->arrMenu[5]['arg'] =  array('page_id' => 2); // Доступные аргументы
+		$this->arrMenu[7]['slug'] = "sitemap.html"; // SEO ссылка (или ссылка на внешний источник)
+		$this->arrMenu[7]['target'] ="_top"; // как открыть ссылку (в новом окне или фрейме) 
+		//$this->arrMenu[5]['js'] =  array('onclick' => ''); // Привязать обработку скриптов
+		//$this->arrMenu[5]['class'] = ""; // css class
+		//$this->arrMenu[5]['id'] = ""; // css id
+		$this->arrMenu[7]['text'] = "Map"; // Текст ссылк, который нужно будет вывести
+		$this->arrMenu[7]['hasCildren'] = false; // Есть ли вложенные элементы
+		$this->arrMenu[7]['parentId'] = 0; // Предок (0 если нет)	
+
 
 
 

@@ -19,7 +19,7 @@ class PageModel
 |
 */	
 	function __construct(){
-		$this->pageFiles = Config::$pathToStorage . 'pages/';
+		$this->pageFile = Config::$pathToStorage . 'pages/';
 	}
 
 /*
@@ -33,7 +33,7 @@ class PageModel
 	function getContentPageFromFile ($fileName){
 		// включаем буфер
 		ob_start();
-		include ($this->pageFiles . $fileName); 
+		include ($this->pageFile . $fileName); 
 
 		// сохраняем всё что есть в буфере в переменную $content
 		$content = ob_get_contents();
@@ -65,7 +65,7 @@ class PageModel
 		// 3. Если файла нет - вернуть 404.php
 		$fileName = $name.'.php';	
 
-		if(file_exists($this->pageFiles . $fileName))			
+		if(file_exists($this->pageFile . $fileName))			
 			return $this->getContentPageFromFile($fileName);
 		else
 			return $this->getContentPageFromFile('404.php');

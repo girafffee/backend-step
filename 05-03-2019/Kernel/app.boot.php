@@ -1,8 +1,6 @@
 <?php
 namespace Kernel;
-use Kernel\Request;
 use App\Layout\Responce;
-use Kernel\Router;
 use App\Config;
 /*
 |--------------------------------------------------------------------------

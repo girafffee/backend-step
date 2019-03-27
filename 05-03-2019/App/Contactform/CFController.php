@@ -1,6 +1,7 @@
 <?php
 namespace App\Contactform;
 use App\Layout\HeaderController;
+use Kernel\Router;
 
 /**
  * 
@@ -17,6 +18,7 @@ class CFController  extends \Kernel\Base\BaseController
 	public function index (){
 		$data['pageTitle'] = "Contact Form";
 		HeaderController::$data ['pageTitle'] = "Contact form";
+		$data['formAction'] = Router::getFormAction();
 		$this->content =  self::render ('contactform.tpl.php', $data);
 	}
 
@@ -26,6 +28,7 @@ class CFController  extends \Kernel\Base\BaseController
 		
 		HeaderController::$data ['pageTitle'] = "Contact form send";
 		$data['pageTitle'] = "Contact Form Send";
+		$data['formAction'] = Router::getFormAction();
 		$this->content =  self::render ('contactform_send.tpl.php', $data);
 	}
 

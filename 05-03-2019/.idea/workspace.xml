@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4ed00bd5-6ed3-4470-b24a-2e4e71270ea1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/App/Contactform/CFController.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Contactform/CFController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Homepage/HomepageModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Homepage/HomepageModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Navigation/NavigationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Navigation/NavigationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Navigation/NavigationModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Navigation/NavigationModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Page/PageModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Page/PageModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kernel/Lib/PP.php" beforeDir="false" afterPath="$PROJECT_DIR$/Kernel/Lib/PP.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kernel/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/Kernel/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kernel/app.boot.php" beforeDir="false" afterPath="$PROJECT_DIR$/Kernel/app.boot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Route/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Route/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/view/mydesign/contactform.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/view/mydesign/contactform.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/view/mydesign/footer.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/view/mydesign/footer.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/view/mydesign/header.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/view/mydesign/header.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12-03-2019/vendor/phpmailer/phpmailer" beforeDir="false" afterPath="$PROJECT_DIR$/../12-03-2019/vendor/phpmailer/phpmailer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../26-02-2019/vendor/phpmailer/phpmailer" beforeDir="false" afterPath="$PROJECT_DIR$/../26-02-2019/vendor/phpmailer/phpmailer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../28-02-2019/vendor/phpmailer/phpmailer" beforeDir="false" afterPath="$PROJECT_DIR$/../28-02-2019/vendor/phpmailer/phpmailer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/../Thumbs.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awsindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awsindex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.alldomains.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.alldomains.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.allhosts.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.allhosts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.allrobots.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.allrobots.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.browserdetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.browserdetail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.downloads.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.downloads.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.errors400.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.errors400.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.errors403.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.errors403.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.errors404.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.errors404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.keyphrases.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.keyphrases.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.keywords.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.keywords.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.lasthosts.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.lasthosts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.lastrobots.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.lastrobots.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.osdetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.osdetail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.refererpages.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.refererpages.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.refererse.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.refererse.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.session.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.session.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.unknownbrowser.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.unknownbrowser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.unknownip.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.unknownip.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.unknownos.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.unknownos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.urldetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.urldetail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.urlentry.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.urlentry.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.urlexit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.urlexit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../����������.png" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Kernel/Router.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3955">
+              <caret line="60" column="30" lean-forward="true" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/App/SiteMap/SiteMapController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="672">
+              <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/view/mydesign/head.tpl.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/view/mydesign/header.tpl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Kernel/app.boot.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Route/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="936">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Route/web.php" />
+        <option value="$PROJECT_DIR$/Kernel/app.boot.php" />
+        <option value="$PROJECT_DIR$/Kernel/Router.php" />
+        <option value="$PROJECT_DIR$/resources/view/mydesign/header.tpl.php" />
+        <option value="$PROJECT_DIR$/App/SiteMap/SiteMapController.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/phpmailer/phpmailer" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="253" />
+    <option name="y" value="-19" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="05-03-2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="05-03-2019" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="05-03-2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="05-03-2019" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="05-03-2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="05-03-2019" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="Homepage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="05-03-2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="05-03-2019" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="Layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="05-03-2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="05-03-2019" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="SiteMap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="05-03-2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="05-03-2019" type="462c0819:PsiDirectoryNode" />
+              <item name="Kernel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="05-03-2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="05-03-2019" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="05-03-2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="05-03-2019" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="05-03-2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="05-03-2019" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="mydesign" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="text.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/public/text.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.text.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4ed00bd5-6ed3-4470-b24a-2e4e71270ea1" name="Default Changelist" comment="" />
+      <created>1553422608004</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553422608004</updated>
+      <workItem from="1553422621767" duration="958000" />
+      <workItem from="1553524478308" duration="844000" />
+      <workItem from="1553533781414" duration="1804000" />
+      <workItem from="1553545504808" duration="4091000" />
+      <workItem from="1553670377536" duration="603000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="8300000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1886388" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32815966" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32900432" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3292683" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32995737" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Kernel/Request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Page/PageModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="59" column="11" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/text.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Navigation/NavigationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kernel/Router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3955">
+          <caret line="60" column="30" lean-forward="true" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/view/mydesign/header.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kernel/app.boot.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Route/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/view/mydesign/head.tpl.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/SiteMap/SiteMapController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
