@@ -14,7 +14,6 @@ final class Responce {
 
     public static $pageData;
 
-
 //*------------------------------------------------------------
 // Собрать данные для построения страницы
     public static function buildPageData (){
@@ -51,17 +50,9 @@ final class Responce {
     }
 
 
-
-
-
 //*------------------------------------------------------------
 // Обеспечение единственной копии класса      
-    private function __construct() {      
-      // self::$pageData ['head'] = "";
-      // self::$pageData ['header'] = "";
-      // self::$pageData ['sidebar'] = "";
-      // self::$pageData ['footer'] = "";
-      // self::$pageData ['mainnav'] = "";
+    private function __construct() {
       self::$pageData ['content'] ="";
     }
       private static $instance;
@@ -75,4 +66,4 @@ final class Responce {
       private function __wakeup() {}
 }
 
-//$Responce = Responce::getInstance();
+

@@ -43,15 +43,20 @@ class RouteEl {
 
 	public function routeName($name) {
 		$this->name = $name;
-        Router::$nameRoute = $name;
 		return $this;
 	}
 
 	public function middleware($mid) {
-		$this->middleware = array();
 		$this->middleware[] = $mid;
 		return $this;
 	}
+
+	public function midEcho(){
+	    for($i = 0; $i < sizeof($this->middleware); $i++){
+	        echo $this->middleware[$i] . "\n";
+        }
+	    return $this;
+    }
 
 
 }
@@ -68,7 +73,6 @@ class RouteEl {
 class Router{
 
     static $routes;
-    static $nameRoute;
 	static $showRoutes;
 
 
@@ -83,16 +87,15 @@ class Router{
 	// посредник
 
     //Создает маршрут при условии, что он не был создан ранее
-    static function resource($url = "/", $controller, $action = "index"){
-        if(!isset(self::$routes[$url]))
-            self::add($url, $controller, $action);
-        self::add($url . "/create", $controller, "create");
-        self::add($url . "/store", $controller, "store");
-        self::add($url . "/show", $controller, "show");
-        self::add($url . "/edit", $controller, "edit");
-        self::add($url . "/update", $controller, "update");
-        self::add($url . "/destroy", $controller, "destroy");
-
+    static function resource($url = "/", $controller){
+        $mainRoute = self::add($url, $controller, "index");
+        self::add($url . "/create", $controller, "create", $mainRoute);
+        self::add($url . "/store", $controller, "store", $mainRoute);
+        self::add($url . "/show", $controller, "show", $mainRoute);
+        self::add($url . "/edit", $controller, "edit", $mainRoute);
+        self::add($url . "/update", $controller, "update", $mainRoute);
+        self::add($url . "/destroy", $controller, "destroy", $mainRoute);
+        return $mainRoute;
     }
 
     // Обращается к роутеру по имени и переписывает нужные параметры
@@ -174,7 +177,7 @@ class Router{
 			//}
 			if(is_array(self::$routes[$url]->middleware)){
 
-				for($i = 0; $i < count(self::$routes[$url]); $i++){
+				for($i = 0; $i < sizeof(self::$routes[$url]->middleware); $i++){
 					$tmp = '\App\Middleware\\' . self::$routes[$url]->middleware[$i];
 					$middleware[$i] = new $tmp();
 				}

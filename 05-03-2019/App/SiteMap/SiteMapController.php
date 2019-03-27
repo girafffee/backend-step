@@ -1,6 +1,7 @@
 <?php
 namespace App\SiteMap;
 use App\Layout\HeaderController;
+use Kernel\Lib\PP;
 
 /**
  * 
@@ -15,8 +16,8 @@ class SiteMapController  extends \Kernel\Base\BaseController
 
 	public function index (){
 		$data['pageTitle'] = "Site Map";
-		HeaderController::$data ['pageTitle'] = " Welcome to my Site";
-		
+		HeaderController::$data ['pageTitle'] = "Site Map";
+
 		$data['sitemap'] = '<ol>' . "\n";
 		foreach (\Kernel\Router::$routes as $url => $route) {
 			if($route->siteMap){
@@ -26,11 +27,12 @@ class SiteMapController  extends \Kernel\Base\BaseController
 					foreach ($route as $key => $child) {
 
 						if(!is_null($child) && $key != 'url'){
-							$data['sitemap'] .= '<li>';
-								$data['sitemap'] .= $child;
+							$data['sitemap'] .= '<li style="list-style: none; margin-left: -25px;">';
+
+								$data['sitemap'] .= PP::dump($child);
 							$data['sitemap'] .= '</li>' . "\n";
 						}
-					}									
+					}
 
 					$data['sitemap'] .= '</ul>' . "\n";
 				$data['sitemap'] .= '</li>' . "\n";
