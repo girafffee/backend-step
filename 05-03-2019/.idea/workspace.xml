@@ -2,50 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ed00bd5-6ed3-4470-b24a-2e4e71270ea1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/App/Contactform/CFController.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Contactform/CFController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Homepage/HomepageModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Homepage/HomepageModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Navigation/NavigationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Navigation/NavigationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Navigation/NavigationModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Navigation/NavigationModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Page/PageModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Page/PageModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kernel/Lib/PP.php" beforeDir="false" afterPath="$PROJECT_DIR$/Kernel/Lib/PP.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kernel/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/Kernel/Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kernel/app.boot.php" beforeDir="false" afterPath="$PROJECT_DIR$/Kernel/app.boot.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Route/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Route/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/view/mydesign/contactform.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/view/mydesign/contactform.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/view/mydesign/footer.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/view/mydesign/footer.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/view/mydesign/header.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/view/mydesign/header.tpl.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../12-03-2019/vendor/phpmailer/phpmailer" beforeDir="false" afterPath="$PROJECT_DIR$/../12-03-2019/vendor/phpmailer/phpmailer" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../26-02-2019/vendor/phpmailer/phpmailer" beforeDir="false" afterPath="$PROJECT_DIR$/../26-02-2019/vendor/phpmailer/phpmailer" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../28-02-2019/vendor/phpmailer/phpmailer" beforeDir="false" afterPath="$PROJECT_DIR$/../28-02-2019/vendor/phpmailer/phpmailer" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/../Thumbs.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../composer.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../robots.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stats/awsindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awsindex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.alldomains.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.alldomains.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.allhosts.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.allhosts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.allrobots.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.allrobots.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.browserdetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.browserdetail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.downloads.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.downloads.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.errors400.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.errors400.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.errors403.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.errors403.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.errors404.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.errors404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.keyphrases.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.keyphrases.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.keywords.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.keywords.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.lasthosts.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.lasthosts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.lastrobots.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.lastrobots.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.osdetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.osdetail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.refererpages.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.refererpages.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.refererse.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.refererse.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.session.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.session.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.unknownbrowser.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.unknownbrowser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.unknownip.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.unknownip.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.unknownos.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.unknownos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.urldetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.urldetail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.urlentry.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.urlentry.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.urlexit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.urlexit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../����������.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/App/SiteMap/SiteMapController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
+            <state relative-caret-position="432">
+              <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -258,12 +221,12 @@
       <workItem from="1553524478308" duration="844000" />
       <workItem from="1553533781414" duration="1804000" />
       <workItem from="1553545504808" duration="4091000" />
-      <workItem from="1553670377536" duration="603000" />
+      <workItem from="1553670377536" duration="1191000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8300000" />
+    <option name="totallyTimeSpent" value="8888000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -361,8 +324,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App/SiteMap/SiteMapController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
+        <state relative-caret-position="432">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
         </state>
       </provider>
     </entry>

@@ -16,9 +16,7 @@ class SiteMapController  extends \Kernel\Base\BaseController
 	public function index (){
 		$data['pageTitle'] = "Site Map";
 		HeaderController::$data ['pageTitle'] = " Welcome to my Site";
-
-		//$data['sitemap_tech'] = \Kernel\Lib\PP::dump(\Kernel\Router::$routes);
-
+		
 		$data['sitemap'] = '<ol>' . "\n";
 		foreach (\Kernel\Router::$routes as $url => $route) {
 			if($route->siteMap){
