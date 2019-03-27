@@ -1,5 +1,6 @@
 <?php
 namespace Kernel;
+use \Kernel\Lib\PP;
 
 
 /*
@@ -98,17 +99,49 @@ class Router{
         return $mainRoute;
     }
 
-    // Обращается к роутеру по имени и переписывает нужные параметры
-    
-/*
-    static function showSiteMap(){
-    	if(isset(self::add($url, $controller, $action)->showInMap)){
-    		self::$showRoutes = array();
-    		self::$showRoutes[] = self::$routes[$url];
-    		return Kernel\Lib\PP::dump(Kernel\Router::$showRoutes);
-    	}
+
+    // /ссылка база / {action} / {key_name} / {key_name} ...
+    // user/{action: index}/{user_id}
+    // blog/{post_id} - если нет action - action = index
+    // page/{page_id}
+    static function addGroup ($url, $controller){
+        $url = explode('/', $url);
+
+        //Извлекаем и удаляем первый элемент массива
+        array_shift($url);
+
+        //Перебираем всю разбитую ссылку и убираем лишнее
+        for($i = 0; $i < sizeof($url); $i++){
+            if($i > 0) $url[$i] = substr($url[$i], 1, -1);
+            $url[$i] = mb_strtolower($url[$i]);
+        }
+
+        $posAction = strpos($url[1], 'action');
+
+        if($posAction === 0) {
+            $urlArr = explode(':', $url[1]);
+            $url[1] = $urlArr[1];
+
+        // ToDo
+            /*
+             * Написать проверку на наличие
+             * action в каждом роуте,
+             * также реализовать else
+             */
+
+        }else{
+
+        }
+
+
+        /*switch ($url[0]){
+            case 'page':
+        }*/
+
+        echo PP::dump($url);
+        $route = self::add($url[1], $controller);
+        return $route;
     }
-*/
 
 /*
 |--------------------------------------------------------------------------
@@ -172,9 +205,18 @@ class Router{
 		// echo self::$routes[$url]->controller;
 
 		if(isset(self::$routes[$url])){
-			//if(!is_null(self::$routes->parent_id)){
-				//if(isset(self::$routes->middleware))
-			//}
+
+            // Если есть родительский роутер
+            if (!is_null(self::$routes[$url]->parent_id)) {
+                if (is_array(self::$routes[$url]->parent_id->middleware)) { // Если у родителя массив посредников
+                    if (is_array(self::$routes[$url]->middleware)) { // Если посредники есть и там и там, объеденить
+                        array_merge (self::$routes[$url]->middleware, self::$routes[$url]->parent_id->middleware);
+                    } else { // если посредник только у родителя
+                        self::$routes[$url]->middleware = self::$routes[$url]->parent_id->middleware;
+                    }
+                }
+            }
+
 			if(is_array(self::$routes[$url]->middleware)){
 
 				for($i = 0; $i < sizeof(self::$routes[$url]->middleware); $i++){
@@ -184,6 +226,9 @@ class Router{
 			}
 			return new self::$routes[$url]->controller(self::$routes[$url]->action, self::$routes[$url]->arg);
 		}
+        $url = explode("/", $url);
+        if(isset(self::$routes['/'.$url[1]]))
+            echo "<p>Динамический маршрут</p>";
 
 	}
 
