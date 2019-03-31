@@ -3,8 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="4ed00bd5-6ed3-4470-b24a-2e4e71270ea1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Page/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Page/PageController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Kernel/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/Kernel/Router.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Route/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Route/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/mystyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/fon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/view/mydesign/head.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/view/mydesign/head.tpl.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../12-03-2019/vendor/phpmailer/phpmailer" beforeDir="false" afterPath="$PROJECT_DIR$/../12-03-2019/vendor/phpmailer/phpmailer" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../26-02-2019/vendor/phpmailer/phpmailer" beforeDir="false" afterPath="$PROJECT_DIR$/../26-02-2019/vendor/phpmailer/phpmailer" afterDir="false" />
@@ -12,6 +17,29 @@
       <change beforePath="$PROJECT_DIR$/../composer.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awsindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awsindex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.alldomains.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.alldomains.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.allhosts.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.allhosts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.allrobots.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.allrobots.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.browserdetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.browserdetail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.downloads.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.downloads.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.errors400.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.errors400.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.errors403.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.errors403.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.errors404.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.errors404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.keyphrases.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.keyphrases.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.keywords.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.keywords.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.lasthosts.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.lasthosts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.lastrobots.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.lastrobots.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.osdetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.osdetail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.refererpages.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.refererpages.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.refererse.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.refererse.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.session.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.session.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.unknownbrowser.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.unknownbrowser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.unknownip.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.unknownip.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.unknownos.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.unknownos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.urldetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.urldetail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.urlentry.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.urlentry.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.urlexit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stats/awstats.girafffee.nikstep.com.ua.urlexit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../����������.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,36 +67,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Kernel/Router.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="124" column="11" selection-start-line="124" selection-start-column="11" selection-end-line="124" selection-end-column="11" />
+            <state relative-caret-position="2643">
+              <caret line="241" column="31" selection-start-line="241" selection-start-column="31" selection-end-line="241" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/SiteMap/SiteMapController.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/App/Page/PageController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="31" column="67" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
-              <folding>
-                <element signature="e#29#61#0#PHP" expanded="true" />
-                <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Middleware/Stop.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-              <folding>
-                <element signature="e#33#51#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="480">
+              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -76,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Route/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+            <state relative-caret-position="408">
+              <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -97,8 +109,10 @@
         <option value="$PROJECT_DIR$/App/SiteMap/SiteMapController.php" />
         <option value="$PROJECT_DIR$/App/Middleware/Run.php" />
         <option value="$PROJECT_DIR$/App/Middleware/Delete.php" />
-        <option value="$PROJECT_DIR$/Route/web.php" />
         <option value="$PROJECT_DIR$/Kernel/Router.php" />
+        <option value="$PROJECT_DIR$/resources/view/mydesign/head.tpl.php" />
+        <option value="$PROJECT_DIR$/Route/web.php" />
+        <option value="$PROJECT_DIR$/App/Page/PageController.php" />
       </list>
     </option>
   </component>
@@ -108,9 +122,9 @@
       <path value="$PROJECT_DIR$/vendor/composer" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="476" />
-    <option name="y" value="47" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="261" />
+    <option name="y" value="17" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -137,6 +151,12 @@
               <item name="05-03-2019" type="462c0819:PsiDirectoryNode" />
               <item name="App" type="462c0819:PsiDirectoryNode" />
               <item name="Middleware" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="05-03-2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="05-03-2019" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="Page" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="05-03-2019" type="b2602c69:ProjectViewProjectNode" />
@@ -223,14 +243,16 @@
       <workItem from="1553533781414" duration="1804000" />
       <workItem from="1553545504808" duration="4091000" />
       <workItem from="1553670377536" duration="1315000" />
-      <workItem from="1553693049124" duration="10977000" />
+      <workItem from="1553693049124" duration="11604000" />
+      <workItem from="1553717802573" duration="1738000" />
+      <workItem from="1554035970204" duration="5437000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19989000" />
+    <option name="totallyTimeSpent" value="27791000" />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -243,7 +265,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19131833" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1977492" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -293,9 +315,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/view/mydesign/head.tpl.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/view/mydesign/header.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -339,10 +358,20 @@
     <entry file="file://$PROJECT_DIR$/resources/view/mydesign/sitemap.tpl.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/App/SiteMap/SiteMapController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="31" column="67" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
+          <folding>
+            <element signature="e#29#61#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/App/Middleware/Stop.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        <state relative-caret-position="144">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
           <folding>
             <element signature="e#33#51#0#PHP" expanded="true" />
           </folding>
@@ -351,26 +380,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Route/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        <state relative-caret-position="408">
+          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/SiteMap/SiteMapController.php">
+    <entry file="file://$PROJECT_DIR$/resources/view/mydesign/head.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="31" column="67" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
-          <folding>
-            <element signature="e#29#61#0#PHP" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="288">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Kernel/Router.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="124" column="11" selection-start-line="124" selection-start-column="11" selection-end-line="124" selection-end-column="11" />
+        <state relative-caret-position="2643">
+          <caret line="241" column="31" selection-start-line="241" selection-start-column="31" selection-end-line="241" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Page/PageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
         </state>
       </provider>
     </entry>

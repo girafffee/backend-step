@@ -18,6 +18,7 @@ class RouteEl {
 	public $name;
 	public $arg;
 	public $middleware;
+	public $path;
 
 	public $parent_id;  //url for parent route
 	public $siteMap;
@@ -34,6 +35,11 @@ class RouteEl {
 
 	public function addArg($key, $value) {
 		$this->arg[$key] = $value;
+		return $this;
+	}
+
+	public function addPath($path) {
+		$this->path = $path;
 		return $this;
 	}
 
@@ -105,41 +111,26 @@ class Router{
     // blog/{post_id} - если нет action - action = index
     // page/{page_id}
     static function addGroup ($url, $controller){
+    	$url = mb_strtolower($url);
+    	$url = str_replace('{', '', $url);
+		$url = str_replace('}', '', $url);
         $url = explode('/', $url);
 
-        //Извлекаем и удаляем первый элемент массива
+
         array_shift($url);
+        $mainUrl = '/'.$url[0];
 
-        //Перебираем всю разбитую ссылку и убираем лишнее
-        for($i = 0; $i < sizeof($url); $i++){
-            if($i > 0) $url[$i] = substr($url[$i], 1, -1);
-            $url[$i] = mb_strtolower($url[$i]);
-        }
+        $path = array();
 
-        $posAction = strpos($url[1], 'action');
-
-        if($posAction === 0) {
-            $urlArr = explode(':', $url[1]);
-            $url[1] = $urlArr[1];
-
-        // ToDo
-            /*
-             * Написать проверку на наличие
-             * action в каждом роуте,
-             * также реализовать else
-             */
-
-        }else{
-
-        }
+	        for($i = 1; $i < sizeof($url); $i++){
+	        		$path[] = $url[$i];
+	        }
 
 
-        /*switch ($url[0]){
-            case 'page':
-        }*/
 
-        echo PP::dump($url);
-        $route = self::add($url[1], $controller);
+        $route = self::add($mainUrl, $controller);
+        $route->addPath($path);
+
         return $route;
     }
 
@@ -201,6 +192,8 @@ class Router{
 		$url =  explode('?' , "/" . str_replace ("public/", "" , strstr($_SERVER['REQUEST_URI'], "public/")));
 		$url = $url [0];
 
+
+
 		//echo $url;
 		// echo self::$routes[$url]->controller;
 
@@ -209,11 +202,11 @@ class Router{
             // Если есть родительский роутер
             if (!is_null(self::$routes[$url]->parent_id)) {
                 if (is_array(self::$routes[$url]->parent_id->middleware)) { // Если у родителя массив посредников
-                    if (is_array(self::$routes[$url]->middleware)) { // Если посредники есть и там и там, объеденить
+                    if (is_array(self::$routes[$url]->middleware)) // Если посредники есть и там и там, объеденить
                         array_merge (self::$routes[$url]->middleware, self::$routes[$url]->parent_id->middleware);
-                    } else { // если посредник только у родителя
+                    else// если посредник только у родителя
                         self::$routes[$url]->middleware = self::$routes[$url]->parent_id->middleware;
-                    }
+
                 }
             }
 
@@ -224,11 +217,49 @@ class Router{
 					$middleware[$i] = new $tmp();
 				}
 			}
+            // Возвращаю экземпляр главного контроллера, передавая ему тот метод
+            // который нужно вызвать
 			return new self::$routes[$url]->controller(self::$routes[$url]->action, self::$routes[$url]->arg);
 		}
+
+
         $url = explode("/", $url);
-        if(isset(self::$routes['/'.$url[1]]))
+		array_shift($url);
+        $mainUrl = '/'.$url[0];
+
+        if(isset(self::$routes[$mainUrl])){
             echo "<p>Динамический маршрут</p>";
+            $arg = array();
+
+            echo "<p>Путь маршрута</p>";
+            echo PP::dump(self::$routes[$mainUrl]->path);
+
+            $action = self::$routes[$mainUrl]->action;
+
+            if(is_array(self::$routes[$mainUrl]->path)){
+            	for ($i = 0; $i < sizeof(self::$routes[$mainUrl]->path); $i++){
+            	    if(self::$routes[$mainUrl]->path[$i] == "action")
+                        $action = $url[$i+1];
+            	    else
+                        $arg[self::$routes[$mainUrl]->path[$i]] = $url[$i+1];
+            	}
+            }
+            echo "<p>Разбор пути</p>";
+            echo PP::dump($arg);
+
+            if (is_array(self::$routes[$mainUrl]->middleware)) {
+                for ($i = 0; $i < sizeof(self::$routes[$mainUrl]->middleware); $i++){
+                    // Создаю новый класс по названию, записанному в переменную
+                    $tmp = "\App\Middleware\\" . self::$routes[$mainUrl]->middleware[$i];
+                    echo $tmp;
+                    $middleware[$i] = new $tmp();
+                }
+            }
+
+            return new self::$routes[$mainUrl]->controller($action, $arg);
+        }
+
+
 
 	}
 
