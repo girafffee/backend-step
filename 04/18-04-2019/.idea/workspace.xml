@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdcaeb3a-5abe-4d50-94cc-316c6a2764da" name="Default Changelist" comment="">
-      <change beforePath="Z:/05-03-2019/.idea/workspace.xml" beforeDir="false" afterPath="Z:/05-03-2019/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/form_connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/form_connect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/mystyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/mystyle.css" afterDir="false" />
       <change beforePath="Z:/05-03-2019/vendor/phpmailer/phpmailer" beforeDir="false" afterPath="Z:/05-03-2019/vendor/phpmailer/phpmailer" afterDir="false" />
       <change beforePath="Z:/12-03-2019/vendor/phpmailer/phpmailer" beforeDir="false" afterPath="Z:/12-03-2019/vendor/phpmailer/phpmailer" afterDir="false" />
       <change beforePath="Z:/26-02-2019/vendor/phpmailer/phpmailer" beforeDir="false" afterPath="Z:/26-02-2019/vendor/phpmailer/phpmailer" afterDir="false" />
       <change beforePath="Z:/28-02-2019/vendor/phpmailer/phpmailer" beforeDir="false" afterPath="Z:/28-02-2019/vendor/phpmailer/phpmailer" afterDir="false" />
       <change beforePath="Z:/composer.lock" beforeDir="false" />
       <change beforePath="Z:/favicon.ico" beforeDir="false" afterPath="Z:/favicon.ico" afterDir="false" />
-      <change beforePath="Z:/public/img/Thumbs.db" beforeDir="false" afterPath="Z:/public/img/Thumbs.db" afterDir="false" />
       <change beforePath="Z:/robots.txt" beforeDir="false" afterPath="Z:/robots.txt" afterDir="false" />
       <change beforePath="Z:/stats/.htaccess" beforeDir="false" afterPath="Z:/stats/.htaccess" afterDir="false" />
       <change beforePath="Z:/stats/awsindex.html" beforeDir="false" afterPath="Z:/stats/awsindex.html" afterDir="false" />
@@ -67,8 +68,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/form_connect.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="172" column="66" selection-start-line="172" selection-start-column="66" selection-end-line="172" selection-end-column="66" />
+            <state relative-caret-position="563">
+              <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#nav#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,6 +83,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="192">
               <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/style/mystyle.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
             </state>
           </provider>
         </entry>
@@ -97,10 +111,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/style/mystyle.css" />
         <option value="$PROJECT_DIR$/connect_mysql_pdo.php" />
         <option value="$PROJECT_DIR$/config.php" />
         <option value="$PROJECT_DIR$/index_mysql_pdo.php" />
+        <option value="$PROJECT_DIR$/style/mystyle.css" />
         <option value="$PROJECT_DIR$/form_connect.php" />
       </list>
     </option>
@@ -125,6 +139,11 @@
               <item name="18-04-2019" type="b2602c69:ProjectViewProjectNode" />
               <item name="18-04-2019" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="18-04-2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="18-04-2019" type="462c0819:PsiDirectoryNode" />
+              <item name="style" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -136,6 +155,7 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -163,17 +183,18 @@
       <workItem from="1555704960124" duration="5673000" />
       <workItem from="1555776269695" duration="6641000" />
       <workItem from="1555788444148" duration="3699000" />
+      <workItem from="1555842805942" duration="3533000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28185000" />
+    <option name="totallyTimeSpent" value="31718000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25937834" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16505896" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -198,13 +219,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/style/mystyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bba27861-85a8-433a-b485-9ef873b0b3e8/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -215,13 +229,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index_mysql_pdo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" selection-start-line="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/index_mysql_pdo.php" />
     <entry file="file://$PROJECT_DIR$/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -229,10 +237,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/style/mystyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/form_connect.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="172" column="66" selection-start-line="172" selection-start-column="66" selection-end-line="172" selection-end-column="66" />
+        <state relative-caret-position="563">
+          <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#nav#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
