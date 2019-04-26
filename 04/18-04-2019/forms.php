@@ -130,13 +130,23 @@ if (isset($where)){
  * (отчаяние)
  */
 
-$result = $dbh->prepare($sql);
-
-$whr = $result->execute();
-if((!$whr) && (!$result)){
-    die("Неправильный запрос!");
+$result = $dbh->query($sql);
+$answer = "";
+if($result->rowCount() == 0){
+    $answer = '<div class="alert alert-danger text-center" role="alert">
+        <h3>Ваш запрос не дал результатов</h3>
+    </div>';
 }
-$dbAnswer = $result->fetchALL(PDO::FETCH_ASSOC);
+else if($result->rowCount() > 0){
+    $dbAnswer = $result->fetchALL(PDO::FETCH_ASSOC);
+    $answer = '<div class="alert alert-success text-center" role="alert">
+        <h3>Найдено совпадение!</h3>
+    </div>';
+}
+
+
+
+
 
 
 /*
@@ -165,7 +175,7 @@ $dbAnswer = $result->fetchALL(PDO::FETCH_ASSOC);
 
     <div class="form container-fluid row" style="padding-top: 50px">
 
-        <form action="<?=$_SERVER['PHP_SELF']?>" method="GET" class="col-lg-4">
+        <form action="<?=$_SERVER['PHP_SELF']?>" method="GET" class="col-lg-4" style="margin-bottom: 20px;">
             <nav class="navbar navbar-dark" style="border-radius: 10px; margin-bottom: 20px; background-color: rgba(40,79,106,0.87);">
                 <h3 class="navbar-text">Поиск по запросу</h3>
             </nav>
@@ -203,15 +213,12 @@ $dbAnswer = $result->fetchALL(PDO::FETCH_ASSOC);
         $ret .= '</table>';
 
         echo $ret;
+
         ?>
     </div>
-    <? foreach ($name_keys as $value) : ?>
-        <h1><?=$value?></h1>
-        <h2><?=$value?></h2>
-        <h3><?=$value?></h3>
-        <h4><?=$value?></h4>
-    <? endforeach; ?>
-    
+   <?=$answer?>
+
+
 <!--
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
