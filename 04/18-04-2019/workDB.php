@@ -14,6 +14,12 @@ if (isset($_GET['action'])) {
         case 'saveEdit':
             $tbl->echoSaveEdit();
             break;
+        case 'viewAdd':
+            $tbl->echoAddForm();
+            break;
+        case 'addField':
+            $tbl->addField();
+            break;
         default:
             echo "No Command";
     }
