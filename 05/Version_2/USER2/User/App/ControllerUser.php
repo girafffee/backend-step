@@ -77,6 +77,33 @@ class ControllerUser extends BaseController
     public  function  login (){
         $this->content = $this->render ("login-form.tpl.php");
     }
+    
+    public function logout(){
+        $this->doEndUserSession();
+    }
+    public function newpswd(){
+        $this->content = $this->render ("send-pass-form.tpl.php");
+    }
+    public function checkEmail(){
+
+        if(strlen($_POST['email']) >= 3){
+            $data['email'] = $_POST['email'];
+            $data['token'] = md5(uniqid($data['email'], true));
+
+            if ($this->Model->checkIssetUser($data) != 0){
+                //Отправляем письмо с токеном
+                var_dump($data);
+                var_dump($this->Model->checkIssetUser($data));
+                /**
+                 * Нужно реализовать новый метод отправки
+                 *
+                $this->SendEmail($data);*/
+
+            }
+
+        }
+
+    }
 
 
     public function token()
@@ -84,7 +111,7 @@ class ControllerUser extends BaseController
         $data1=$_GET;
         $data = $this->Model->getToken($data1);
         if($data){
-            if($this->Model->activEmail($data)== 1)
+            if($this->Model->activEmail($data) == 1)
                 echo 'Спасибо за подтверждения Email-а';
             else
                 echo 'Ваша ссылка на подтверждение не действительна';
@@ -112,7 +139,7 @@ class ControllerUser extends BaseController
         $port = ':81';
         $mail = new PHPMailer();
         try {
-//          $mail->SMTPDebug = 2;
+//            $mail->SMTPDebug = 2;
             $mail->isSMTP();
             $mail->CharSet = "UTF-8";
             $mail->Host = Config::$emailSmtp;

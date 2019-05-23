@@ -8,14 +8,22 @@ class RouteUser
     private $url;
     public $action;
 
-    public function getRegisterLink()
-    {
+    public function getRegisterLink(){
         return $this->url . "?doUserAction=register";
     }
 
-    public function getLoginLink()
-    {
+    public function getLoginLink(){
         return $this->url . "?doUserAction=login";
+    }
+
+    public function getLogOutLink(){
+        return $this->url . "?doUserAction=logout";
+    }
+    public function getNewPassLink(){
+        return $this->url . "?doUserAction=newpswd";
+    }
+    public function getCheckEmailLink(){
+        return $this->url . "?doUserAction=newpswd";
     }
 
 
@@ -35,6 +43,9 @@ class RouteUser
 
             if ($_POST["doUserAction"] == "loginInto") {
                 $this->action = "loginInto";
+            }
+            if ($_POST['doUserAction'] == "checkEmail"){
+                $this->action = "checkEmail";
             }
         }
         if (isset($_GET['token'])) {

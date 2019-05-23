@@ -48,6 +48,13 @@ class ModelUser extends ModelBase
         return $row;
     }
 
+    public function checkIssetUser($data){
+        $sql = "SELECT * FROM `user` WHERE `email`=" .$data['email'];
+        MySQLi_DB::getInstance()->execute($sql);
+        $row = MySQLi_DB::getInstance()->affected_rows();
+        return $row;
+    }
+
     public function loginIn($data)
     {
         $sql = "SELECT * FROM " . $this->table . " WHERE email='" . $data['email'] . "' AND ";
