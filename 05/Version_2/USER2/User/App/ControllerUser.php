@@ -67,7 +67,7 @@ class ControllerUser extends BaseController
 
     public  function  loginInto (){
         $data_form = $_POST;
-        if($this->Model->checkIssetUser($data_form) == 1)
+        if($this->Model->checkIssetUser($data_form) == 1 AND strlen($data_form['email'])>3)
             $this->doStartUserSession($data_form);
         else {
             $data['alert_type'] = "alert-dark";
@@ -115,20 +115,29 @@ class ControllerUser extends BaseController
         if($this->Model->checkIssetUserEmail($data1) != 1) {
             if ($data1['pswd'] == $data1['pswd1']) {
                 $data1['token'] = md5(uniqid($data1['email'], true));
-                $data = $this->Model->Create($data1);
-                $this->error = $data['errNum'] . $data['errText'];
+                
+                
                 $port = ":81";
                 $data1['subject'] = "Подтверждение: " . $data1['email'];
                 $data1['body'] = '<b>Для подтверждения почты перейдите по</b>
                 <a href="http://' . $_SERVER['SERVER_NAME'] . $port . $_SERVER['PHP_SELF'] .
                     '?token=' . $data1['token'] . '"><b>ссылке</b></a>';
                 if ($this->SendEmail($data1)) {
+                    $data = $this->Model->Create($data1);
+                    $this->error = $data['errNum'] . $data['errText'];
                     $data['alert_type'] = "alert-success";
                     $data['response'] = '<h4 class="alert-heading">Успешная регистрация!</h4>
                 <p>Для полной регистрации подтвердите свою почту, перейдя по ссылке в письме с темой:</p><br>
                 <b>Подтверждение: ' . $data1['email'] . '</b><hr>';
-                    $this->answertpl($data);
+                    
+                }else{
+                    $data['alert_type'] = "alert-danger";
+                    $data['response'] = '<h4 class="alert-heading">Не удалось зарегистрироваться</h4>
+                <p>Введите корректный <b>Email</b></p><br>
+                <a href="'. RouteUser::getInstance()->getRegisterLink().'"><button class="btn btn-light">Вернуться...</button></a>';
                 }
+                $this->answertpl($data);
+
             } else {
                 $this->content = $this->render("register-form.tpl.php", $data1);
                 echo "Пароли не совпадают!";

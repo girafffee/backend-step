@@ -199,7 +199,7 @@ class ModelBase
         $sql .= implode(", ", $arrValues);
         $sql .= '); ';
 
-        $data['res'] = MySQLi_DB::getInstance()->execute($sql);
+        MySQLi_DB::getInstance()->execute($sql);
         $data['errNum'] = MySQLi_DB::getInstance()->getErrno();
         $data['errText'] = MySQLi_DB::getInstance()->getError();
 
