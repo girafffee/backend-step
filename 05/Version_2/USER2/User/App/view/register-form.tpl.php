@@ -5,7 +5,7 @@
     <form action="<?= \App\RouteUser::getInstance()->getRegisterLink(); ?>" method="post">
         <input type="hidden" name="doUserAction" value="registerCreate">
         <label style="margin-top: 5px">E-mail:</label>
-        <input type="text" class="form-control" name="email">
+        <input type="text" class="form-control" name="email" value="<?=(isset($data['email']) ? $data['email'] : '') ?>">
         <label style="margin-top: 5px">Пароль:</label>
         <input type="password" class="form-control" name="pswd">
         <label style="margin-top: 5px">Подтверждение пароля:</label>

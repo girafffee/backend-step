@@ -203,6 +203,7 @@ class ModelBase
         $data['errNum'] = MySQLi_DB::getInstance()->getErrno();
         $data['errText'] = MySQLi_DB::getInstance()->getError();
 
+
         return $data;
     }
 

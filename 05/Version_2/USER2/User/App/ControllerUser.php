@@ -22,22 +22,11 @@ class ControllerUser extends BaseController
         }
     }
 
-    public function doStartUserSession($data)
-    {
-        $_SESSION['user_id'] = $this->Model->getSessionId($data);
-        header("Location: ". $_SERVER['PHP_SELF']);
-    }
 
-    public function doEndUserSession()
-    {
-        unset($_SESSION['user_id']);
-        session_destroy();
-    }
 
     public function getWiget()
     {
         if ($this->isUserLogin()) {
-
             return $this->render("wiget-login.tpl.php");
         } else {
             return $this->render("wiget-guest.tpl.php");
@@ -54,9 +43,7 @@ class ControllerUser extends BaseController
         return $this->error;
     }
 
-    public function index()
-    {
-
+    public function index(){
     }
 
     public function register()
@@ -66,12 +53,30 @@ class ControllerUser extends BaseController
 
 
 
+    public function doStartUserSession($data)
+    {
+        $_SESSION['user_id'] = $this->Model->getSessionId($data);
+        header("Location: ". $_SERVER['PHP_SELF']);
+    }
 
+    public function doEndUserSession()
+    {
+        unset($_SESSION['user_id']);
+        session_destroy();
+    }
 
     public  function  loginInto (){
-        $data = $_POST;
-        $this->doStartUserSession($data);
-        // echo "Do Login";
+        $data_form = $_POST;
+        if($this->Model->checkIssetUser($data_form) == 1)
+            $this->doStartUserSession($data_form);
+        else {
+            $data['alert_type'] = "alert-dark";
+            $data['response'] = '<p>Такого пользователя не существует.</p><br>
+            <a href="'. RouteUser::getInstance()->getLoginLink().'"><button class="btn btn-light">Вернуться...</button></a>
+            <a href="'. RouteUser::getInstance()->getNewPassLink().'" ><button class="btn btn-light">Восстановить пароль</button></a>';
+            $this->answertpl($data);
+        }
+
     }
     public  function  login (){
         $this->content = $this->render ("login-form.tpl.php");
@@ -86,7 +91,7 @@ class ControllerUser extends BaseController
     public function tokenpass(){
         $this->content = $this->render ("upd-pass-form.tpl.php");
     }
-    public function resetpswd($data){
+    public function answertpl($data){
         $this->content = $this->render ("answ-pass-form.tpl.php", $data);
     }
 
@@ -107,21 +112,31 @@ class ControllerUser extends BaseController
     {
         // Логика
         $data1 = $_POST;
-        if($data1['pswd'] == $data1['pswd1']) {
-            $data1['token'] = md5(uniqid($data1['email'], true));
-            $data = $this->Model->Create($data1);
-            $this->error = $data['errNum'] . $data['errText'];
-            $port = ":81";
-            $data1['subject'] = "Подтверждение: " . $data1['email'];
-            $data1['body'] = '<b>Для подтверждения почты перейдите по</b>
+        if($this->Model->checkIssetUserEmail($data1) != 1) {
+            if ($data1['pswd'] == $data1['pswd1']) {
+                $data1['token'] = md5(uniqid($data1['email'], true));
+                $data = $this->Model->Create($data1);
+                $this->error = $data['errNum'] . $data['errText'];
+                $port = ":81";
+                $data1['subject'] = "Подтверждение: " . $data1['email'];
+                $data1['body'] = '<b>Для подтверждения почты перейдите по</b>
                 <a href="http://' . $_SERVER['SERVER_NAME'] . $port . $_SERVER['PHP_SELF'] .
-                '?token=' . $data1['token'] . '"><b>ссылке</b></a>';
-            $this->SendEmail($data1);
-        } else{
+                    '?token=' . $data1['token'] . '"><b>ссылке</b></a>';
+                if ($this->SendEmail($data1)) {
+                    $data['alert_type'] = "alert-success";
+                    $data['response'] = '<h4 class="alert-heading">Успешная регистрация!</h4>
+                <p>Для полной регистрации подтвердите свою почту, перейдя по ссылке в письме с темой:</p><br>
+                <b>Подтверждение: ' . $data1['email'] . '</b><hr>';
+                    $this->answertpl($data);
+                }
+            } else {
+                $this->content = $this->render("register-form.tpl.php", $data1);
+                echo "Пароли не совпадают!";
+            }
+        }else{
             $this->content = $this->render("register-form.tpl.php");
-            echo "Пароли не совпадают!";
+            echo "Такой пользователь уже существует!";
         }
-
     }
 
     public function SendEmail($data)
@@ -146,6 +161,7 @@ class ControllerUser extends BaseController
                 return true;
         } catch (Exception $e) {
             echo "Сообщение не может быть отправлено. Ошибка: {$mail->ErrorInfo}";
+            return false;
         }
     }
     public function checkEmail(){
@@ -153,15 +169,15 @@ class ControllerUser extends BaseController
             $data['email'] = $_POST['email'];
             $token = md5(uniqid($data['email'], true));
             $port = ":81";
+            $link = "http://" . $_SERVER['SERVER_NAME'] . $port . $_SERVER['PHP_SELF'] . "?tokenpass=" . $token;
             $data['subject'] = "Восстановить пароль: " . $data['email'];
-            $data['body'] = '<b>Для сброса пароля перейдите по ссылке: </b> <br> 
-                <a href="http://' . $_SERVER['SERVER_NAME'] . $port . $_SERVER['PHP_SELF'] .
-                '?tokenpass=' . $token . '"><b>Сбросить</b></a>';
+            $data['body'] = '<b>Для сброса пароля перейдите по ссылке: </b> <br> <a href="'.$link.'"><b>Сбросить</b></a>';
             //Подкорректировать проверку на наличие юзверя
-            $checkdata = $this->Model->checkIssetUser($data);
+            $checkdata = $this->Model->checkIssetUserEmail($data);
 
-            if ($checkdata['count'] == 1){
+            if ($checkdata == 1){
                 $_SESSION['email'] = $data['email'];
+                $_SESSION['link'] = $link;
                 //Отправляем письмо с токеном
                 if($this->SendEmail($data)) {
                     $data['alert_type'] = "alert-success";
@@ -170,9 +186,9 @@ class ControllerUser extends BaseController
             }else{
                 $data['alert_type'] = "alert-primary";
                 $data['response'] = '<p>Ваш почта не зарегистрирована. Это можно сделать по 
-                <a href="'.\App\RouteUser::getInstance()->getRegisterLink().'"><b>Ссылке</b></a> </p>';
+                <a href="'.RouteUser::getInstance()->getRegisterLink().'"><b>Ссылке</b></a> </p>';
             }
-            $this->resetpswd($data);
+            $this->answertpl($data);
 
         }
     }
@@ -180,17 +196,24 @@ class ControllerUser extends BaseController
         if (session_status() == PHP_SESSION_ACTIVE and isset($_SESSION['email']))
             return $_SESSION['email'];
         else
-            return "Ссылке не действительна.";
+            return "Ссылка не действительна.";
     }
 
     public function updatePassword(){
         $data = $_POST;
-        if($data['pswd'] == $data['pswd1'])
-            if($this->Model->setNewPswd($data)) {
+        if($data['pswd'] == $data['pswd1']) {
+            if ($this->Model->setNewPswd($data)) {
                 $data['alert_type'] = "alert-success";
                 $data['response'] = '<p>Пароль успешно сменен.</p>';
-                $this->resetpswd($data);
+
+            } else {
+                $data['alert_type'] = "alert-warning";
+                $data['response'] = '<p>Произошла ошибка, либо введеный пароль совпадает с существующим.</p><br>
+                <b><a href="' . RouteUser::getInstance()->getLoginLink() . '">Войти</a></b>
+                 | <b><a href="' . $_SESSION['link'] . '">Повторить попытку</a></b>';
             }
+            $this->answertpl($data);
+        }
     }
 
     private $Model;

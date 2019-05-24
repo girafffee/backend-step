@@ -19,16 +19,7 @@ class ModelUser extends ModelBase
         $this->funFildsCreate['email']['end'] = ") ";*/
 
     }
-    public function getSessionId($data){
-        $addFildsFun['email'] = $this->getCellFunction($data['email'], 'email');
-        $addFildsFun['pswd'] = $this->getCellFunction($data['pswd'], 'pswd');
 
-        $sql = "SELECT * FROM `user` WHERE `email`=" .$addFildsFun['email']. " AND `pswd`=" .$addFildsFun['pswd']."; ";
-
-        $session = MySQLi_DB::getInstance()->execute($sql);
-        $user = $session->fetch_assoc();
-        return $user['id'];
-    }
 
 
 
@@ -48,11 +39,29 @@ class ModelUser extends ModelBase
         return $row;
     }
 
-    public function checkIssetUser($data){
+
+    public function checkIssetUserEmail($data){
         $sql = "SELECT * FROM " . $this->table . " WHERE `email`='" .$data['email']."'; ";
-        $checkdata['rows'] = MySQLi_DB::getInstance()->execute($sql);
-        $checkdata['count'] = $checkdata['rows']->num_rows;
-        return $checkdata;
+        $rows = MySQLi_DB::getInstance()->execute($sql);
+        $count = $rows->num_rows;
+        return $count;
+    }
+    public function checkIsset($data){
+        $data['pswd'] = $this->getCellFunction($data['pswd'], 'pswd');
+        $data['email'] = $this->getCellFunction($data['email'], 'email');
+
+        $sql = "SELECT * FROM `user` WHERE `email`=" .$data['email']. " AND `pswd`=" .$data['pswd']."; ";
+        $session = MySQLi_DB::getInstance()->execute($sql);
+        return $session;
+    }
+
+    public function getSessionId($data){
+        $session = $this->checkIsset($data);
+        return $session->fetch_assoc();
+    }
+    public function checkIssetUser($data){
+        $rows = $this->checkIsset($data);
+        return $rows->num_rows;
     }
 
     public function setNewPswd($data){
@@ -60,18 +69,10 @@ class ModelUser extends ModelBase
         $data['email'] = $this->getCellFunction($data['email'], 'email');
 
         $sql = "UPDATE " . $this->table . " SET pswd=". $data['pswd'] ." WHERE email=".$data['email']."; ";
-        print_r($sql);
-        MySQLi_DB::getInstance()->execute($sql);
 
+        MySQLi_DB::getInstance()->execute($sql);
         if(MySQLi_DB::getInstance()->affected_rows() == 1) return true;
         else false;
     }
 
-    public function loginIn($data)
-    {
-        $sql = "SELECT * FROM " . $this->table . " WHERE email='" . $data['email'] . "' AND ";
-        $d['res'] = MySQLi_DB::getInstance()->execute($sql);
-        $d['row'] = $d['res']->fetch_assoc();
-        return $d;
-    }
 }
