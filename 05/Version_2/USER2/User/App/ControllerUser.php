@@ -68,7 +68,6 @@ class ControllerUser extends BaseController
 
 
 
-
     public  function  loginInto (){
         $data = $_POST;
         $this->doStartUserSession($data);
@@ -84,26 +83,13 @@ class ControllerUser extends BaseController
     public function newpswd(){
         $this->content = $this->render ("send-pass-form.tpl.php");
     }
-    public function checkEmail(){
-
-        if(strlen($_POST['email']) >= 3){
-            $data['email'] = $_POST['email'];
-            $data['token'] = md5(uniqid($data['email'], true));
-
-            if ($this->Model->checkIssetUser($data) != 0){
-                //Отправляем письмо с токеном
-                var_dump($data);
-                var_dump($this->Model->checkIssetUser($data));
-                /**
-                 * Нужно реализовать новый метод отправки
-                 *
-                $this->SendEmail($data);*/
-
-            }
-
-        }
-
+    public function tokenpass(){
+        $this->content = $this->render ("upd-pass-form.tpl.php");
     }
+    public function resetpswd($data){
+        $this->content = $this->render ("answ-pass-form.tpl.php", $data);
+    }
+
 
 
     public function token()
@@ -119,13 +105,17 @@ class ControllerUser extends BaseController
     }
     public function create()
     {
-        // Логика 
-
+        // Логика
         $data1 = $_POST;
         if($data1['pswd'] == $data1['pswd1']) {
             $data1['token'] = md5(uniqid($data1['email'], true));
             $data = $this->Model->Create($data1);
             $this->error = $data['errNum'] . $data['errText'];
+            $port = ":81";
+            $data1['subject'] = "Подтверждение: " . $data1['email'];
+            $data1['body'] = '<b>Для подтверждения почты перейдите по</b>
+                <a href="http://' . $_SERVER['SERVER_NAME'] . $port . $_SERVER['PHP_SELF'] .
+                '?token=' . $data1['token'] . '"><b>ссылке</b></a>';
             $this->SendEmail($data1);
         } else{
             $this->content = $this->render("register-form.tpl.php");
@@ -136,7 +126,6 @@ class ControllerUser extends BaseController
 
     public function SendEmail($data)
     {
-        $port = ':81';
         $mail = new PHPMailer();
         try {
 //            $mail->SMTPDebug = 2;
@@ -148,18 +137,60 @@ class ControllerUser extends BaseController
             $mail->Password = Config::$emailPswd;
             $mail->SMTPSecure = 'ssl';
             $mail->Port = 465;
-            $mail->setFrom('sanko200065@gmail.com', 'Hug.reed');
+            $mail->setFrom(Config::$emailUser, 'Hug.reed');
             $mail->addAddress($data['email']);
             $mail->isHTML(true);
-            $mail->Subject = 'Подтверждение регистрации';
-            $mail->Body = '<b>Ваш email: </b>' . $data['email'] . '<br> <b>Ваш пароль: </b>' . $data['pswd'] . '<br>'
-                . 'Для подтверждения регистрации перейдите по ссылке: 
-                <a href="http://' . $_SERVER['SERVER_NAME'] . $port . $_SERVER['PHP_SELF'] . '?token=' . $data['token'] . '"><b>Подтверждение</b></a>';
-            $mail->send();
-            echo 'Письмо с подтверждением регистрации отправлено';
+            $mail->Subject = $data['subject'];
+            $mail->Body = $data['body'];
+            if($mail->send())
+                return true;
         } catch (Exception $e) {
             echo "Сообщение не может быть отправлено. Ошибка: {$mail->ErrorInfo}";
         }
+    }
+    public function checkEmail(){
+        if(strlen($_POST['email']) >= 3){
+            $data['email'] = $_POST['email'];
+            $token = md5(uniqid($data['email'], true));
+            $port = ":81";
+            $data['subject'] = "Восстановить пароль: " . $data['email'];
+            $data['body'] = '<b>Для сброса пароля перейдите по ссылке: </b> <br> 
+                <a href="http://' . $_SERVER['SERVER_NAME'] . $port . $_SERVER['PHP_SELF'] .
+                '?tokenpass=' . $token . '"><b>Сбросить</b></a>';
+            //Подкорректировать проверку на наличие юзверя
+            $checkdata = $this->Model->checkIssetUser($data);
+
+            if ($checkdata['count'] == 1){
+                $_SESSION['email'] = $data['email'];
+                //Отправляем письмо с токеном
+                if($this->SendEmail($data)) {
+                    $data['alert_type'] = "alert-success";
+                    $data['response'] = '<p>Письмо успешно отправлено.</p>';
+                }
+            }else{
+                $data['alert_type'] = "alert-primary";
+                $data['response'] = '<p>Ваш почта не зарегистрирована. Это можно сделать по 
+                <a href="'.\App\RouteUser::getInstance()->getRegisterLink().'"><b>Ссылке</b></a> </p>';
+            }
+            $this->resetpswd($data);
+
+        }
+    }
+    public function sessionEmail(){
+        if (session_status() == PHP_SESSION_ACTIVE and isset($_SESSION['email']))
+            return $_SESSION['email'];
+        else
+            return "Ссылке не действительна.";
+    }
+
+    public function updatePassword(){
+        $data = $_POST;
+        if($data['pswd'] == $data['pswd1'])
+            if($this->Model->setNewPswd($data)) {
+                $data['alert_type'] = "alert-success";
+                $data['response'] = '<p>Пароль успешно сменен.</p>';
+                $this->resetpswd($data);
+            }
     }
 
     private $Model;

@@ -49,10 +49,22 @@ class ModelUser extends ModelBase
     }
 
     public function checkIssetUser($data){
-        $sql = "SELECT * FROM `user` WHERE `email`=" .$data['email'];
+        $sql = "SELECT * FROM " . $this->table . " WHERE `email`='" .$data['email']."'; ";
+        $checkdata['rows'] = MySQLi_DB::getInstance()->execute($sql);
+        $checkdata['count'] = $checkdata['rows']->num_rows;
+        return $checkdata;
+    }
+
+    public function setNewPswd($data){
+        $data['pswd'] = $this->getCellFunction($data['pswd'], 'pswd');
+        $data['email'] = $this->getCellFunction($data['email'], 'email');
+
+        $sql = "UPDATE " . $this->table . " SET pswd=". $data['pswd'] ." WHERE email=".$data['email']."; ";
+        print_r($sql);
         MySQLi_DB::getInstance()->execute($sql);
-        $row = MySQLi_DB::getInstance()->affected_rows();
-        return $row;
+
+        if(MySQLi_DB::getInstance()->affected_rows() == 1) return true;
+        else false;
     }
 
     public function loginIn($data)

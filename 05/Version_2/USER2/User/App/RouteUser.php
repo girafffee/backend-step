@@ -7,6 +7,7 @@ class RouteUser
 
     private $url;
     public $action;
+    public $param; // что передать
 
     public function getRegisterLink(){
         return $this->url . "?doUserAction=register";
@@ -23,7 +24,8 @@ class RouteUser
         return $this->url . "?doUserAction=newpswd";
     }
     public function getCheckEmailLink(){
-        return $this->url . "?doUserAction=newpswd";
+        $this->param = '$data';
+        return $this->url . "?doUserAction=resetpswd";
     }
 
 
@@ -37,20 +39,31 @@ class RouteUser
             $this->action = "index";
         }
         if (isset($_POST["doUserAction"])) {
-            if ($_POST["doUserAction"] == "registerCreate") {
-                $this->action = "create";
+            switch ($_POST["doUserAction"]){
+                case "registerCreate":
+                    $this->action = "create";
+                    break;
+                case "loginInto":
+                    $this->action = "loginInto";
+                    break;
+                case "checkEmail":
+                    $this->action = "checkEmail";
+                    break;
+                case "updatePassword":
+                    $this->action = "updatePassword";
+                    break;
+                default:
+                    $this->action = "loginInto";
+                    break;
             }
 
-            if ($_POST["doUserAction"] == "loginInto") {
-                $this->action = "loginInto";
-            }
-            if ($_POST['doUserAction'] == "checkEmail"){
-                $this->action = "checkEmail";
-            }
         }
-        if (isset($_GET['token'])) {
+        if (isset($_GET['token']))
             $this->action = 'token';
-        }
+
+        if(isset($_GET['tokenpass']))
+            $this->action = 'tokenpass';
+
     }
 
     private static $instance;

@@ -26,6 +26,7 @@ class DB_Driver
         return $this->DB->affected_rows;
     }
 
+
     public function getCount($table)
     {
         $sql = "SELECT COUNT(id) AS c FROM " . $table;
