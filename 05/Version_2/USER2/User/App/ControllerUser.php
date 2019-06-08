@@ -21,6 +21,20 @@ class ControllerUser extends BaseController
             return false;
         }
     }
+    // Проверка на право выполнения действий
+    public function isUserCan($role){
+        $user['role'] = $_SESSION['user_role']['roles'];
+        if($user['role'] == $role)
+            return true;
+    }
+    
+    // Прооверка на роль пользователя
+    public function isUserRole($array_roles){
+        foreach($array_roles as $role){
+            if($role == $_SESSION['user_role']['roles'])
+                return true;
+        }
+    }
 
 
 
@@ -29,7 +43,8 @@ class ControllerUser extends BaseController
         if ($this->isUserLogin()) {
             return $this->render("wiget-login.tpl.php");
         } else {
-            return $this->render("wiget-guest.tpl.php");
+
+            return $this->render("widget-guest.tpl.php");
         }
     }
 
@@ -44,8 +59,14 @@ class ControllerUser extends BaseController
     }
 
     public function index(){
+        if($this->isUserLogin()){
+            $this->content = $this->render("auth-user.tpl.php");
+        }else{
+            $this->content = $this->render("guest.tpl.php");
+        }
     }
 
+    //Не нужна с новой формой
     public function register()
     {
         $this->content = $this->render("register-form.tpl.php");
@@ -56,7 +77,9 @@ class ControllerUser extends BaseController
     public function doStartUserSession($data)
     {
         $_SESSION['user_id'] = $this->Model->getSessionId($data);
+        $_SESSION['user_role'] = $this->Model->userRole();
         header("Location: ". $_SERVER['PHP_SELF']);
+
     }
 
     public function doEndUserSession()
@@ -67,8 +90,11 @@ class ControllerUser extends BaseController
 
     public  function  loginInto (){
         $data_form = $_POST;
-        if($this->Model->checkIssetUser($data_form) == 1 AND strlen($data_form['email'])>3)
+        if($this->Model->checkIssetUser($data_form) == 1 AND strlen($data_form['email'])>3) {
+            $_SESSION['email'] = $data_form['email'];
             $this->doStartUserSession($data_form);
+
+        }
         else {
             $data['alert_type'] = "alert-dark";
             $data['response'] = '<p>Такого пользователя не существует.</p><br>
@@ -80,6 +106,7 @@ class ControllerUser extends BaseController
     }
     public  function  login (){
         $this->content = $this->render ("login-form.tpl.php");
+
     }
     
     public function logout(){
@@ -93,6 +120,11 @@ class ControllerUser extends BaseController
     }
     public function answertpl($data){
         $this->content = $this->render ("answ-pass-form.tpl.php", $data);
+
+    }
+    
+    public function adpanel(){
+        $this->content = $this->render("service.tpl.php");
     }
 
 
@@ -115,8 +147,6 @@ class ControllerUser extends BaseController
         if($this->Model->checkIssetUserEmail($data1) != 1) {
             if ($data1['pswd'] == $data1['pswd1']) {
                 $data1['token'] = md5(uniqid($data1['email'], true));
-                
-                
                 $port = ":81";
                 $data1['subject'] = "Подтверждение: " . $data1['email'];
                 $data1['body'] = '<b>Для подтверждения почты перейдите по</b>
@@ -169,38 +199,38 @@ class ControllerUser extends BaseController
             if($mail->send())
                 return true;
         } catch (Exception $e) {
-            echo "Сообщение не может быть отправлено. Ошибка: {$mail->ErrorInfo}";
+            //echo "Сообщение не может быть отправлено. Ошибка: {$mail->ErrorInfo}";
             return false;
         }
     }
+
     public function checkEmail(){
         if(strlen($_POST['email']) >= 3){
             $data['email'] = $_POST['email'];
-            $token = md5(uniqid($data['email'], true));
-            $port = ":81";
-            $link = "http://" . $_SERVER['SERVER_NAME'] . $port . $_SERVER['PHP_SELF'] . "?tokenpass=" . $token;
-            $data['subject'] = "Восстановить пароль: " . $data['email'];
-            $data['body'] = '<b>Для сброса пароля перейдите по ссылке: </b> <br> <a href="'.$link.'"><b>Сбросить</b></a>';
-            //Подкорректировать проверку на наличие юзверя
-            $checkdata = $this->Model->checkIssetUserEmail($data);
+            if($this->Model->checkIssetUserEmail($data) == 1) {
+                $token = md5(uniqid($data['email'], true));
+                $port = ":81";
+                $link = "http://" . $_SERVER['SERVER_NAME'] . $port . $_SERVER['PHP_SELF'] . "?tokenpass=" . $token;
+                $data['subject'] = "Восстановить пароль: " . $data['email'];
+                $data['body'] = '<b>Для сброса пароля перейдите по ссылке: </b> <br> <a href="' . $link . '"><b>Сбросить</b></a>';
+                //Подкорректировать проверку на наличие юзверя
 
-            if ($checkdata == 1){
                 $_SESSION['email'] = $data['email'];
                 $_SESSION['link'] = $link;
                 //Отправляем письмо с токеном
-                if($this->SendEmail($data)) {
+                if ($this->SendEmail($data)) {
                     $data['alert_type'] = "alert-success";
                     $data['response'] = '<p>Письмо успешно отправлено.</p>';
                 }
-            }else{
-                $data['alert_type'] = "alert-primary";
-                $data['response'] = '<p>Ваш почта не зарегистрирована. Это можно сделать по 
-                <a href="'.RouteUser::getInstance()->getRegisterLink().'"><b>Ссылке</b></a> </p>';
             }
-            $this->answertpl($data);
-
+        }else {
+            $data['alert_type'] = "alert-primary";
+            $data['response'] = '<p>Ваш почта не зарегистрирована. Это можно сделать по 
+            <a href="' . RouteUser::getInstance()->getRegisterLink() . '"><b>Ссылке</b></a> </p>';
         }
+        $this->answertpl($data);
     }
+
     public function sessionEmail(){
         if (session_status() == PHP_SESSION_ACTIVE and isset($_SESSION['email']))
             return $_SESSION['email'];
@@ -210,7 +240,7 @@ class ControllerUser extends BaseController
 
     public function updatePassword(){
         $data = $_POST;
-        if($data['pswd'] == $data['pswd1']) {
+        if($data['pswd'] == $data['pswd1'] AND strlen($data['pswd'])>2) {
             if ($this->Model->setNewPswd($data)) {
                 $data['alert_type'] = "alert-success";
                 $data['response'] = '<p>Пароль успешно сменен.</p>';
@@ -236,6 +266,7 @@ class ControllerUser extends BaseController
             session_start();
             $this->Model = new ModelUser();
         }
+
     }
 
     private static $instance;

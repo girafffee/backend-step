@@ -27,6 +27,9 @@ class RouteUser
         $this->param = '$data';
         return $this->url . "?doUserAction=resetpswd";
     }
+    public function getAdminPanel(){
+        return $this->url . "?doUserAction=adpanel";
+    }
 
 
     private function __construct()

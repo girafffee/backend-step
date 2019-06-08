@@ -1,7 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a2eb6e6-58db-4784-bcf2-e3bdc3510177" name="Default Changelist" comment="" />
+    <list default="true" id="9a2eb6e6-58db-4784-bcf2-e3bdc3510177" name="Default Changelist" comment="">
+      <change beforePath="Z:/05-03-2019/vendor/phpmailer/phpmailer" beforeDir="false" afterPath="Z:/05-03-2019/vendor/phpmailer/phpmailer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/05.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/05.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/User.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/User.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/ControllerUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/ControllerUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/ModelBase.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/ModelBase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/ModelUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/ModelUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/view/answ-pass-form.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/view/login-form.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/view/register-form.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/view/send-pass-form.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/view/upd-pass-form.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/view/wiget-guest.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/view/wiget-login.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer" afterDir="false" />
+      <change beforePath="Z:/12-03-2019/public/img/Thumbs.db" beforeDir="false" afterPath="Z:/12-03-2019/public/img/Thumbs.db" afterDir="false" />
+      <change beforePath="Z:/12-03-2019/vendor/phpmailer/phpmailer" beforeDir="false" afterPath="Z:/12-03-2019/vendor/phpmailer/phpmailer" afterDir="false" />
+      <change beforePath="Z:/26-02-2019/vendor/phpmailer/phpmailer" beforeDir="false" afterPath="Z:/26-02-2019/vendor/phpmailer/phpmailer" afterDir="false" />
+      <change beforePath="Z:/28-02-2019/vendor/phpmailer/phpmailer" beforeDir="false" afterPath="Z:/28-02-2019/vendor/phpmailer/phpmailer" afterDir="false" />
+      <change beforePath="Z:/composer.lock" beforeDir="false" />
+      <change beforePath="Z:/favicon.ico" beforeDir="false" afterPath="Z:/favicon.ico" afterDir="false" />
+      <change beforePath="Z:/robots.txt" beforeDir="false" afterPath="Z:/robots.txt" afterDir="false" />
+      <change beforePath="Z:/stats/.htaccess" beforeDir="false" afterPath="Z:/stats/.htaccess" afterDir="false" />
+      <change beforePath="Z:/stats/awsindex.html" beforeDir="false" afterPath="Z:/stats/awsindex.html" afterDir="false" />
+      <change beforePath="Z:/stats/awstats.girafffee.nikstep.com.ua.alldomains.html" beforeDir="false" afterPath="Z:/stats/awstats.girafffee.nikstep.com.ua.alldomains.html" afterDir="false" />
+      <change beforePath="Z:/stats/awstats.girafffee.nikstep.com.ua.allhosts.html" beforeDir="false" afterPath="Z:/stats/awstats.girafffee.nikstep.com.ua.allhosts.html" afterDir="false" />
+      <change beforePath="Z:/stats/awstats.girafffee.nikstep.com.ua.allrobots.html" beforeDir="false" afterPath="Z:/stats/awstats.girafffee.nikstep.com.ua.allrobots.html" afterDir="false" />
+      <change beforePath="Z:/stats/awstats.girafffee.nikstep.com.ua.browserdetail.html" beforeDir="false" afterPath="Z:/stats/awstats.girafffee.nikstep.com.ua.browserdetail.html" afterDir="false" />
+      <change beforePath="Z:/stats/awstats.girafffee.nikstep.com.ua.downloads.html" beforeDir="false" afterPath="Z:/stats/awstats.girafffee.nikstep.com.ua.downloads.html" afterDir="false" />
+      <change beforePath="Z:/stats/awstats.girafffee.nikstep.com.ua.errors400.html" beforeDir="false" afterPath="Z:/stats/awstats.girafffee.nikstep.com.ua.errors400.html" afterDir="false" />
+      <change beforePath="Z:/stats/awstats.girafffee.nikstep.com.ua.errors403.html" beforeDir="false" afterPath="Z:/stats/awstats.girafffee.nikstep.com.ua.errors403.html" afterDir="false" />
+      <change beforePath="Z:/stats/awstats.girafffee.nikstep.com.ua.errors404.html" beforeDir="false" afterPath="Z:/stats/awstats.girafffee.nikstep.com.ua.errors404.html" afterDir="false" />
+      <change beforePath="Z:/stats/awstats.girafffee.nikstep.com.ua.keyphrases.html" beforeDir="false" afterPath="Z:/stats/awstats.girafffee.nikstep.com.ua.keyphrases.html" afterDir="false" />
+      <change beforePath="Z:/stats/awstats.girafffee.nikstep.com.ua.keywords.html" beforeDir="false" afterPath="Z:/stats/awstats.girafffee.nikstep.com.ua.keywords.html" afterDir="false" />
+      <change beforePath="Z:/stats/awstats.girafffee.nikstep.com.ua.lasthosts.html" beforeDir="false" afterPath="Z:/stats/awstats.girafffee.nikstep.com.ua.lasthosts.html" afterDir="false" />
+      <change beforePath="Z:/stats/awstats.girafffee.nikstep.com.ua.lastrobots.html" beforeDir="false" afterPath="Z:/stats/awstats.girafffee.nikstep.com.ua.lastrobots.html" afterDir="false" />
+      <change beforePath="Z:/stats/awstats.girafffee.nikstep.com.ua.osdetail.html" beforeDir="false" afterPath="Z:/stats/awstats.girafffee.nikstep.com.ua.osdetail.html" afterDir="false" />
+      <change beforePath="Z:/stats/awstats.girafffee.nikstep.com.ua.refererpages.html" beforeDir="false" afterPath="Z:/stats/awstats.girafffee.nikstep.com.ua.refererpages.html" afterDir="false" />
+      <change beforePath="Z:/stats/awstats.girafffee.nikstep.com.ua.refererse.html" beforeDir="false" afterPath="Z:/stats/awstats.girafffee.nikstep.com.ua.refererse.html" afterDir="false" />
+      <change beforePath="Z:/stats/awstats.girafffee.nikstep.com.ua.session.html" beforeDir="false" afterPath="Z:/stats/awstats.girafffee.nikstep.com.ua.session.html" afterDir="false" />
+      <change beforePath="Z:/stats/awstats.girafffee.nikstep.com.ua.unknownbrowser.html" beforeDir="false" afterPath="Z:/stats/awstats.girafffee.nikstep.com.ua.unknownbrowser.html" afterDir="false" />
+      <change beforePath="Z:/stats/awstats.girafffee.nikstep.com.ua.unknownip.html" beforeDir="false" afterPath="Z:/stats/awstats.girafffee.nikstep.com.ua.unknownip.html" afterDir="false" />
+      <change beforePath="Z:/stats/awstats.girafffee.nikstep.com.ua.unknownos.html" beforeDir="false" afterPath="Z:/stats/awstats.girafffee.nikstep.com.ua.unknownos.html" afterDir="false" />
+      <change beforePath="Z:/stats/awstats.girafffee.nikstep.com.ua.urldetail.html" beforeDir="false" afterPath="Z:/stats/awstats.girafffee.nikstep.com.ua.urldetail.html" afterDir="false" />
+      <change beforePath="Z:/stats/awstats.girafffee.nikstep.com.ua.urlentry.html" beforeDir="false" afterPath="Z:/stats/awstats.girafffee.nikstep.com.ua.urlentry.html" afterDir="false" />
+      <change beforePath="Z:/stats/awstats.girafffee.nikstep.com.ua.urlexit.html" beforeDir="false" afterPath="Z:/stats/awstats.girafffee.nikstep.com.ua.urlexit.html" afterDir="false" />
+      <change beforePath="Z:/����������.png" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,102 +65,84 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/User/RouteUser.php">
+        <entry file="file://$PROJECT_DIR$/App/DB_Driver.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+            <state relative-caret-position="221">
+              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/ControllerUser.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="69" column="30" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
+              <folding>
+                <element signature="e#23#57#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/User/ControllerUser.php">
+        <entry file="file://Z:/12-03-2019/Kernel/Router.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="64" column="3" lean-forward="true" selection-start-line="64" selection-start-column="3" selection-end-line="64" selection-end-column="3" />
-              <folding>
-                <element signature="e#24#43#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="493">
+              <caret line="38" column="24" lean-forward="true" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/User/view/wiget-login.tpl.php">
+        <entry file="file://$PROJECT_DIR$/App/RouteUser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="21" selection-start-column="21" selection-end-column="21" />
+            <state relative-caret-position="-719">
+              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/User/ModelBase.php">
+        <entry file="file://$PROJECT_DIR$/App/MySQLi_DB.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="171" column="80" selection-start-line="171" selection-start-column="80" selection-end-line="171" selection-end-column="80" />
+            <state relative-caret-position="119">
+              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/User/view/register-form.tpl.php">
+        <entry file="file://$PROJECT_DIR$/App/Config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="4" column="67" selection-end-line="15" />
+            <state relative-caret-position="340">
+              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="24" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/User/view/login-form.tpl.php">
+        <entry file="file://$PROJECT_DIR$/App/ModelUser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" column="84" selection-start-line="10" selection-start-column="84" selection-end-line="10" selection-end-column="84" />
-              <folding>
-                <element signature="n#style#0;n#label#0;n#form#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="255">
+              <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/User/Config.php">
+        <entry file="file://$PROJECT_DIR$/App/ModelBase.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/User/MySQLi_DB.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/User/boot.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/User/view/wiget-guest.tpl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="69" selection-start-line="2" selection-start-column="69" selection-end-line="2" selection-end-column="69" />
+            <state relative-caret-position="68">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="Z:/" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -129,6 +162,8 @@
         <option value="$PROJECT_DIR$/User/view/wiget-login.tpl.php" />
         <option value="$PROJECT_DIR$/User/ModelBase.php" />
         <option value="$PROJECT_DIR$/User/ControllerUser.php" />
+        <option value="$PROJECT_DIR$/App/ModelBase.php" />
+        <option value="$PROJECT_DIR$/App/ModelPage.php" />
       </list>
     </option>
   </component>
@@ -151,6 +186,7 @@
     <option name="width" value="1346" />
     <option name="height" value="451" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -167,13 +203,7 @@
             <path>
               <item name="User" type="b2602c69:ProjectViewProjectNode" />
               <item name="User" type="462c0819:PsiDirectoryNode" />
-              <item name="User" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="User" type="b2602c69:ProjectViewProjectNode" />
-              <item name="User" type="462c0819:PsiDirectoryNode" />
-              <item name="User" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -182,11 +212,17 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../modules/php/PHP_7.1-x64/php.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/App" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="Z:\05\Version_2\USER2\User\App" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -230,16 +266,21 @@
       <workItem from="1558381907448" duration="3083000" />
       <workItem from="1558443563434" duration="1628000" />
       <workItem from="1558445479640" duration="2879000" />
+      <workItem from="1559061470265" duration="1958000" />
+      <workItem from="1559230661868" duration="3690000" />
+      <workItem from="1559836832888" duration="2078000" />
+      <workItem from="1559919837959" duration="6385000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42023000" />
+    <option name="totallyTimeSpent" value="56134000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28668684" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30134475" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -291,20 +332,8 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/User/migration.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/User/BaseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/User/migration.sql" />
+    <entry file="file://$PROJECT_DIR$/User/BaseController.php" />
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/superglobals/_superglobals.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
@@ -312,13 +341,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/User/ModelUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/User/ModelUser.php" />
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="624">
@@ -326,86 +349,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/User/DB_Driver.php">
+    <entry file="file://$PROJECT_DIR$/User/DB_Driver.php" />
+    <entry file="file://$PROJECT_DIR$/User/MySQLi_DB.php" />
+    <entry file="file://$PROJECT_DIR$/User/boot.php" />
+    <entry file="file://$PROJECT_DIR$/User/Config.php" />
+    <entry file="file://$PROJECT_DIR$/User/view/wiget-guest.tpl.php" />
+    <entry file="file://$PROJECT_DIR$/User/view/register-form.tpl.php" />
+    <entry file="file://$PROJECT_DIR$/User/RouteUser.php" />
+    <entry file="file://$PROJECT_DIR$/User/view/wiget-login.tpl.php" />
+    <entry file="file://$PROJECT_DIR$/User/view/login-form.tpl.php" />
+    <entry file="file://$PROJECT_DIR$/User/ModelBase.php" />
+    <entry file="file://$PROJECT_DIR$/User/ControllerUser.php" />
+    <entry file="file://$PROJECT_DIR$/App/DB_Driver.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        <state relative-caret-position="221">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/User/MySQLi_DB.php">
+    <entry file="file://$PROJECT_DIR$/App/ModelBase.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        <state relative-caret-position="68">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/User/boot.php">
+    <entry file="file://$PROJECT_DIR$/App/ModelUser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        <state relative-caret-position="255">
+          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/User/Config.php">
+    <entry file="file://$PROJECT_DIR$/App/ModelPage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+        <state relative-caret-position="204">
+          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/User/view/wiget-guest.tpl.php">
+    <entry file="file://$PROJECT_DIR$/App/RouteUser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="69" selection-start-line="2" selection-start-column="69" selection-end-line="2" selection-end-column="69" />
+        <state relative-caret-position="-719">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/User/view/register-form.tpl.php">
+    <entry file="file://$PROJECT_DIR$/App/MySQLi_DB.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="67" selection-end-line="15" />
+        <state relative-caret-position="119">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/User/RouteUser.php">
+    <entry file="file://$PROJECT_DIR$/App/Config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+        <state relative-caret-position="340">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="24" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/User/view/wiget-login.tpl.php">
+    <entry file="file://$PROJECT_DIR$/App/ControllerUser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/User/view/login-form.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="84" selection-start-line="10" selection-start-column="84" selection-end-line="10" selection-end-column="84" />
+        <state relative-caret-position="459">
+          <caret line="69" column="30" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
           <folding>
-            <element signature="n#style#0;n#label#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#23#57#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/User/ModelBase.php">
+    <entry file="file://Z:/12-03-2019/Kernel/Router.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="171" column="80" selection-start-line="171" selection-start-column="80" selection-end-line="171" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/User/ControllerUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="64" column="3" lean-forward="true" selection-start-line="64" selection-start-column="3" selection-end-line="64" selection-end-column="3" />
-          <folding>
-            <element signature="e#24#43#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="493">
+          <caret line="38" column="24" lean-forward="true" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
         </state>
       </provider>
     </entry>

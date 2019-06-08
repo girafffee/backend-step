@@ -27,6 +27,11 @@ class ModelBase
     public $viewFildsAll;      // отображаемые поля на вкладке все
     public $viewFildsAllAlter; // альтернативные названия полей
 
+    public $hasOne;
+    public $belongsTo;
+    public $hasMany;
+    public $manyToMany;
+
     public $sql; // Содержит запрос
     public $Where;
     public $WhereAnd;
@@ -38,6 +43,23 @@ class ModelBase
     public $PagCount;
     public $Pag;
 
+
+    public function hasOne($modelName, $foreign_key, $local_key){
+        $this->hasOne[] = [$modelName, $foreign_key, $local_key];
+    }
+    public function belongsTo($modelName, $foreign_key, $local_key) {
+        $this->belongsTo[] = [$modelName, $foreign_key, $local_key];
+    }
+    public function hasMany($modelName, $foreign_key, $local_key) {
+        $this->hasMany[] = [$modelName, $foreign_key, $local_key];
+    }
+    public function manyToMany($modelName, $foreign_key, $local_key, $middleTable, $middleTableForeign_key, $middleTableLocal_key) {
+        $this->hasMany[] = [$modelName, $foreign_key, $local_key, $middleTable, $middleTableForeign_key, $middleTableLocal_key];
+    }
+
+    public function hasManyThrough($modelName, $foreign_key, $local_key, $middleTable, $middleTableForeign_key, $middleTableLocal_key) {
+        $this->hasMany[] = [$modelName, $foreign_key, $local_key, $middleTable, $middleTableForeign_key, $middleTableLocal_key];
+    }
 
     // $db->Where("(`id` < 5) OR (7>6 AND 7>5)")
     public function Where($sql)
@@ -79,10 +101,51 @@ class ModelBase
         return $this;
     }
 
+
+
     /*return $this   $db->WhereAnd('created_at', '<', 5)->WhereOr('id', '>', 5)*/
     public function Get()
     {
         $sql = "SELECT * FROM " . $this->table;
+        $addHasMany = "";
+        $sqlGroupBy = "";
+
+        if (is_array($this->hasMany)) {
+            for ($i = 0; $i < sizeof($this->hasMany); $i++) {
+                $tmp = "User\\" . $this->hasMany[$i][0];
+                echo $tmp;
+                $tmpModel = new $tmp();
+                $tblName = $tmpModel->table;
+                $tmpConCad = array();
+                
+                for ($j = 0; $j < sizeof($tmpModel->addFilds); $j++) {
+                    $tmpConCad[] = " GROUP_CONCAT(DISTINCT " . $tblName . "." . $tmpModel->addFilds[$j] . ", ', ')  AS " . $tmpModel->addFilds[$j] . " ";
+                }
+                $addHasMany .= " LEFT JOIN " . $tblName . " ON " .
+                    $tblName . "." . $this->hasMany[$i][1] . "=" . $this->table . "." . $this->hasMany[$i][2] . " ";
+            }
+            $sql = "SELECT *, " . $tmpConCad[0] . " FROM " . $this->table." ";
+            $sqlGroupBy = " GROUP BY " . $this->table . ".id ";
+        }
+
+        if(is_array($this->hasOne)){
+            for ($i = 0; $i < sizeof($this->hasOne); $i++) {
+                $sql.= " LEFT JOIN " . $this->hasOne[$i][0] . " ON " .
+                    $this->hasOne[$i][0].".". $this->hasOne[$i][1] . "=" . $this->table . "." . $this->hasOne[$i][2] . " ";
+            }
+        }
+
+        if (is_array($this->belongsTo)) {
+            for ($i = 0; $i < sizeof($this->belongsTo); $i++) {
+                $sql.= " LEFT JOIN " . $this->belongsTo[$i][0] . " ON " .
+                    $this->belongsTo[$i][0].".". $this->belongsTo[$i][1] . "=" . $this->table . "." . $this->belongsTo[$i][2] . " ";
+            }
+        }
+        if (is_array($this->hasMany)) {
+            $sql.= $addHasMany;
+        }
+
+
         if (strlen($this->Where) > 0) {
             $sql .= " WHERE " . $this->Where;
         } else {

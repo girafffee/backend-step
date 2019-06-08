@@ -1,0 +1,21 @@
+{
+    "name": "ninydev/user",
+    "type": "education",
+    "require": {
+        "phpmailer/phpmailer": "dev-master"
+    },
+    "require-dev": {
+        "phpmailer/phpmailer": "dev-master"
+    },
+    "license": "beerWare",
+    "authors": [
+        {
+            "name": "Oleksandr Nykytin",
+            "email": "nikitin_a@itstep.org"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {"User\\": "User/"}
+    }
+}

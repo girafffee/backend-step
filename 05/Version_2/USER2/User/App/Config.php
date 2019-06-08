@@ -6,8 +6,9 @@ namespace App;
 final class Config
 {
     // Путь к файлам View (шаблон)
-    public static $pathToTemplate = __DIR__ . '/../resources/view/mydesign/';
-    public static $pathToUserTemplate = __DIR__ . '/view/';
+    //public static $pathToTemplate = __DIR__ . '/../resources/view/mydesign/';
+    public static $pathToUserTemplate = __DIR__ . '/../resources/view/';
+
     // Путь к файлам Storage
     public static $pathToStorage = __DIR__ . '/../storage/';
     // Имя сайта
@@ -19,7 +20,7 @@ final class Config
     // Настройки базы
     public static $DBhost = "localhost";
     public static $DBport = 3306;
-    public static $DBname = "c13girafffee";
+    public static $DBname = "c13db";
     public static $DBuser = "c13db";
     public static $DBpswd = "SaNkO20001221";
     //*------------------------------------------------------------
