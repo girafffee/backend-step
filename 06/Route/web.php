@@ -12,10 +12,14 @@ use \Kernel\Router;
 
 Router::addGroup("/PAGE/{action}/{page_id}/{page_autor}", "\App\Page\PageController");
 
+Router::add("/", "\App\Homepage\HomepageController")
+            ->routeName('Home')
+			->showInMap();
+
 Router::add("/home", "\App\Homepage\HomepageController")
             ->addArg("page_id", "home")
             ->routeName('Home')
-			->showInMap();
+            ->showInMap();
 
 Router::add("/about", "\App\Page\PageController")
             ->addArg("page_id", "about")

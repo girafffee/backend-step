@@ -15,7 +15,7 @@ class HeaderController  extends \Kernel\Base\BaseController
 		self::$data['mainMenu'] = $mainMenu->buildMenu();
 		
 		if (!isset(self::$data ['pageTitle']))
-			self::$data ['pageTitle'] = " My Slogan ";
+			self::$data ['pageTitle'] = " My Slogan";
 	}
 
 

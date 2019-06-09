@@ -260,8 +260,6 @@ class Router{
             return new self::$routes[$mainUrl]->controller($action, $arg);
         }
 
-
-
 	}
 
 

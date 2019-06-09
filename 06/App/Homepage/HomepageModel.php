@@ -1,11 +1,14 @@
 <?php
 namespace App\Homepage;
+use App\Page\PageModel;
 
 
 /**
  * 
  */
-class HomepageModel
-{
-	
+class HomepageModel extends PageModel
+{   
+    /*public function __construct(){
+
+    }*/
 }

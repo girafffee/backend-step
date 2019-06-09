@@ -186,7 +186,7 @@ class BaseModel
             $sql .= $this->Lim;
         }
         $sql .= "; ";
-        echo "<p> sql: " . $sql . "</p>";
+        //echo "<p> sql: " . $sql . "</p>";
         return MySQLi_DB::getInstance()->execute($sql);
     }
 

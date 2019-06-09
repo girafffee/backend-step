@@ -10,14 +10,20 @@ class HomepageController  extends \Kernel\Base\BaseController
 	var $Model;
 
 	function __construct($action = "index"){
-		if ($action == "index") { $this->index(); return; };
+		if ($action == "index") {
+		    $this->index();
+		    return;
+		}
+
 	}
 
 	public function index (){
+        $this->Model = new HomepageModel();
 		$data['pageTitle'] = "Home Page";
-		HeaderController::$data ['pageTitle'] = " Welcome to my Site";
+		HeaderController::$data ['pageTitle'] = "Welcome to my Site";
 		HeaderController::$tpl = 'header_home.tpl.php';
-		$this->content =  self::render ('homepage.tpl.php', $data);
+		$data = $this->Model->getPage("home");
+		$this->content =  $data['body'];
 	}
 
 /*
