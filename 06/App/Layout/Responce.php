@@ -14,7 +14,6 @@ final class Responce {
 
     public static $pageData;
 
-
 //*------------------------------------------------------------
 // Собрать данные для построения страницы
     public static function buildPageData (){
@@ -23,20 +22,19 @@ final class Responce {
       self::$pageData ['sidebar'] = SidebarController::getContent();
       self::$pageData ['footer'] = FooterController::getContent();
       self::$pageData ['mainnav'] = MainNavigationController::getContent();
-      self::$pageData ['form'] = FormController::getContent();
-
     }
 
 
 //*------------------------------------------------------------
 // Вернуть всю страницу
     public static function renderPage(){
-      $ret = '<!DOCTYPE html>
-      <html lang="ru" class="no-js">';
+      if (isset($_GET['ajax'])) { return self::$pageData ['content']; }
+
+
+      $ret = '<!DOCTYPE html>'."\n".'<html lang="ru">'."\n";
       $ret.= self::$pageData ['head'];
       $ret.= "\n<body>\n";
       $ret.= self::$pageData ['header'];
-      $ret.= self::$pageData ['form'];
       $ret.= self::$pageData ['mainnav'];
       $ret.= self::$pageData ['sidebar'];
       $ret.= self::$pageData ['content'];
@@ -52,18 +50,11 @@ final class Responce {
     }
 
 
-
-
-
 //*------------------------------------------------------------
 // Обеспечение единственной копии класса      
-    private function __construct() {      
-
-      self::$pageData ['content'] = "";
-
+    private function __construct() {
+      self::$pageData ['content'] ="";
     }
-
-    
       private static $instance;
       public static function getInstance() {
           if (!self::$instance) {
@@ -75,4 +66,4 @@ final class Responce {
       private function __wakeup() {}
 }
 
-//$Responce = Responce::getInstance();
+

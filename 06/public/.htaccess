@@ -1,0 +1,13 @@
+# http://htaccess.net.ru/ -полный список возможностей на русском
+
+<IfModule mod_rewrite.c>
+# http://www.htaccess.net.ru/doc/mod_rewrite/ - все возможности модуля
+	RewriteEngine On
+	#RewriteBase /
+
+# http://www.htaccess.net.ru/doc/mod_rewrite/RewriteRule.php - правила переименования	
+	RewriteRule ^index\.php$ - [L]
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule . index.php [L]
+</IfModule>

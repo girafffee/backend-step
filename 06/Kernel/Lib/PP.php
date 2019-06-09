@@ -17,7 +17,7 @@ class PP {
  * @return void
  */
 
-public static function echo($in,$opened = false){
+public static function dump($in,$opened = false){
 	$str = "";
     if($opened)
         $opened = ' open';

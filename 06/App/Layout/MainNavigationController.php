@@ -6,5 +6,5 @@ namespace App\Layout;
  */
 class MainNavigationController 
 {
-	public static function getContent () {return;}
+	public static function getContent () {return "";}
 }

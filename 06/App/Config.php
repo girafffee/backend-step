@@ -12,11 +12,11 @@ final class Config {
 
 
   // Имя сайта
-  public static $appSiteName = "Girafffee";
+  public static $appSiteName = " My Site ";
 
   // НАстройки почты
   public static $emailSmtp = "smtp.google.com";
-  public static $emailUser = "sanko200065@gmail.com";
+  public static $emailUser = "keeper@ninydev.com";
   public static $emaiPswd = "";
 
     public static $DBhost = "localhost";

@@ -1,36 +1,8 @@
-<ul>
-
 <?php
 //var_dump($data);
 
-foreach ($data as $key => $item) {
-	// Построение ссылки
-	$url = $_SERVER['PHP_SELF'];
-	$get = array();
-	if (isset($item['controller'])) {
-		$get[] = "controller=" . $item['controller'];
-	}
-	if (isset($item['action'])) {
-		$get[] = "action=" . $item['action'];
-	}
-	if (isset($item['arg'])) {
-		$arg = array();
-		foreach ($item['arg'] as $keya => $valuea) {
-			$arg[]=  $keya . "=" . $valuea;
-		}
-		$get[] = implode ('&',$arg);
-	}
-
-	$url.= '?' . implode ('&', $get);
-	$res = '<a href="' . $url . '" >' . $item['text'] . '</a>' ;
-
-	echo "<li>" . $res . "</li>";
-
-}
-
+echo \Kernel\Router::BuildItem($data, 0);
 ?>
-
-</ul>
 
 
 <?php

@@ -10,7 +10,6 @@ namespace Kernel\Base;
 
 use Kernel\Lib\MySQLi_DB;
 
-
 class BaseModel
 {
     public $table;             // текущая таблица
@@ -33,6 +32,7 @@ class BaseModel
     public $manyToMany;
 
     public $sql; // Содержит запрос
+    public $Select;
     public $Where;
     public $WhereAnd;
     public $WhereOr;
@@ -100,18 +100,33 @@ class BaseModel
         $this->WhereOr[] = $f . $o . $s;
         return $this;
     }
+    public function SelectWhat($array_selected){
+        $selected = array();
+        foreach ($array_selected as $name => $item){
+            $selected[] = $item . " as " . $name;
+        }
+        $this->Select = implode(", ", $selected);
+        return $this;
+    }
 
 
 
     /*return $this   $db->WhereAnd('created_at', '<', 5)->WhereOr('id', '>', 5)*/
     public function Get()
     {
-        $sql = "SELECT * FROM " . $this->table;
+        $sql = "SELECT ";
+        if(strlen($this->Select)>0)
+            $sql .= $this->Select;
+        else
+            $sql .= " * ";
+
+        $sql .= " FROM " . $this->table;
         $addHasMany = "";
         $sqlGroupBy = "";
 
         if (is_array($this->hasMany)) {
             for ($i = 0; $i < sizeof($this->hasMany); $i++) {
+                // Пространство модели
                 $tmp = "User\\" . $this->hasMany[$i][0];
                 echo $tmp;
                 $tmpModel = new $tmp();
@@ -170,7 +185,8 @@ class BaseModel
         } else if (strlen($this->Lim) > 0) {
             $sql .= $this->Lim;
         }
-        //echo "<p> sql: " . $sql . "</p>";
+        $sql .= "; ";
+        echo "<p> sql: " . $sql . "</p>";
         return MySQLi_DB::getInstance()->execute($sql);
     }
 

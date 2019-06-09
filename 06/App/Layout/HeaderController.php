@@ -1,6 +1,6 @@
 <?php
 namespace App\Layout;
-use App\Navigation\NavController;
+use \App\Navigation\NavigationController;
 
 /**
  * 
@@ -11,10 +11,11 @@ class HeaderController  extends \Kernel\Base\BaseController
 	public static $tpl;
 
 	public static function buildHeadData (){
-		$mainMenu = new NavController();
+		$mainMenu = new NavigationController('MainMenu');
 		self::$data['mainMenu'] = $mainMenu->buildMenu();
+		
 		if (!isset(self::$data ['pageTitle']))
-			self::$data ['pageTitle'] = "First template";
+			self::$data ['pageTitle'] = " My Slogan ";
 	}
 
 
@@ -23,5 +24,4 @@ class HeaderController  extends \Kernel\Base\BaseController
 		return self::render (self::$tpl, self::$data);
 	}
 }
-
-HeaderController::$tpl = "header.tpl.php";
+HeaderController::$tpl = 'header.tpl.php';

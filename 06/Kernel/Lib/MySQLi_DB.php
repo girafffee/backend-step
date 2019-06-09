@@ -7,6 +7,7 @@
  */
 
 namespace Kernel\Lib;
+
 use App\Config;
 
 class MySQLi_DB extends DB_Driver
@@ -20,6 +21,7 @@ class MySQLi_DB extends DB_Driver
         $this->dbname = Config::$DBname;
         $this->DB = new \mysqli($this->dbhost, $this->dbuser, $this->dbpswd, $this->dbname);
         $this->DB->set_charset("UTF8");
+
     }
 
     private static $instance;

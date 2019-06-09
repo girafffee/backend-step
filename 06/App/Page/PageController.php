@@ -1,5 +1,5 @@
 <?php
-namespace App\Page; 
+namespace App\Page;
 
 /**
  * 
@@ -8,25 +8,20 @@ class PageController
 {
 	var $Model;
 	var $content;
-	function __construct($page_id, $action = "index"){
+	function __construct($action = "index", $arg = 1){
+		// var_dump($arg);
+        if (isset($arg["page_id"])) $page_id = $arg["page_id"];
+
+
 		$this->Model = new PageModel ();
-
-		if ($action == "index")
-			$data = $this->Model->getPageByID($page_id);
-		    $this->content = $data;
-	}
-
-	function getHrefController($href, $id){
-		switch ($href) {
-			case 'page':
-			return new PageController ($id);
-				break;
-
-			default:
-			return new PageController ("0"); // TODO Error 404 or HomePage
-				break;
-		}
-		
+		if ($action == "index" && isset($page_id)) {
+		    // Получаем страницу из базы по ID либо Slug
+            $data = $this->Model->getPage($page_id);
+            // Выводим содержимое на страницу
+            $this->content = $data['body'];
+        }
+        else
+            $this->content = "<h3> No Action </h3>";
 	}
 
 	function getContent () {return $this->content;}

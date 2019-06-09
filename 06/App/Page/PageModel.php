@@ -1,9 +1,7 @@
 <?php
 namespace App\Page;
-use App\Config;
 use Kernel\Base\BaseModel;
-use Kernel\Lib\DB_Driver;
-use Kernel\Lib\MySQLi_DB;
+
 
 /**
  * 
@@ -11,14 +9,71 @@ use Kernel\Lib\MySQLi_DB;
 class PageModel extends BaseModel
 {
 
-    public function __construct(){
+    function __construct(){
         $this->table = "pages";
     }
+    /*
+    |--------------------------------------------------------------------------
+    | Взять страницу по id OR slug
+    |--------------------------------------------------------------------------
+    | Анализирует, каким образом была запрошена таблица,
+    | по слагу (алиасу) или идентификатору
+    |
+    */
 
-    function getPageFile ($file){
-				// включаем буфер
+    public function getPage($page){
+        /*$fileName = $name.'.php';
+
+        if(file_exists($this->pageFile . $fileName))
+            return $this->getContentPageFromFile($fileName);
+        else
+            return $this->getContentPageFromFile('404.php');*/
+        if(is_numeric($page)) {
+            $ret = $this
+                ->Where('id='. $page)
+                ->Get();
+
+        }
+        else{
+            $ret = $this
+                ->Where("slug='". $page."'")
+                ->Get();
+        }
+        if($ret->num_rows == 0){
+            $ret = $this
+                ->Where("slug='404.html'")
+                ->Get();
+        }
+
+        $data = $ret->fetch_assoc();
+
+        return $data;
+    }
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | Создание обьекта страницы и подготовка абсолютного маршрута
+    |--------------------------------------------------------------------------
+    | Сохраняет путь к страницам в переменную
+    |
+    |
+    */
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Чтение подготовленной страницы 
+|--------------------------------------------------------------------------
+| Читает страницу и возвращает ее содержимое
+| 
+|
+*/	
+	/*function getContentPageFromFile ($fileName){
+		// включаем буфер
 		ob_start();
-		include (Config::$pathToStorage .'pages/'. $file); 
+		include ($this->pageFile . $fileName); 
 
 		// сохраняем всё что есть в буфере в переменную $content
 		$content = ob_get_contents();
@@ -27,38 +82,9 @@ class PageModel extends BaseModel
 		ob_end_clean();
 
 		return $content;
-	}
+	}*/
 
 
-	function getPageByID ($id){
-
-        $ret = $this->WhereAnd('id', '=', $id)
-                ->Get();
-
-        return $ret->fetch_assoc();
-/*
-		switch ($id) {
-			case "1":
-			return $this->getPageFile('about.php');
-				break;
-
-			case "2":
-			return $this->getPageFile('blog.php');
-				break;
-
-			case '3':
-			return $this->getPageFile('services.php');
-				break;
-
-			case '4':
-			return $this->getPageFile('works.php');
-				break;
-			
-			default:
-			return " Нет данных "; // TODO Error 404 or HomePage
-				break;
-		}*/
-	}
 
 
 }

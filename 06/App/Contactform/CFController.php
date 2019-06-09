@@ -1,30 +1,37 @@
 <?php
 namespace App\Contactform;
-use App\Layout\FormController;
+use App\Layout\HeaderController;
+use Kernel\Router;
 
 /**
  * 
  */
 class CFController  extends \Kernel\Base\BaseController
 {
-	private $Model;
-	private $content;
+	var $Model;
+	var $content;
 	function __construct($action = "index"){
-		if ($action == "index") {return $this->index();} // Нет нужного метода
-		if ($action == "send") {return $this->send ();}
+		if ($action == "index") { $this->index(); return; }; // Нет нужного метода
+		if ($action == "send") { $this->send (); return;};
 	}
 
 	public function index (){
-		$data['formTitle'] = "Contact Form";
-		FormController::$data ['formTitle'] = "Contact form";
+		$data['pageTitle'] = "Contact Form";
+		HeaderController::$data ['pageTitle'] = "Contact form";
+		$data['formAction'] = Router::getFormAction();
 		$this->content =  self::render ('contactform.tpl.php', $data);
 	}
 
-	private function send (){		
-		$data['formTitle'] = "Contact Form Send";
-		FormController::$data ['formTitle'] = "Contact form was send";
+	public function send (){
+		$this->Model = new CFModel();
+		$this->Model->send();
+		
+		HeaderController::$data ['pageTitle'] = "Contact form send";
+		$data['pageTitle'] = "Contact Form Send";
+		$data['formAction'] = Router::getFormAction();
 		$this->content =  self::render ('contactform_send.tpl.php', $data);
 	}
+
 
 
 	function getContent () {return $this->content;}

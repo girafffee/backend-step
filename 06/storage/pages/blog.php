@@ -1,1 +1,0 @@
-<h1 class="text-center">This is Blog page</h1>

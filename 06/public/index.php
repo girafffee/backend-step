@@ -1,5 +1,5 @@
 <?php
-
+use App\Layout\Responce;
 /*
 |--------------------------------------------------------------------------
 | Register The Auto Loader
@@ -24,14 +24,4 @@ include_once ("../vendor/autoload.php");
 */
 include_once ("../Kernel/app.boot.php");
 
-/*
-|--------------------------------------------------------------------------
-| Build the Page
-|--------------------------------------------------------------------------
-|
-| Рендерим всю страницу
-|
-*/
-
-use App\Layout\Responce;
 echo Responce::renderPage();
