@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPMailer/PHPMailer.git",
-                "reference": "511413a6eaeb167fa88282d437766d34510548b8"
+                "reference": "82a578e9420d0e541cd5fd14aaf210ed9bf36b55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/511413a6eaeb167fa88282d437766d34510548b8",
-                "reference": "511413a6eaeb167fa88282d437766d34510548b8",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/82a578e9420d0e541cd5fd14aaf210ed9bf36b55",
+                "reference": "82a578e9420d0e541cd5fd14aaf210ed9bf36b55",
                 "shasum": ""
             },
             "require": {
@@ -70,7 +70,7 @@
                 }
             ],
             "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
-            "time": "2019-06-05T13:16:33+00:00"
+            "time": "2019-07-14T13:08:12+00:00"
         }
     ],
     "packages-dev": [],

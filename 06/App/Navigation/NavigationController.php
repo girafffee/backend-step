@@ -26,13 +26,9 @@ class NavigationController extends \Kernel\Base\BaseController
 			if(!function_exists($this->Model->$createMenu()))
 				//Если такой не найдется, то обрабатываем исключение
 				//throw new Exception("Error Processing Request");
-				echo '';
+				echo "";
 			else
 				$this->Model->$createMenu();
-			 
-			
-
-
 
 		$this->content = self::render(strtolower($this->menuName) . '.tpl.php', $this->Model->arrMenu);
 		return $this->content;

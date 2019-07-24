@@ -1,0 +1,12 @@
+{
+    "name": "girafffee/smartygir",
+    "authors": [
+        {
+            "name": "girafffee",
+            "email": "sanko200065@gmail.com"
+        }
+    ],
+    "require": {
+	 "smarty/smarty": "~3.1"
+}
+}

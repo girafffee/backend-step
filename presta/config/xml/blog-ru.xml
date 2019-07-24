@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xml:base="https://www.prestashop.com/en/blog/feed.xml" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:og="http://ogp.me/ns#" xmlns:article="http://ogp.me/ns/article#" xmlns:book="http://ogp.me/ns/book#" xmlns:profile="http://ogp.me/ns/profile#" xmlns:video="http://ogp.me/ns/video#" xmlns:product="http://ogp.me/ns/product#" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <channel>
+    <title>Blog Feed</title>
+    <link>https://www.prestashop.com/en/blog/feed.xml</link>
+    <description></description>
+    <language>en</language>
+     <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
+      <item>
+    <title>PSD2 Is Coming to the EU – Are You Ready?</title>
+    <link>https://www.prestashop.com/en/blog/psd2-coming-to-eu</link>
+    <description>Companies that sell in the European Union have dealt with many changes over the years to payment services, cross-market regulations, and individual country mandates.</description>
+     <pubDate>Fri, 19 Jul 2019 14:11:59 +0200</pubDate>
+ <dc:creator>ns8</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/psd2-coming-to-eu</guid>
+  </item>
+  <item>
+    <title>Essential inventory management tips for eCommerce businesses</title>
+    <link>https://www.prestashop.com/en/blog/inventory-management-tips</link>
+    <description>Inventory management sounds as straightforward as it gets. You stock your stores and warehouses with products you can sell to your customers.</description>
+     <pubDate>Wed, 17 Jul 2019 10:44:29 +0200</pubDate>
+ <dc:creator>Samantha Novick</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/inventory-management-tips</guid>
+  </item>
+  <item>
+    <title>Discover the Customer Reviews module available in version 1.7.6 of PrestaShop!</title>
+    <link>https://www.prestashop.com/en/blog/customer-reviews-module</link>
+    <description>Reassurance on an online store plays a huge part in building trust between merchants and visitors.</description>
+     <pubDate>Mon, 15 Jul 2019 12:13:57 +0200</pubDate>
+ <dc:creator>Coline Ginestet</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/customer-reviews-module</guid>
+  </item>
+  <item>
+    <title>New features, developments, advanced functionalities, download PrestaShop 1.7.6 now!</title>
+    <link>https://www.prestashop.com/en/blog/prestashop-1-7-6</link>
+    <description>So, what&#039;s new in version 1.7.6?</description>
+     <pubDate>Tue, 09 Jul 2019 16:23:04 +0200</pubDate>
+ <dc:creator>Méguy Solvet</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/prestashop-1-7-6</guid>
+  </item>
+  <item>
+    <title>How to reduce the size and weight of your eCommerce photos</title>
+    <link>https://www.prestashop.com/en/blog/reduce-size-weight-photos</link>
+    <description>Do you know the real importance of reducing the weight and size of photos on your PrestaShop store&#039;s website?</description>
+     <pubDate>Tue, 02 Jul 2019 16:39:16 +0200</pubDate>
+ <dc:creator>Eva Lacalle</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/reduce-size-weight-photos</guid>
+  </item>
+  <item>
+    <title>The importance of social networks for your ecommerce</title>
+    <link>https://www.prestashop.com/en/blog/social-netwoks-ecommerce</link>
+    <description>The social networks</description>
+     <pubDate>Thu, 27 Jun 2019 16:57:13 +0200</pubDate>
+ <dc:creator>Code Sphere Network</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/social-netwoks-ecommerce</guid>
+  </item>
+  <item>
+    <title>3 challenges to expand your logistics internationally</title>
+    <link>https://www.prestashop.com/en/blog/expand-your-logistics-internationally</link>
+    <description>Do you know that many businesses face loss due to inefficiency to meet customers demand on time?</description>
+     <pubDate>Wed, 26 Jun 2019 10:38:00 +0200</pubDate>
+ <dc:creator>Webkul</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/expand-your-logistics-internationally</guid>
+  </item>
+  <item>
+    <title>5 Ways To Manage Your After Sales Service Effectively</title>
+    <link>https://www.prestashop.com/en/blog/ecommerce-after-sales-service</link>
+    <description>If you have ever worked in real-world retail as opposed to eCommerce, you may have heard it said that just one negative customer experience is a sure way to lose ten customers!</description>
+     <pubDate>Fri, 21 Jun 2019 15:27:07 +0200</pubDate>
+ <dc:creator>Teapot</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/ecommerce-after-sales-service</guid>
+  </item>
+  <item>
+    <title>5 Marketing Content Mistakes to Avoid</title>
+    <link>https://www.prestashop.com/en/blog/marketing-content-ecommerce</link>
+    <description>The amount of data we produce each day is truly mind-blowing. It’s hard to stand out with your content when there are 2.5 quintillion bytes of data created every day.</description>
+     <pubDate>Thu, 20 Jun 2019 10:43:17 +0200</pubDate>
+ <dc:creator>Invertus</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/marketing-content-ecommerce</guid>
+  </item>
+  <item>
+    <title>New! Manage all your payment options securely from a single interface with PrestaShop Checkout</title>
+    <link>https://www.prestashop.com/en/blog/prestashop-checkout</link>
+    <description>Don’t wait to try out PrestaShop Checkout Built with PayPal, the innovative payment solution launched by PrestaShop to boost your e-commerce activity!</description>
+     <pubDate>Mon, 03 Jun 2019 20:54:20 +0200</pubDate>
+ <dc:creator>MLNielsen</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/prestashop-checkout</guid>
+  </item>
+  </channel>
+</rss>

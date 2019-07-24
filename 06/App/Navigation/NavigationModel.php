@@ -32,7 +32,7 @@ class NavigationModel extends BaseModel
 		//$this->arrMenu[1]['class'] = ""; // css class
 		//$this->arrMenu[1]['id'] = ""; // css id
 		$this->arrMenu[1]['text'] = "Warrenty"; // Текст ссылк, который нужно будет вывести
-		$this->arrMenu[1]['hasCildren'] = false; // Есть ли вложенные элементы
+		$this->arrMenu[1]['hasChildren'] = false; // Есть ли вложенные элементы
 		$this->arrMenu[1]['parentId'] = 0; // Предок (0 если нет)
 
 	// Terms of Conditions
@@ -45,7 +45,7 @@ class NavigationModel extends BaseModel
 		//$this->arrMenu[2]['class'] = ""; // css class
 		//$this->arrMenu[2]['id'] = ""; // css id
 		$this->arrMenu[2]['text'] = "Terms of Conditions"; // Текст ссылк, который нужно будет вывести
-		$this->arrMenu[2]['hasCildren'] = false; // Есть ли вложенные элементы
+		$this->arrMenu[2]['hasChildren'] = false; // Есть ли вложенные элементы
 		$this->arrMenu[2]['parentId'] = 0; // Предок (0 если нет)
 
 	// About
@@ -58,7 +58,7 @@ class NavigationModel extends BaseModel
 		//$this->arrMenu[3]['class'] = ""; // css class
 		//$this->arrMenu[3]['id'] = ""; // css id
 		$this->arrMenu[3]['text'] = "About"; // Текст ссылк, который нужно будет вывести
-		$this->arrMenu[3]['hasCildren'] = false; // Есть ли вложенные элементы
+		$this->arrMenu[3]['hasChildren'] = false; // Есть ли вложенные элементы
 		$this->arrMenu[3]['parentId'] = 0; // Предок (0 если нет)
 
 	// Contacts
@@ -71,7 +71,7 @@ class NavigationModel extends BaseModel
 		//$this->arrMenu[4]['class'] = ""; // css class
 		//$this->arrMenu[4]['id'] = ""; // css id
 		$this->arrMenu[4]['text'] = "Contacts"; // Текст ссылк, который нужно будет вывести
-		$this->arrMenu[4]['hasCildren'] = false; // Есть ли вложенные элементы
+		$this->arrMenu[4]['hasChildren'] = false; // Есть ли вложенные элементы
 		$this->arrMenu[4]['parentId'] = 0; // Предок (0 если нет)
 
 
@@ -87,9 +87,11 @@ class NavigationModel extends BaseModel
                 "slug"          => $this->hasOne[0][0] . ".slug",
                 "body"          => $this->hasOne[0][0] . ".body",
                 "status"        => $this->hasOne[0][0] . ".status",
-                "hasCildren"    => $this->table . ".hasCildren",
+                "hasChildren"    => $this->table . ".hasChildren",
                 "parentId"      => $this->table . ".parentId"
             ])
+            ->WhereEqually($this->hasOne[0][0].".status", 1)
+            ->OrderBy($this->table . ".id")
             ->Get();
 
 	    while($row = $ret->fetch_assoc())

@@ -1,0 +1,11 @@
+{shop_url}
+
+Здравствуйте,
+
+Your stock cover is now less than the specified minimum of: {warning_coverage}
+
+Текущий складской запас: {current_coverage}
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](http://www.prestashop.com/)

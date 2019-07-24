@@ -1,0 +1,7 @@
+[2019-07-07 19:13:33] app.ERROR: Class "AdminLinkWidgetController" not found in controllers/admin [] []
+[2019-07-07 19:13:34] app.INFO: Exporting mail with theme modern for language Русский (Russian) [] []
+[2019-07-07 19:13:34] app.INFO: Core output folder: /var/www/clients/client13/web15/web/presta/mails [] []
+[2019-07-07 19:13:34] app.INFO: Modules output folder: /var/www/clients/client13/web15/web/presta/modules/ [] []
+[2019-07-07 19:13:40] app.INFO: Exporting mail with theme modern for language Українська (Ukrainian) [] []
+[2019-07-07 19:13:40] app.INFO: Core output folder: /var/www/clients/client13/web15/web/presta/mails [] []
+[2019-07-07 19:13:40] app.INFO: Modules output folder: /var/www/clients/client13/web15/web/presta/modules/ [] []

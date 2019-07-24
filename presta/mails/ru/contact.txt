@@ -1,0 +1,17 @@
+{shop_url}
+
+Сообщение от покупателя магазина {shop_name}
+
+Customer Email Address: {email}
+
+Order ID #:  {order_name}
+
+Прикрепленный файл: {attached_file}
+
+Сообщение покупателя:
+
+{message}
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](http://www.prestashop.com/)

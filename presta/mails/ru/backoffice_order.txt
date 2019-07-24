@@ -1,0 +1,11 @@
+{shop_url}
+
+Здравствуйте, {firstname} {lastname},
+
+Был оформлен новый заказ на ваше имя.
+
+Please go on {order_link} to complete the payment.
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](http://www.prestashop.com/)

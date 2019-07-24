@@ -1,0 +1,13 @@
+{shop_url}
+
+Здравствуйте,
+
+{product} есть в наличии.
+
+Good news, this item is back in stock!
+
+Click on the following link to visit the product page and order it: [{product}]({product_link})
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](http://www.prestashop.com/)

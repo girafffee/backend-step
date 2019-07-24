@@ -1,6 +1,7 @@
 <?php
 namespace App\Homepage;
 use App\Layout\HeaderController;
+use Kernel\Router;
 
 /**
  * 
@@ -24,6 +25,9 @@ class HomepageController  extends \Kernel\Base\BaseController
 		HeaderController::$tpl = 'header_home.tpl.php';
 		$data = $this->Model->getPage("home");
 		$this->content =  $data['body'];
+		/*echo '<pre>';
+		$this->content = var_dump(Router::$routes);
+        echo '</pre>';*/
 	}
 
 /*

@@ -1,0 +1,17 @@
+1562521973
+s:2558:"HTTP/1.1 200 OK
+Server: nginx
+Date: Sun, 07 Jul 2019 17:47:53 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Vary: Accept-Encoding
+X-XSS-Protection: 1; mode=block;
+X-Content-Type-Options: nosniff
+X-Frame-Options: sameorigin
+Referrer-Policy: strict-origin-when-cross-origin
+X-Permitted-Cross-Domain-Policies: none
+Expect-CT: enforce, max-age=604800
+Feature-Policy: accelerometer 'self'; ambient-light-sensor 'self'; autoplay 'self'; camera 'self'; encrypted-media 'self'; fullscreen 'self'; geolocation 'self'; gyroscope 'self'; magnetometer 'self'; microphone 'self'; midi 'self'; payment 'self'; picture-in-picture *; speaker 'self'; sync-xhr *; usb 'self'; vr 'self';
+X-Backend-Server: vm2729.jn-hebergement.com
+
+{"modules":[{"id":"22385","name":"welcome","displayName":"Welcome","categoryName":"\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u044b \u0430\u0434\u043c\u0438\u043d\u0438\u0441\u0442\u0440\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044f","description":"Be ready to sell your first product on PrestaShop quicker than you would have wished by following our nice onboarding process","author":"PrestaShop","url":"https:\/\/addons.prestashop.com\/ru\/administrative-tools\/22385-welcome.html?utm_source=back-office&utm_medium=push-addons&utm_campaign=back-office-RU&utm_content=download","serviceUrl":"","img":"https:\/\/medias1.prestastore.com\/img\/pico\/22385.jpg","fullDescription":"Be ready to sell your first product on PrestaShop quicker than you would have wished by following our nice onboarding process.","additionalDescription":"Use this native module to:\r\n<ul>\r\n\t<li><strong>Discover PrestaShop:<\/strong> learn quicker, sell faster!<\/li>\r\n<\/ul>\r\n","features":"No need to configure this module, all you have to do is enable or disable it whenever you need.<br \/>\r\n<br \/>\r\nThis module is an onboarding. In short, in motion, it makes you enter the few steps you will have to follow in order to set up all the basic settings of your shop: product pages, categories, modules, logo, etc.","customer_benefits":"","demo_video":"","version":"6.0.0","last_update":"2019-07-07 14:16:17","compatibility":{"from":"1.7.6.0","to":"1.7.6.0"},"price":{"EUR":0,"USD":0,"GBP":0},"badges":[{"label":"Made by PrestaShop","img":"https:\/\/medias2.prestastore.com\/themes\/prestastore\/img\/front\/sprites\/badges\/made-by-prestashop.png"}],"cover":{"small":"https:\/\/medias2.prestastore.com\/-pprod\/welcome.jpg","big":"https:\/\/medias2.prestastore.com\/-pbig\/welcome.jpg"}}]}";

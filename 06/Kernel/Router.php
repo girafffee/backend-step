@@ -98,6 +98,9 @@ class Router{
 	// Разобраться с посредником - что бы для всех созданных маршрутов вызывался
 	// посредник
 
+    static function getRoute($url){
+        return self::$routes[$url]->url;
+    }
     //Создает маршрут при условии, что он не был создан ранее
     static function resource($url, $controller){
         $mainRoute = self::add($url, $controller, "index");
@@ -107,6 +110,14 @@ class Router{
         self::add($url . "/edit", $controller, "edit", $mainRoute);
         self::add($url . "/update", $controller, "update", $mainRoute);
         self::add($url . "/destroy", $controller, "destroy", $mainRoute);
+        return $mainRoute;
+    }
+
+    static function auth($url, $controller){
+        $mainRoute = self::add($url, $controller, "index");
+        self::add($url . "/login", $controller, "loginInto", $mainRoute);
+        self::add($url . "/register", $controller, "registerCreate", $mainRoute);
+        self::add($url . "/logout", $controller, "loginOut", $mainRoute);
         return $mainRoute;
     }
 
@@ -298,7 +309,7 @@ class Router{
 			$res_a = '<a href="' . $item['slug'] /*self::BuildUrl($item)*/ . '" title="' . $item['slug'] . '" >' . $item['text'] . "</a>" ;
 			$res.= "<li>" . $res_a;
 
-			if ($item['hasCildren']){
+			if ($item['hasChildren']){
 				$res.= self::BuildItem($data, $key);
 			}
 			$res.= "</li>\n";

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>ps_faviconnotificationbo</name>
+    <displayName><![CDATA[Уведомления о заказах в фавиконке]]></displayName>
+    <version><![CDATA[2.0.0]]></version>
+    <description><![CDATA[Уведомления прямо на вкладке бэк-офиса о каждом новом заказе, клиенте или сообщении, даже если вы работаете с другой страницей]]></description>
+    <author><![CDATA[PrestaShop]]></author>
+    <tab><![CDATA[administration]]></tab>
+	<confirmUninstall><![CDATA[Точно хотите удалить этот модуль?]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

@@ -24,6 +24,6 @@ class PageController
             $this->content = "<h3> No Action </h3>";
 	}
 
-	function getContent () {return $this->content;}
+	function getContent() {return $this->content;}
 
 }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>gsitemap</name>
+    <displayName><![CDATA[Карта сайта Google sitemap]]></displayName>
+    <version><![CDATA[4.1.0]]></version>
+    <description><![CDATA[Генерирует файл Google sitemap]]></description>
+    <author><![CDATA[PrestaShop]]></author>
+    <tab><![CDATA[seo]]></tab>
+	<confirmUninstall><![CDATA[Точно хотите удалить этот модуль?]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

@@ -1,0 +1,15 @@
+{shop_url}
+
+Hi {firstname} {lastname},
+
+Customer Service - Discussion Forwarded
+
+{employee} wanted to forward this discussion to you.
+
+Discussion history: {messages}
+
+{employee} added {comment}
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](http://www.prestashop.com/)

@@ -1,0 +1,11 @@
+{shop_url}
+
+Hi {firstname} {lastname},
+
+Here is a test email from your shop.
+
+If you can read this, it means the test is successful!
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](http://www.prestashop.com/)
