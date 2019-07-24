@@ -1,6 +1,6 @@
 <?php
 namespace Kernel\Base;
-use App\Config;
+
 use Kernel\Lib\SmartyGir;
 
 /**
@@ -9,9 +9,9 @@ use Kernel\Lib\SmartyGir;
 class BaseController extends SmartyGir
 {
 
-	public static function render ($tplPath, $data = '', $config = ''){
+	public static function render ($tplPath, $data = '', $config = '', $cache_id = ''){
 
-        parent::RenderSmarty($tplPath, $data, $config);
+        parent::RenderSmarty($tplPath, $data, $config, $cache_id);
 
 	    // включаем буфер
 		ob_start();

@@ -10,6 +10,8 @@ final class Config {
   public static $pathToTemplate = __DIR__ . '/../resources/view/mydesign/';
   public static $pathToStorage = __DIR__ . '/../storage/';
   public static $pathToSmartyConfig = __DIR__ . '/../configs/';
+  public static $pathToSmartyCache = __DIR__ . '/../cache/';
+
 
 
 

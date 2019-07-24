@@ -27,7 +27,7 @@ class PageController extends BaseController
         }
         else
             $this->content = "<h3> No Action </h3>";
-        $this->content = self::render(self::$tpl, $this->content);
+        $this->content = self::render(self::$tpl, $this->content, null, $data['slug']);
 	}
 
 	function getContent() {return $this->content;}

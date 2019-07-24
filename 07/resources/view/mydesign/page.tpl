@@ -1,5 +1,5 @@
-<section id="">
-    <h1>HELLO!!! WORLD!!!</h1>
+<section class="container">
+    <h1>HELLO WORLD!!</h1>
     {$data}
 
 </section>
