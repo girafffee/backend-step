@@ -1,6 +1,6 @@
 <?php
 /* Smarty version 3.1.34-dev-7, created on 2019-07-22 01:41:44
-  from '/var/www/clients/client13/web15/web/07/resources/view/mydesign/footer.tpl.php' */
+  from '/var/www/clients/client13/web15/web/07/resources/view/mydesign/footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
@@ -11,7 +11,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
     'abd049f697d8a86b49a2a86ec44dd0516ecd8a7f' => 
     array (
-      0 => '/var/www/clients/client13/web15/web/07/resources/view/mydesign/footer.tpl.php',
+      0 => '/var/www/clients/client13/web15/web/07/resources/view/mydesign/footer.tpl',
       1 => 1563748901,
       2 => 'file',
     ),

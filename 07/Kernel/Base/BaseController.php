@@ -8,15 +8,18 @@ use Kernel\Lib\SmartyGir;
  */
 class BaseController extends SmartyGir
 {
+    protected static $tpl;
 
 	public static function render ($tplPath, $data = '', $config = '', $cache_id = ''){
 
         parent::RenderSmarty($tplPath, $data, $config, $cache_id);
 
+
 	    // включаем буфер
 		ob_start();
 
 		parent::display();
+
 
         // сохраняем всё что есть в буфере в переменную $content
         $content = ob_get_contents();

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2019-07-24 13:14:13
+/* Smarty version 3.1.34-dev-7, created on 2019-07-27 01:45:11
   from '/var/www/clients/client13/web15/web/07/resources/view/mydesign/header_home.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5d382f757099c4_11175483',
+  'unifunc' => 'content_5d3b8277bfb061_60167071',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -22,9 +22,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
       2 => 'file',
     ),
   ),
-  'cache_lifetime' => 86400,
+  'cache_lifetime' => 120,
 ),true)) {
-function content_5d382f757099c4_11175483 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d3b8277bfb061_60167071 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div id="containerHeaderHome"  class="container-fluid">
 	<header id="headerMain" class="container"><div class="row">

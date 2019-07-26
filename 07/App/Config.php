@@ -11,6 +11,8 @@ final class Config {
   public static $pathToStorage = __DIR__ . '/../storage/';
   public static $pathToSmartyConfig = __DIR__ . '/../configs/';
   public static $pathToSmartyCache = __DIR__ . '/../cache/';
+  public static $pathToSmartyPlugins = __DIR__ . '/../Kernel/Lib/smarty_functions';
+
 
 
 

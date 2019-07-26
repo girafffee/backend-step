@@ -8,43 +8,80 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Page/PageModel.php">
+        <entry file="file://$PROJECT_DIR$/Kernel/Base/BaseController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+            <state relative-caret-position="187">
+              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Kernel/app.boot.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
               <folding>
-                <element signature="e#26#41#0#PHP" expanded="true" />
-                <element signature="e#516#897#0#PHP" />
+                <element signature="e#24#48#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/App/Page/PageController.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Layout/Responce.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+            <state relative-caret-position="488">
+              <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Kernel/Lib/MySQLi_DB.php">
+        <entry file="file://$PROJECT_DIR$/resources/view/mydesign/mainmenu.tpl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+            <state relative-caret-position="51">
+              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Kernel/Router.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3230">
+              <caret line="84" column="6" selection-start-line="84" selection-start-column="6" selection-end-line="84" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Where(</find>
+      <find>Homepage</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../" />
@@ -52,12 +89,37 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Kernel/app.boot.php" />
+        <option value="$PROJECT_DIR$/App/Middleware/Stop.php" />
+        <option value="$PROJECT_DIR$/App/SiteMap/SiteMapController.php" />
+        <option value="$PROJECT_DIR$/App/Middleware/Run.php" />
+        <option value="$PROJECT_DIR$/App/Middleware/Delete.php" />
         <option value="$PROJECT_DIR$/Kernel/Lib/DB_Driver.php" />
-        <option value="$PROJECT_DIR$/Kernel/Base/BaseModel.php" />
-        <option value="$PROJECT_DIR$/Kernel/Lib/MySQLi_DB.php" />
+        <option value="$PROJECT_DIR$/storage/pages/404.php" />
         <option value="$PROJECT_DIR$/App/Config.php" />
+        <option value="$PROJECT_DIR$/Kernel/Lib/MySQLi_DB.php" />
+        <option value="$PROJECT_DIR$/App/Layout/Responce.php" />
+        <option value="$PROJECT_DIR$/resources/view/mydesign/head.tpl.php" />
+        <option value="$PROJECT_DIR$/resources/view/mydesign/homepage.tpl.php" />
+        <option value="$PROJECT_DIR$/resources/view/mydesign/mainmenu.tpl.php" />
+        <option value="$PROJECT_DIR$/resources/view/mydesign/header_home.tpl.php" />
+        <option value="$PROJECT_DIR$/App/Homepage/HomepageModel.php" />
+        <option value="$PROJECT_DIR$/App/Layout/HeaderController.php" />
+        <option value="$PROJECT_DIR$/App/Auth/ModelRoles.php" />
+        <option value="$PROJECT_DIR$/App/Auth/ModelPermissons.php" />
+        <option value="$PROJECT_DIR$/App/Auth/ModelPermissions.php" />
+        <option value="$PROJECT_DIR$/App/Auth/ControllerAuth.php" />
+        <option value="$PROJECT_DIR$/App/Navigation/NavigationModel.php" />
+        <option value="$PROJECT_DIR$/Kernel/Base/BaseModel.php" />
+        <option value="$PROJECT_DIR$/App/Auth/ModelAuth.php" />
         <option value="$PROJECT_DIR$/App/Page/PageModel.php" />
         <option value="$PROJECT_DIR$/App/Page/PageController.php" />
+        <option value="$PROJECT_DIR$/App/Navigation/NavigationController.php" />
+        <option value="$PROJECT_DIR$/Route/web.php" />
+        <option value="$PROJECT_DIR$/resources/view/mydesign/header.tpl.php" />
+        <option value="$PROJECT_DIR$/Kernel/Router.php" />
+        <option value="$PROJECT_DIR$/App/Homepage/HomepageController.php" />
+        <option value="$PROJECT_DIR$/Kernel/Base/BaseController.php" />
       </list>
     </option>
   </component>
@@ -79,59 +141,114 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
             <path>
-              <item name="12-03-2019" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Z:\12-03-2019" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="06" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Z:\06" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
             <path>
-              <item name="12-03-2019" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Z:\12-03-2019" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="06" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Z:\06" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="App" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="12-03-2019" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Z:\12-03-2019" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="App" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Contactform" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="12-03-2019" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Z:\12-03-2019" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="App" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Homepage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="12-03-2019" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Z:\12-03-2019" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="App" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Layout" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="12-03-2019" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Z:\12-03-2019" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="App" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Page" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="12-03-2019" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Z:\12-03-2019" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="06" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Z:\06" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="Kernel" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="12-03-2019" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Z:\12-03-2019" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="06" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Z:\06" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="Kernel" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="Base" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="12-03-2019" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Z:\12-03-2019" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="Kernel" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Lib" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="06" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Z:\06" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="06" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Z:\06" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="view" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="06" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Z:\06" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="view" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="mydesign" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="06" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Z:\06" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Route" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="05-03-2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="05-03-2019" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="05-03-2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="05-03-2019" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="05-03-2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="05-03-2019" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="Middleware" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="05-03-2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="05-03-2019" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="Page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="05-03-2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="05-03-2019" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="SiteMap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="05-03-2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="05-03-2019" type="462c0819:PsiDirectoryNode" />
+              <item name="Kernel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="05-03-2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="05-03-2019" type="462c0819:PsiDirectoryNode" />
+              <item name="Kernel" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="05-03-2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="05-03-2019" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="05-03-2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="05-03-2019" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="05-03-2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="05-03-2019" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="mydesign" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -142,14 +259,15 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Kernel/Lib" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="Z:\12-03-2019\Kernel\Lib" />
-      <recent name="Z:\12-03-2019\Kernel\Base" />
+      <recent name="Z:\06\App\Auth" />
+      <recent name="Z:\06\Kernel\Base" />
+      <recent name="Z:\06\Kernel\Lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -164,136 +282,334 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="PHPUnit.06">
+    <configuration name="06" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner directory="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="text.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/public/text.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.text.php" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="ca046bb2-509a-4c94-907f-8217f7450a6a" name="Default Changelist" comment="" />
-      <created>1559925088106</created>
+      <created>1553422608004</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1559925088106</updated>
-      <workItem from="1559925089415" duration="3596000" />
+      <updated>1553422608004</updated>
+      <workItem from="1553422621767" duration="958000" />
+      <workItem from="1553524478308" duration="844000" />
+      <workItem from="1553533781414" duration="1804000" />
+      <workItem from="1553545504808" duration="4091000" />
+      <workItem from="1553670377536" duration="1315000" />
+      <workItem from="1553693049124" duration="11604000" />
+      <workItem from="1553717802573" duration="1738000" />
+      <workItem from="1554035970204" duration="6037000" />
+      <workItem from="1560067208986" duration="9264000" />
+      <workItem from="1560081213991" duration="3979000" />
+      <workItem from="1560093484239" duration="862000" />
+      <workItem from="1561035086028" duration="2276000" />
+      <workItem from="1561068117760" duration="1836000" />
+      <workItem from="1561101023410" duration="4561000" />
+      <workItem from="1561109935092" duration="3497000" />
+      <workItem from="1561478128932" duration="26000" />
+      <workItem from="1561982566079" duration="293000" />
+      <workItem from="1563558018940" duration="845000" />
+      <workItem from="1563721595590" duration="12000" />
+      <workItem from="1563722526797" duration="936000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3596000" />
+    <option name="totallyTimeSpent" value="66653000" />
+  </component>
+  <component name="TodoView" selected-index="1">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14364304" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32815966" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32900432" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32850778" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32975295" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Kernel/Base/BaseController.php">
+    <entry file="file://$PROJECT_DIR$/resources/view/mydesign/contactform_send.tpl.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/view/mydesign/contactform.tpl.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/view/mydesign/article.tpl.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/view/mydesign/head.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="22" />
+        <state relative-caret-position="240">
+          <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Kernel/Lib/Mailer.php">
+    <entry file="file://$PROJECT_DIR$/Kernel/Request.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://W:/domains/laravel/bootstrap/app.php" />
+    <entry file="file://W:/domains/laravel/database/factories/UserFactory.php" />
+    <entry file="file://W:/domains/laravel/database/migrations/2014_10_12_000000_create_users_table.php" />
+    <entry file="file://W:/domains/laravel/database/migrations/2014_10_12_100000_create_password_resets_table.php" />
+    <entry file="file://W:/domains/laravel/database/seeds/DatabaseSeeder.php" />
+    <entry file="file://W:/domains/laravel/config/auth.php" />
+    <entry file="file://W:/domains/laravel/config/app.php" />
+    <entry file="file://W:/domains/laravel/config/database.php" />
+    <entry file="file://W:/domains/laravel/config/logging.php" />
+    <entry file="file://W:/domains/laravel/routes/channels.php" />
+    <entry file="file://W:/domains/laravel/routes/web.php" />
+    <entry file="file://W:/domains/laravel/routes/console.php" />
+    <entry file="file://W:/domains/laravel/config/session.php" />
+    <entry file="file://W:/domains/laravel/config/view.php" />
+    <entry file="file://W:/domains/laravel/resources/views/welcome.blade.php" />
+    <entry file="file://$PROJECT_DIR$/App/Middleware/Stop.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="21" />
+        <state relative-caret-position="168">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding>
+            <element signature="e#33#51#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Kernel/Lib/DB_Driver.php">
+    <entry file="file://$PROJECT_DIR$/App/Layout/HeadController.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/pages/2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        <state>
+          <caret selection-end-line="1" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/pages/5.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/pages/4.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/pages/3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="26" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/pages/404.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/view/mydesign/homepage.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/pages/catalog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Homepage/HomepageModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Kernel/Base/BaseModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="170" column="23" lean-forward="true" selection-start-line="170" selection-start-column="23" selection-end-line="170" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Homepage/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Homepage/HomeModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Navigation/NavController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kernel/Lib/MySQLi_DB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Layout/Responce.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="50" column="26" lean-forward="true" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+        <state relative-caret-position="336">
+          <caret line="67" column="44" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Page/PageModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-          <folding>
-            <element signature="e#26#41#0#PHP" expanded="true" />
-            <element signature="e#516#897#0#PHP" />
-          </folding>
+        <state relative-caret-position="551">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Page/PageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        <state relative-caret-position="600">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Navigation/NavigationModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="94" column="20" lean-forward="true" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Layout/FooterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Layout/HeaderController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Navigation/NavigationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/view/mydesign/header_home.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="115" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Route/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="32" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Auth/ControllerAuth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4080">
+          <caret line="242" column="23" selection-start-line="242" selection-start-column="23" selection-end-line="242" selection-end-column="23" />
+          <folding>
+            <element signature="e#28#59#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Auth/ModelRoles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Auth/ModelPermissions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Auth/ModelAuth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="28" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/view/mydesign/header.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Homepage/HomepageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#30#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kernel/Base/BaseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kernel/app.boot.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+          <folding>
+            <element signature="e#24#48#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Layout/Responce.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/view/mydesign/mainmenu.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kernel/Router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3230">
+          <caret line="84" column="6" selection-start-line="84" selection-start-column="6" selection-end-line="84" selection-end-column="6" />
         </state>
       </provider>
     </entry>
