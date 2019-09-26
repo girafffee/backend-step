@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2019-07-27 01:45:13
+/* Smarty version 3.1.34-dev-7, created on 2019-08-24 01:51:03
   from '/var/www/clients/client13/web15/web/07/resources/view/mydesign/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5d3b82799477a2_55970273',
+  'unifunc' => 'content_5d606dd75409e2_63865334',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -24,7 +24,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 120,
 ),true)) {
-function content_5d3b82799477a2_55970273 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d606dd75409e2_63865334 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="containerHeader"  class="container-fluid">
 	<header id="headerMain" class="container">
         <div class="row">
@@ -50,14 +50,6 @@ function content_5d3b82799477a2_55970273 (Smarty_Internal_Template $_smarty_tpl)
 
 
 																									<li><a href="catalog" title="catalog">Catalog</a>
-																					</li>
-
-
-																									<li><a href="login" title="login">Login</a>
-																					</li>
-
-
-																									<li><a href="register" title="register">Register</a>
 																					</li>
 
 

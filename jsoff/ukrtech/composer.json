@@ -1,0 +1,17 @@
+{
+    "name": "ukrtech/binary",
+    "license": "BeerWare",
+    "authors": [
+        {
+            "name": "Sasha Ivanenko",
+            "email": "sanko200065@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "app"
+        }
+    }
+}

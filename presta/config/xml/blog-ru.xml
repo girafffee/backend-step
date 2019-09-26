@@ -6,11 +6,35 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>How To Create A Social Media Calendar</title>
+    <link>https://www.prestashop.com/en/blog/create-social-media-calendar</link>
+    <description>We all know that promoting our businesses on social media is an important part of reaching and expanding our customer base, but great intentions can slide away from us in the absence of a strategic</description>
+     <pubDate>Fri, 26 Jul 2019 10:20:45 +0200</pubDate>
+ <dc:creator>Teapot</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/create-social-media-calendar</guid>
+  </item>
+  <item>
+    <title>Why do mobile shoppers prefer a simplified payment method?</title>
+    <link>https://www.prestashop.com/en/blog/simplified-payment-method</link>
+    <description>The arrival of smartphones has radically changed e-shoppers’ purchasing habits. The number of people buying online using their mobile phone has increased considerably over recent years.</description>
+     <pubDate>Wed, 24 Jul 2019 11:08:47 +0200</pubDate>
+ <dc:creator>Yateo EN</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/simplified-payment-method</guid>
+  </item>
+  <item>
+    <title>How to build a brand story through storytelling?</title>
+    <link>https://www.prestashop.com/en/blog/brand-story-through-storytelling</link>
+    <description>Storytelling is a powerful form of human communication. We have used storytelling in sharing our history, expressing our feelings, and telling people our purpose.</description>
+     <pubDate>Mon, 22 Jul 2019 10:45:27 +0200</pubDate>
+ <dc:creator>Invertus</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/brand-story-through-storytelling</guid>
+  </item>
+  <item>
     <title>PSD2 Is Coming to the EU – Are You Ready?</title>
     <link>https://www.prestashop.com/en/blog/psd2-coming-to-eu</link>
     <description>Companies that sell in the European Union have dealt with many changes over the years to payment services, cross-market regulations, and individual country mandates.</description>
      <pubDate>Fri, 19 Jul 2019 14:11:59 +0200</pubDate>
- <dc:creator>ns8</dc:creator>
+ <dc:creator>JackieLong</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/psd2-coming-to-eu</guid>
   </item>
   <item>
@@ -60,30 +84,6 @@
      <pubDate>Wed, 26 Jun 2019 10:38:00 +0200</pubDate>
  <dc:creator>Webkul</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/expand-your-logistics-internationally</guid>
-  </item>
-  <item>
-    <title>5 Ways To Manage Your After Sales Service Effectively</title>
-    <link>https://www.prestashop.com/en/blog/ecommerce-after-sales-service</link>
-    <description>If you have ever worked in real-world retail as opposed to eCommerce, you may have heard it said that just one negative customer experience is a sure way to lose ten customers!</description>
-     <pubDate>Fri, 21 Jun 2019 15:27:07 +0200</pubDate>
- <dc:creator>Teapot</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/ecommerce-after-sales-service</guid>
-  </item>
-  <item>
-    <title>5 Marketing Content Mistakes to Avoid</title>
-    <link>https://www.prestashop.com/en/blog/marketing-content-ecommerce</link>
-    <description>The amount of data we produce each day is truly mind-blowing. It’s hard to stand out with your content when there are 2.5 quintillion bytes of data created every day.</description>
-     <pubDate>Thu, 20 Jun 2019 10:43:17 +0200</pubDate>
- <dc:creator>Invertus</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/marketing-content-ecommerce</guid>
-  </item>
-  <item>
-    <title>New! Manage all your payment options securely from a single interface with PrestaShop Checkout</title>
-    <link>https://www.prestashop.com/en/blog/prestashop-checkout</link>
-    <description>Don’t wait to try out PrestaShop Checkout Built with PayPal, the innovative payment solution launched by PrestaShop to boost your e-commerce activity!</description>
-     <pubDate>Mon, 03 Jun 2019 20:54:20 +0200</pubDate>
- <dc:creator>MLNielsen</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/prestashop-checkout</guid>
   </item>
   </channel>
 </rss>

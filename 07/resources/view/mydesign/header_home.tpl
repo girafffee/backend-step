@@ -10,6 +10,6 @@
 	<div id="headerCaptions" class="text-center">
 		<h2>{$data.pageTitle}</h2>
 		<p>Your Favourite Creative Agency Template </p>
-		<a href="contact.html">Get Started</a>
+		<a href="catalog">Get Started {*test*}</a>
 	</div>
 </div>

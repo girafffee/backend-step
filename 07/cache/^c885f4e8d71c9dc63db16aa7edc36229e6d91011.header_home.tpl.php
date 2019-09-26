@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2019-07-27 01:45:11
+/* Smarty version 3.1.34-dev-7, created on 2019-09-02 10:21:23
   from '/var/www/clients/client13/web15/web/07/resources/view/mydesign/header_home.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5d3b8277bfb061_60167071',
+  'unifunc' => 'content_5d6cc2f30fea10_90751592',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '76195ed358acdc060f1926c121eec328e7bd46b9' => 
     array (
       0 => '/var/www/clients/client13/web15/web/07/resources/view/mydesign/header_home.tpl',
-      1 => 1563730759,
+      1 => 1564327799,
       2 => 'file',
     ),
     'ec8104636474a9b5ea404c3cb0c11530a92e5952' => 
@@ -24,7 +24,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 120,
 ),true)) {
-function content_5d3b8277bfb061_60167071 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d6cc2f30fea10_90751592 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div id="containerHeaderHome"  class="container-fluid">
 	<header id="headerMain" class="container"><div class="row">
@@ -53,14 +53,6 @@ function content_5d3b8277bfb061_60167071 (Smarty_Internal_Template $_smarty_tpl)
 																					</li>
 
 
-																									<li><a href="login" title="login">Login</a>
-																					</li>
-
-
-																									<li><a href="register" title="register">Register</a>
-																					</li>
-
-
 												
 			</ul>
 		</nav>
@@ -72,7 +64,7 @@ function content_5d3b8277bfb061_60167071 (Smarty_Internal_Template $_smarty_tpl)
 	<div id="headerCaptions" class="text-center">
 		<h2>Welcome to my Site</h2>
 		<p>Your Favourite Creative Agency Template </p>
-		<a href="contact.html">Get Started</a>
+		<a href="catalog">Get Started </a>
 	</div>
 </div>
 <?php }

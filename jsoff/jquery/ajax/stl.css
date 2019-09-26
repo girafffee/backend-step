@@ -1,0 +1,34 @@
+#html_star{
+}
+
+.rater{
+    display: inline-flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+
+.rater input[type='radio']{
+    display: none;
+}
+
+.rater label:hover ~label {
+    color: aqua;
+    font-weight: bold;
+}
+.rater label:hover{
+    color: aqua;
+    font-weight: bold;
+}
+
+.rater label{
+
+}
+
+.rater input[type='radio']:checked ~label{
+    color: aqua;
+    font-weight: bold;
+}
+
+
+

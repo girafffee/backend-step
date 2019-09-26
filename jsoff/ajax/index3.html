@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drag & Drop</title>
+    <style>
+        .draggable {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: 10px;
+        }
+
+        .d1 {
+            left: 10px;
+            background-image: url(/img/1.jpg);
+        }
+
+        .d2 {
+            left: 150px;
+            background: lime;
+        }
+
+        .d3 {
+            left: 290px;
+            background: aqua;
+        }
+
+        .d4 {
+            left: 430px;
+            background: crimson;
+        }
+
+        .d5 {
+            left: 570px;
+            background: darkorange;
+        }
+    </style>
+</head>
+<body>
+
+<div class="draggable d1"></div>
+<div class="draggable d2"></div>
+<div class="draggable d3"></div>
+<div class="draggable d4"></div>
+<div class="draggable d5"></div>
+<script>
+    var drag = false;
+    var phantom = false;
+    document.onmouseup = (e) => {
+        if (drag) {
+            drag.style.opacity = "1";
+            drag = false;
+        }
+        if (phantom) {
+            document.body.removeChild(phantom)
+            phantom = false;
+        }
+
+    }
+    document.onmousemove = (e) => {
+        if (drag) {
+            if (phantom) {
+                phantom.style.left = e.pageX - 50 + "px";
+                phantom.style.top = e.pageY - 50 + "px";
+            } else {
+                phantom = drag.cloneNode(true);
+                drag.style.opacity = "0.5";
+                document.body.appendChild(phantom);
+            }
+            drag.style.left = e.pageX - 50 + "px";
+            drag.style.top = e.pageY - 50 + "px";
+        }
+    }
+    const dr = document.querySelectorAll(".draggable");
+    for (let d of dr) {
+        d.onmousedown = (e) => {
+            e.preventDefault();
+            drag = e.target;
+        }
+    }
+
+</script>
+</body>
+</html>

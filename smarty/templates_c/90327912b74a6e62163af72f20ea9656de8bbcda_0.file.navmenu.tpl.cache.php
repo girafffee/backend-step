@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-07-21 14:18:37
+/* Smarty version 3.1.33, created on 2019-08-23 18:59:01
   from '/var/www/clients/client13/web15/web/smarty/templates/navmenu.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d344a0de9f025_80172907',
+  'unifunc' => 'content_5d600d4583b069_87768046',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '90327912b74a6e62163af72f20ea9656de8bbcda' => 
     array (
       0 => '/var/www/clients/client13/web15/web/smarty/templates/navmenu.tpl',
-      1 => 1563707904,
+      1 => 1563725720,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d344a0de9f025_80172907 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->compiled->nocache_hash = '7266966285d344a0de84460_00172007';
+function content_5d600d4583b069_87768046 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '6666334875d600d457234f7_73597384';
 ?>
 <nav class="main-nav">
+
     <ul>
         <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['menus']->value, 'url', false, 'name');

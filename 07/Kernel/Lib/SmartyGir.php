@@ -23,6 +23,7 @@ class SmartyGir
          * Register all custom Functions
          */
         //self::regPlugins();
+        //self::$smarty->clearAllCache();
 
 
     }
@@ -55,6 +56,13 @@ class SmartyGir
         //Передаем параметры в шаблон
         if(!empty(self::$data))
             self::$smarty->assign('data', self::$data);
+    }
+
+    public static function isCached($tpl, $cache_id){
+        if(self::$smarty->isCached($tpl, $cache_id))
+            return true;
+        else
+            return false;
     }
 
     /*
@@ -93,7 +101,7 @@ class SmartyGir
      */
     private static function regPlugins(){
         echo "567506lkmhfghf";
-        self::$smarty->registerPlugin("function", "title", "getTitle");
+        self::$smarty->registerPlugin("function", "testFunc", "test");
 
         echo "2323123";
 
@@ -101,6 +109,10 @@ class SmartyGir
         /**
          * It would be bigger..
          */
+    }
+
+    function testFunc(){
+        echo __FILE__;
     }
 
 
@@ -112,9 +124,9 @@ class SmartyGir
             $title = $data['title'] . ' - ' . $default;
         elseif($print_id) {
             if(is_array($data) AND isset($data['id']))
-                $title = 'Page #' . $data['id'];
+                $title = 'Page #' . $data['id'] . ' - '.$default;
             else
-                $title = 'Page #' . $data;
+                $title = 'Page #' . $data. ' - '.$default;
         }
         else
             $title = $default;

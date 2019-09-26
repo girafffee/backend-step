@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2019-07-27 01:45:16
+/* Smarty version 3.1.34-dev-7, created on 2019-08-24 01:48:36
   from '/var/www/clients/client13/web15/web/07/resources/view/mydesign/head.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5d3b827c54a7a1_30528403',
+  'unifunc' => 'content_5d606d44b02880_24015380',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -18,7 +18,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 120,
 ),true)) {
-function content_5d3b827c54a7a1_30528403 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d606d44b02880_24015380 (Smarty_Internal_Template $_smarty_tpl) {
 ?><head>
 		<meta name="description" content="Описание страницы"/>
 		<meta name="keywords" content="Ключевые слова страницы"/>

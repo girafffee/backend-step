@@ -9,10 +9,10 @@ use Kernel\Lib\SmartyGir;
  * Purpose:  outputs a random magic answer
  * -------------------------------------------------------------
  */
-function smarty_function_title(){
+/*function smarty_function_title(){
     $data = SmartyGir::getTempVars('data');
     if(!strlen($data['title']) > 0)
         return SmartyGir::$smarty->getConfigVars('title');
     else
         return $data['title'];
-}
+}*/

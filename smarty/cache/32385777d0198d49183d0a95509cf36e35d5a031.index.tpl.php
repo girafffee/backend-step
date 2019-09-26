@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-07-21 14:39:16
+/* Smarty version 3.1.33, created on 2019-08-23 18:59:01
   from '/var/www/clients/client13/web15/web/smarty/templates/index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d344ee4e88447_61420176',
+  'unifunc' => 'content_5d600d4588e462_17872979',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -24,7 +24,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     '90327912b74a6e62163af72f20ea9656de8bbcda' => 
     array (
       0 => '/var/www/clients/client13/web15/web/smarty/templates/navmenu.tpl',
-      1 => 1563707904,
+      1 => 1563725720,
       2 => 'file',
     ),
     'd4dc226abc552b74500705ae4b03f99bf2f5377e' => 
@@ -42,7 +42,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 86400,
 ),true)) {
-function content_5d344ee4e88447_61420176 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d600d4588e462_17872979 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -77,6 +77,7 @@ function content_5d344ee4e88447_61420176 (Smarty_Internal_Template $_smarty_tpl)
             <a href="#"><img src="_imgs/logo.png" alt="logo"></a>
         </div>
     <nav class="main-nav">
+
     <ul>
                                                         <li class="current"><a href="#">Home</a></li>
 

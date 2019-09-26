@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+.container-fluid{
+    width: 100%;
+    height: 100%;
+    background: rgba(155, 165, 242, 0.2);
+}
+.container{
+    width: 60%;
+    height: 100%;
+    background: #ffffff;
+    margin: auto;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.contact-form{
+    padding: 50px;
+    background: linear-gradient(to top left, powderblue, pink);
+    height: 100%;
+    border-radius: 5px;
+}
+.contact-form *{
+    font-family: 'Lato', sans-serif;
+}
+.contact-form input{
+    font-size: 12pt;
+    padding: 5px;
+    border-radius: 2px;
+    border-width: 3px;
+    transition: .5s;
+}
+
+.contact-form input:focus{
+    background-color: #e7eaf5;
+}
+
+
+.wrong-check{
+    border-color: orangered;
+}
+
+.right-check{
+    border-color: limegreen;
+}
+
+.warning-check{
+    border-color: orange;
+}
+
+.tels .input_info{
+    display: flex;
+    flex-direction: column;
+}
+
+.tels .input_info input{
+    margin-top: .8em;
+}
+.tels .input_info .info{
+    margin: 5px 0;
+    color: white;
+    font-weight: bold;
+}
+#name_info{
+    margin: 5px 0 10px 0;
+    color: white;
+    font-weight: bold;
+}
+
+
+.contact-form .rows-flex{
+    display: flex;
+    flex-direction: column;
+}
+.contact-form .rows-flex .remove-button{
+    margin: 0 .2em 0 0;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-weight: 900;
+    font-size: 12px;
+    color: white;
+    background: rgba(199, 38, 12, 0.75);
+    transition: 0.2s;
+    cursor: pointer;
+}
+.contact-form .rows-flex .remove-button:hover{
+    color: black;
+    background: rgb(199, 38, 12);
+    box-shadow: 0 0 0 0.2rem rgba(240, 248, 238);
+}
+
+.rows-flex .tels{
+    margin-top: 10px;
+}
+.rows-flex .tels .main{
+    cursor: pointer;
+}
+
+.contact-form .columns-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+.contact-form .columns-flex .col-flex-item{
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: .25rem;
+    outline: 0;
+    box-sizing: border-box;
+    margin: 0 .25rem;
+    background: rgb(124, 126, 146);
+    transition: all ease-in-out 0.2s;
+}
+
+
+.contact-form .columns-flex .col-flex-item:hover{
+    background: rgb(110, 109, 168);
+    box-shadow: 0 0 0 0.2rem rgba(152, 158, 151, 0.5);
+}
+.contact-form .columns-flex .col-flex-item:active{
+    box-shadow: 0 0 0 0.2rem rgba(255, 252, 236, 0.8);
+}

@@ -1,0 +1,58 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JAVASCRIPT</title>
+
+    <!--<link rel="stylesheet" href="css/stl.css" />-->
+	<script src="https://kit.fontawesome.com/eb982ef246.js"></script>
+</head>
+
+<body><ol id="mainul"><li>Item 1</li><li><b>Item 2</b></li><li>Item <i>3</i></li></ol>
+<button onclick="showDOM()">DOM</button>
+<button onclick="hideDOM()">Hide DOM</button><br/><br/>
+<button onclick="addLi('OL')">Add Li in Ul</button><br/>
+<label>Добавить элемент после №:</label>
+<input type="number" id="num" value="1" /><button onclick="insLi()">GO</button><br/>
+<label>Удалить элемент по №:</label>
+<input type="number" id="delnum" value="1" /><button onclick="delLi()">GO</button><br/>
+
+<button onclick="delALL()">Удалить все</button><br/><br/><br/>
+
+<button onclick="cloneUl()">Клонировать UL</button>
+
+<!--<input type="number" id="mrli" value="3" /><button onclick="moreLi()">Кол-во Li</button>-->
+
+<p id="out"></p>
+
+<div class="container-fluid">
+    <!--<div class="container">
+        <div class="gallery">
+
+            <div class="photos">
+                <img class="show" src="http://www.randrs.ru/uploads/photos/show/10293_ins-yescib.jpg">
+                <img src="http://www.randrs.ru/uploads/photos/show/10294_ibisya-ecb-ln-ib.jpg" alt="">
+                <img src="http://www.randrs.ru/uploads/photos/show/10295_ecb-ln-i-s-ni-yocis.jpg" alt="">
+                <img src="http://www.randrs.ru/uploads/photos/show/10296_lcnyo-bigsl.jpg" alt="">
+                <img src="http://www.randrs.ru/uploads/photos/show/10297_bun-sp-yescib.jpg" alt="">
+            </div>
+
+            <div class="buttons">
+                <span class="btn_slide" id="btn_prev">
+					
+					<i class="fas fa-angle-right"></i>
+				</span>
+                <span class="btn_slide" id="btn_next">
+					<i class="fas fa-angle-left"></i>
+				</span>
+            </div>
+
+        </div>
+    </div> 
+	
+	<div class="banner"></div>-->
+
+</div>
+<!--<script src="js/hello.js"></script>-->
+<script src="js/dom.js"></script>
+</body>
+</html>

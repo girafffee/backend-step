@@ -1,0 +1,13 @@
+body{
+    width: 1000px;
+}
+#d1{
+    width: 100px;
+    height: 100px;
+    background: tomato;
+    border-radius: 50%;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    transition: 0.3s;
+}

@@ -1,0 +1,96 @@
+<meta charset="utf-8">
+
+<div class="container"></div>
+
+<script>
+    /*
+    РАБОТА С ФУНКЦИЯМИ
+    */
+
+window.onload = function(){
+    
+    for(var i = 1; i <= 10; i++){
+        let btn = document.createElement("BUTTON");
+        btn.innerText = "btn_" + i;
+        btn.name = "Button #" + i;
+
+        // btn.onclick = function self() {
+        //     alert("Button #" + self.x);
+        // };
+        //btn.onclick.x = i;
+
+        btn.onclick = (function (x) {
+            return function(){
+                alert(x);
+            };
+        })("Button #" + i);
+
+        
+        document.querySelector(".container").appendChild(btn);
+    }
+
+    
+}
+
+function getName(){
+    alert(this.name);
+}
+/*
+========================
+========================
+*/
+
+function fun(){
+    alert("Черeз создание функции - ES5");
+}
+
+fun2 = function(){
+    alert("Через переменную - ES5");
+}
+
+func3 = () => {
+    alert("Стрелочная функция - ES6");
+}
+
+function fun4(x, y, z){
+    let str = "";
+    str += x + " (" + typeof x + ")\n";
+   
+    alert(str);
+}
+function fun5(){
+    let maxi = 0;
+    maxi = arguments[0];
+    for(let num of arguments){
+        if(typeof num != "number") continue;
+        
+        if(num > maxi){
+            maxi = num;
+        }
+    }
+    alert(maxi);
+}
+
+
+fun6 = function self(){
+    alert(self.x)
+}
+
+fun6.x = 435435;
+
+</script>
+
+
+
+
+<!--
+typeof x    != "undefined"  => проверка на определение переменной
+typeof fun  == "function"   => проверка на обьявление функции
+
+Параметрический полиморфизм в JS отсутствует!!!
+
+(function (x) {alert(x)} )(10)
+
+Выражение функции мгновенного вызова
+
+-->

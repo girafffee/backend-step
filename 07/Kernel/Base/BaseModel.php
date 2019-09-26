@@ -44,6 +44,8 @@ class BaseModel
     public $Pag;
 
 
+
+
     public function hasOne($modelName, $foreign_key, $local_key){
         $this->hasOne[] = [$modelName, $foreign_key, $local_key];
     }

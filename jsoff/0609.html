@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+
+        <div style="width:200px; height: 200px; border: 2px solid navy; margin: auto;" onmouseenter="console.log('DIV-1')">DIV-1
+            <div style="width:100px; height: 100px; background: tomato; margin: 50px;" onmouseenter="console.log('DIV-2')">DIV-2</div>
+        </div>
+
+        <div style="width:200px; height: 200px; border: 2px solid navy; margin: auto;" onmouseover="console.log('DIV-1')">DIV-1
+            <div style="width:100px; height: 100px; background: tomato; margin: 50px;" onmouseover="console.log('DIV-2')">DIV-2</div>
+        </div>
+        
+        <div style="width:200px; height: 200px; border: 2px solid navy; margin: auto;" onmouseleave="text.innerText += 'Вы вышли за пределы DIV-1!'; text.innerHTML += '<br/><br/>'"
+        onmouseenter="text.innerText += 'Вы вошли в пространство DIV-1!'; text.innerHTML += '<br/>';"
+        >DIV-1
+            <div style="width:100px; height: 100px; background: tomato; margin: 50px;" onmouseleave="text.innerText += 'Вы вышли за пределы DIV-2!'; text.innerHTML += '<br/><br/>'"
+            onmouseenter="text.innerText += 'Вы вошли в пространство DIV-2!'; text.innerHTML += '<br/>';"
+            >DIV-2</div>
+        </div>
+        
+        <div id="text"></div>
+    </body>
+</html>
+
+
+<!--
+    Три цветных блока. Один без цвета, с рамкой.
+    Его цвет задается при наведении мышью над одним из цветных блоков.
+    
+    Использовать события mouseenter, mouseleave
+
+    -->

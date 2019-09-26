@@ -1,0 +1,30 @@
+body{
+    width: 1000px;
+}
+.drag{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    transition: 0.1s;
+}
+#d1{
+    left: 10px;
+    background: navy;
+}
+#d2{
+    left: 150px;
+    background: lime;
+}
+
+#d3{
+    left: 290px;
+    background: tomato;
+}
+#d4{
+    left: 430px;
+    background: aqua;
+}
+

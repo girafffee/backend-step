@@ -1,0 +1,56 @@
+#d1{
+    background:linear-gradient(73deg, rgb(51, 105, 231), rgb(0, 174, 255));
+    left: calc(10% - 75px);
+}
+
+#d2{
+    background:linear-gradient(135deg, rgb(129, 243, 80) 0%, rgb(3, 254, 219) 100%);
+    left: calc(30% - 75px);
+}
+
+#d3{
+    background:linear-gradient(45deg, rgb(232, 91, 111), rgb(17, 43, 77));
+    left: calc(50% - 75px);
+}
+
+#d4{
+    background:linear-gradient(45deg, rgb(232, 191, 111), rgb(17, 43, 77));
+    left: calc(70% - 75px);
+}
+
+#d5{
+    background:linear-gradient(45deg, rgb(132, 91, 111), rgb(17, 99, 77));
+    left: calc(90% - 75px);
+}
+.container{
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    border-radius: 1em;
+}
+#sub{
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+}
+
+.cont1{
+    left: calc(30% - 250px);
+    top: calc(66% - 150px);
+}
+
+.cont2{
+    left: calc(70% - 250px);
+    top: calc(66% - 150px);
+}
+
+.blocks{
+    border-radius: 50%;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: calc(33% - 75px);
+    transition: 0.1s;
+}

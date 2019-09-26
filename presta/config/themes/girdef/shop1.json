@@ -1,0 +1,1 @@
+{"parent":"classic","name":"girdef","display_name":"Girafffee Theme Classic","version":"1.0.0","author":{"name":"Olexandr Ivanenko","email":"email@email.com","url":"domain.com"},"assets":{"use_parent_assets":true},"global_settings":{"hooks":{"custom_hooks":[{"name":"customFooterBefore","title":"customFooterBefore","description":"Add a widget area above the footer"}]}}}

@@ -41,7 +41,6 @@ class PageModel extends BaseModel
         }
 
         $data = $ret->fetch_assoc();
-
         return $data;
     }
 
